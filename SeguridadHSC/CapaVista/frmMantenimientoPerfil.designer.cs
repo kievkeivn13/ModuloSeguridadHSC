@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientoPerfil));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.gbxEstado = new System.Windows.Forms.GroupBox();
@@ -42,16 +43,16 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.perfilTabla = new System.Windows.Forms.DataGridView();
-            this.dataSet5 = new CapaVista.DataSet5();
-            this.perfilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.perfilTableAdapter = new CapaVista.DataSet5TableAdapters.perfilTableAdapter();
             this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.perfilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet5 = new CapaVista.DataSet5();
+            this.perfilTableAdapter = new CapaVista.DataSet5TableAdapters.perfilTableAdapter();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -189,20 +190,6 @@
             this.perfilTabla.TabIndex = 27;
             this.perfilTabla.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.perfilTabla_RowHeaderMouseClick);
             // 
-            // dataSet5
-            // 
-            this.dataSet5.DataSetName = "DataSet5";
-            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // perfilBindingSource
-            // 
-            this.perfilBindingSource.DataMember = "perfil";
-            this.perfilBindingSource.DataSource = this.dataSet5;
-            // 
-            // perfilTableAdapter
-            // 
-            this.perfilTableAdapter.ClearBeforeFill = true;
-            // 
             // pkIdDataGridViewTextBoxColumn
             // 
             this.pkIdDataGridViewTextBoxColumn.DataPropertyName = "pkId";
@@ -221,12 +208,27 @@
             this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             // 
+            // perfilBindingSource
+            // 
+            this.perfilBindingSource.DataMember = "perfil";
+            this.perfilBindingSource.DataSource = this.dataSet5;
+            // 
+            // dataSet5
+            // 
+            this.dataSet5.DataSetName = "DataSet5";
+            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // perfilTableAdapter
+            // 
+            this.perfilTableAdapter.ClearBeforeFill = true;
+            // 
             // frmMantenimientoPerfil
             // 
             this.AcceptButton = this.btnInsertar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(658, 491);
             this.Controls.Add(this.perfilTabla);
             this.Controls.Add(this.btnLimpiar);
@@ -239,14 +241,16 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelNombreaplicacion);
             this.Controls.Add(this.labelIdaplicacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmMantenimientoPerfil";
             this.Text = "Mantenimiento Perfil";
             this.Load += new System.EventHandler(this.frmMantenimientoPerfil_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

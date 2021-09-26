@@ -17,6 +17,7 @@ namespace CapaVista
         public frmAplicacionAPerfiles()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         //Mostrar los datos CAPA VISTA

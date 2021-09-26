@@ -16,6 +16,7 @@ namespace CapaVista
         public frmRegistrarUsuario()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)

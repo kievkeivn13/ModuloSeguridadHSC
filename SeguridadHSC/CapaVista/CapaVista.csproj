@@ -225,6 +225,7 @@
     <Content Include="Recursos\login_50px.png" />
     <Content Include="Recursos\Logopng.png" />
     <Content Include="Recursos\see %281%29.png" />
+    <None Include="Recursos\seguridad.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

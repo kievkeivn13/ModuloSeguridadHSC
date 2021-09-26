@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAplicacionAPerfiles));
             this.dtgConsulta = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -234,7 +235,7 @@ namespace CapaVista
             this.button6.Click += new System.EventHandler(this.button6_Click);
             this.button6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button6_KeyDown);
             // 
-            // formAplicacionAPerfiles
+            // frmAplicacionAPerfiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -256,8 +257,10 @@ namespace CapaVista
             this.Controls.Add(this.dtgConsulta);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "formAplicacionAPerfiles";
+            this.MaximizeBox = false;
+            this.Name = "frmAplicacionAPerfiles";
             this.Text = "Perfiles";
             this.Load += new System.EventHandler(this.fmConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientoAplicacion));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.gbxEstado = new System.Windows.Forms.GroupBox();
@@ -42,17 +43,17 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataSet1 = new CapaVista.DataSet1();
-            this.aplicacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.aplicacionTableAdapter1 = new CapaVista.DataSet1TableAdapters.aplicacionTableAdapter();
             this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idReporteAsociadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aplicacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new CapaVista.DataSet1();
+            this.aplicacionTableAdapter1 = new CapaVista.DataSet1TableAdapters.aplicacionTableAdapter();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -191,20 +192,6 @@
             this.dataGridView1.TabIndex = 27;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick_1);
             // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // aplicacionBindingSource1
-            // 
-            this.aplicacionBindingSource1.DataMember = "aplicacion";
-            this.aplicacionBindingSource1.DataSource = this.dataSet1;
-            // 
-            // aplicacionTableAdapter1
-            // 
-            this.aplicacionTableAdapter1.ClearBeforeFill = true;
-            // 
             // pkIdDataGridViewTextBoxColumn
             // 
             this.pkIdDataGridViewTextBoxColumn.DataPropertyName = "pkId";
@@ -229,6 +216,20 @@
             this.idReporteAsociadoDataGridViewTextBoxColumn.HeaderText = "idReporteAsociado";
             this.idReporteAsociadoDataGridViewTextBoxColumn.Name = "idReporteAsociadoDataGridViewTextBoxColumn";
             // 
+            // aplicacionBindingSource1
+            // 
+            this.aplicacionBindingSource1.DataMember = "aplicacion";
+            this.aplicacionBindingSource1.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aplicacionTableAdapter1
+            // 
+            this.aplicacionTableAdapter1.ClearBeforeFill = true;
+            // 
             // frmMantenimientoAplicacion
             // 
             this.AcceptButton = this.btnInsertar;
@@ -247,14 +248,16 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelNombreaplicacion);
             this.Controls.Add(this.labelIdaplicacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmMantenimientoAplicacion";
             this.Text = "frmMantenimientoAplicacion";
             this.Load += new System.EventHandler(this.frmMantenimientoAplicacion_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

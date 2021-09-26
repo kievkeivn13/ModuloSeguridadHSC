@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAplicaciones));
             this.dtgConsulta = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -58,7 +59,7 @@ namespace CapaVista
             this.dtgConsulta.AllowUserToDeleteRows = false;
             this.dtgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgConsulta.Location = new System.Drawing.Point(367, 180);
-            this.dtgConsulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgConsulta.Margin = new System.Windows.Forms.Padding(2);
             this.dtgConsulta.Name = "dtgConsulta";
             this.dtgConsulta.ReadOnly = true;
             this.dtgConsulta.RowHeadersWidth = 51;
@@ -70,7 +71,7 @@ namespace CapaVista
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(493, 113);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 37);
             this.button1.TabIndex = 1;
@@ -82,7 +83,7 @@ namespace CapaVista
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(107, 122);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(93, 20);
             this.textBox1.TabIndex = 2;
@@ -92,7 +93,7 @@ namespace CapaVista
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(213, 122);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(276, 20);
@@ -103,7 +104,7 @@ namespace CapaVista
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(28, 275);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -114,7 +115,7 @@ namespace CapaVista
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(284, 319);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 27);
             this.button2.TabIndex = 5;
@@ -126,7 +127,7 @@ namespace CapaVista
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(284, 221);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 27);
             this.button3.TabIndex = 6;
@@ -138,7 +139,7 @@ namespace CapaVista
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(28, 221);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(138, 20);
             this.textBox3.TabIndex = 7;
@@ -160,7 +161,7 @@ namespace CapaVista
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(284, 221);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 27);
             this.button4.TabIndex = 10;
@@ -172,7 +173,7 @@ namespace CapaVista
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(284, 351);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 27);
             this.button5.TabIndex = 9;
@@ -228,7 +229,7 @@ namespace CapaVista
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(284, 406);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 23);
             this.button6.TabIndex = 15;
@@ -241,7 +242,7 @@ namespace CapaVista
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(28, 180);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -283,7 +284,9 @@ namespace CapaVista
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "frmAplicaciones";
             this.Text = "Aplicaciones";
             this.Load += new System.EventHandler(this.fmConsulta_Load);

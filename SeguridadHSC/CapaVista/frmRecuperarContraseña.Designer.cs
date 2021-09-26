@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecuperarContraseña));
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblNuevaContraseña = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -187,6 +188,7 @@ namespace CapaVista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 450);
             this.Controls.Add(this.btnConfirmacion);
             this.Controls.Add(this.btnConfirmacionN);
@@ -200,6 +202,8 @@ namespace CapaVista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblNuevaContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmRecuperarContraseña";
             this.Text = "frmRecuperarContraseña";
             this.ResumeLayout(false);

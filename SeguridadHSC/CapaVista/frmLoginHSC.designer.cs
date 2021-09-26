@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginHSC));
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.btnPasswordn = new System.Windows.Forms.Button();
@@ -235,6 +236,7 @@ namespace CapaVista
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.btnAyuda);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLoginHSC";
             this.Text = "frmLoginHSC";

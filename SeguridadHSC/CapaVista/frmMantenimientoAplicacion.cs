@@ -19,6 +19,7 @@ namespace CapaVista
         public frmMantenimientoAplicacion()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         

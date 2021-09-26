@@ -30,10 +30,10 @@ namespace CapaVista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacoraLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvBitacoraLogin1 = new VistaBitacoraLogin.DGVBitacoraLogin();
             this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +42,7 @@ namespace CapaVista
             this.conexionHoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aplicacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBitacoraLogin1)).BeginInit();
             this.SuspendLayout();
@@ -54,18 +55,8 @@ namespace CapaVista
             this.panel1.Controls.Add(this.dgvBitacoraLogin1);
             this.panel1.Location = new System.Drawing.Point(80, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(518, 258);
+            this.panel1.Size = new System.Drawing.Size(902, 449);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bitácora de Inicio de Sesión";
             // 
             // dgvBitacoraLogin1
             // 
@@ -74,10 +65,10 @@ namespace CapaVista
             this.dgvBitacoraLogin1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvBitacoraLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBitacoraLogin1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacoraLogin1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacoraLogin1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBitacoraLogin1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBitacoraLogin1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pkIdDataGridViewTextBoxColumn,
@@ -93,12 +84,12 @@ namespace CapaVista
             this.dgvBitacoraLogin1.MultiSelect = false;
             this.dgvBitacoraLogin1.Name = "dgvBitacoraLogin1";
             this.dgvBitacoraLogin1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacoraLogin1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacoraLogin1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBitacoraLogin1.RowHeadersVisible = false;
-            this.dgvBitacoraLogin1.Size = new System.Drawing.Size(518, 258);
+            this.dgvBitacoraLogin1.Size = new System.Drawing.Size(902, 449);
             this.dgvBitacoraLogin1.TabIndex = 0;
             // 
             // pkIdDataGridViewTextBoxColumn
@@ -150,13 +141,27 @@ namespace CapaVista
             this.aplicacionDataGridViewTextBoxColumn.Name = "aplicacionDataGridViewTextBoxColumn";
             this.aplicacionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(76, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(271, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bitácora de Inicio de Sesión";
+            // 
             // frmBitacoraLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 348);
+            this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1055, 539);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBitacoraLogin";
             this.Text = "frmBitacoraLogin";
             this.panel1.ResumeLayout(false);
