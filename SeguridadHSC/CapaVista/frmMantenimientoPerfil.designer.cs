@@ -42,15 +42,15 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.perfilTabla = new System.Windows.Forms.DataGridView();
-            this.dataSet3 = new CapaVista.DataSet3();
+            this.dataSet5 = new CapaVista.DataSet5();
             this.perfilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.perfilTableAdapter = new CapaVista.DataSet3TableAdapters.perfilTableAdapter();
+            this.perfilTableAdapter = new CapaVista.DataSet5TableAdapters.perfilTableAdapter();
             this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(27, 20);
             this.textBox3.TabIndex = 22;
+            this.textBox3.Visible = false;
             // 
             // textBox2
             // 
@@ -186,17 +187,17 @@
             this.perfilTabla.Name = "perfilTabla";
             this.perfilTabla.Size = new System.Drawing.Size(534, 183);
             this.perfilTabla.TabIndex = 27;
-            this.perfilTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.perfilTabla_RowHeaderMouseClick);
+            this.perfilTabla.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.perfilTabla_RowHeaderMouseClick);
             // 
-            // dataSet3
+            // dataSet5
             // 
-            this.dataSet3.DataSetName = "DataSet3";
-            this.dataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSet5.DataSetName = "DataSet5";
+            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // perfilBindingSource
             // 
             this.perfilBindingSource.DataMember = "perfil";
-            this.perfilBindingSource.DataSource = this.dataSet3;
+            this.perfilBindingSource.DataSource = this.dataSet5;
             // 
             // perfilTableAdapter
             // 
@@ -239,12 +240,12 @@
             this.Controls.Add(this.labelNombreaplicacion);
             this.Controls.Add(this.labelIdaplicacion);
             this.Name = "frmMantenimientoPerfil";
-            this.Text = "frmMantenimientoAplicacion";
+            this.Text = "Mantenimiento Perfil";
             this.Load += new System.EventHandler(this.frmMantenimientoPerfil_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -266,9 +267,9 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView perfilTabla;
-        private DataSet3 dataSet3;
+        private DataSet5 dataSet5;
         private System.Windows.Forms.BindingSource perfilBindingSource;
-        private DataSet3TableAdapters.perfilTableAdapter perfilTableAdapter;
+        private DataSet5TableAdapters.perfilTableAdapter perfilTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn pkIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;

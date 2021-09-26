@@ -19,6 +19,7 @@ namespace CapaVista
         public frmMantenimientoPerfil()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         
@@ -47,10 +48,14 @@ namespace CapaVista
 
         private void frmMantenimientoPerfil_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'dataSet5.perfil' Puede moverla o quitarla según sea necesario.
+            this.perfilTableAdapter.Fill(this.dataSet5.perfil);
+            // TODO: esta línea de código carga datos en la tabla 'dataSet4.perfil' Puede moverla o quitarla según sea necesario.
+            this.perfilTableAdapter.Fill(this.dataSet5.perfil);
             try
             {
                 // TODO: esta línea de código carga datos en la tabla 'dataSet3.perfil' Puede moverla o quitarla según sea necesario.
-                this.perfilTableAdapter.Fill(this.dataSet3.perfil);
+                this.perfilTableAdapter.Fill(this.dataSet5.perfil);
             }
             catch (Exception Error)
             {
@@ -65,6 +70,84 @@ namespace CapaVista
         }
 
         private void perfilTabla_RowHeaderMouseClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
+                {
+
+                    conAplicacion.insertarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
+                    MessageBox.Show("Insercion realizada");
+                    funLimpiar();
+                }
+                else
+                {
+
+                    MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
+
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
+            }
+            actualizarTablaDeporte();
+        }
+
+
+
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
+            {
+
+                conAplicacion.modificarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
+                MessageBox.Show("Insercion realizada");
+                funLimpiar();
+            }
+            else
+            {
+
+                MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
+
+            }
+            actualizarTablaDeporte();
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            conAplicacion.eliminarPerfil(textBox1.Text);
+            MessageBox.Show("Eliminacion realizada");
+            funLimpiar();
+            actualizarTablaDeporte();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            funLimpiar();
+        }
+
+
+        public void actualizarTablaDeporte()
+        {
+            try
+            {
+                this.perfilTableAdapter.Fill(this.dataSet5.perfil);
+                //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
+            }
+            catch (Exception Error)
+            {
+                Console.WriteLine("404 ", Error);
+            }
+
+        }
+
+        private void perfilTabla_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
             {
@@ -86,61 +169,6 @@ namespace CapaVista
 
             }
         }
-
-        private void btnIngresar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                
-                conAplicacion.insertarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
-                MessageBox.Show("Insercion realizada");
-                funLimpiar();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex);
-            }
-            actualizarTablaDeporte();
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            conAplicacion.modificarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
-            MessageBox.Show("Insercion realizada");
-            funLimpiar();
-            actualizarTablaDeporte();
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            conAplicacion.eliminarPerfil(textBox1.Text);
-            MessageBox.Show("Eliminacion realizada");
-            funLimpiar();
-            actualizarTablaDeporte();
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            funLimpiar();
-        }
-
-
-        public void actualizarTablaDeporte()
-        {
-            try
-            {
-                this.perfilTableAdapter.Fill(this.dataSet3.perfil);
-                //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
-            }
-            catch (Exception Error)
-            {
-                Console.WriteLine("404 ", Error);
-            }
-
-        }
-
-
     }
 
 
