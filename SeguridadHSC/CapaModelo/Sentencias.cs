@@ -9,10 +9,9 @@ namespace CapaModelo
 {
     public class Sentencias
     {
+        private Conexion cn = new Conexion();
+        private OdbcCommand Comm;
 
-
-        Conexion cn = new Conexion();
-        OdbcCommand Comm;
         //frmLogin
         public int funIniciarSesion(string Usuario, string Contraseña, int validar)
         {
@@ -34,67 +33,43 @@ namespace CapaModelo
                 }
 
                 validar = Contraseña.CompareTo(con);
-
-
             }
             catch
             {
-
             }
 
             return validar;
-
-
         }
-
 
         //frmMantenimientoAplicacion
         public void funInsertar(string Id, string Nombre, int estado, string ruta)
         {
-
             string cadena = "INSERT INTO" +
             " `componenteseguridad`.`Aplicacion` VALUES (" + "'" + Id + "', '" + Nombre + "' , " + estado + ", '" + ruta + "');";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
-
         }
-
 
         public void funModificar(string Id, string Nombre, int estado, string ruta)
         {
-
             string cadena = "UPDATE componenteseguridad.aplicacion set pkId ='" + Id
               + "',nombre ='" + Nombre + "',estado = " + estado + ", idReporteAsociado = '" + ruta + "'  where pkId= '" + Id + "';";
 
-
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
-
-
-
         }
 
         public void funEliminar(string Id)
         {
-
             string cadena = "delete from componenteseguridad.aplicacion where pkId ='" + Id + "';";
-
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
         }
-
-
-
 
         public (string, int) funBuscar(string id, string nombre, int estado, string ruta)
         {
-
-
             string Query = "select * from `componenteseguridad`.`Aplicacion` where pkId='" + id + "';";
 
             OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
@@ -105,16 +80,11 @@ namespace CapaModelo
 
             if (busqueda.Read())
             {
-
                 nombre = busqueda["nombre"].ToString();
                 estado = int.Parse(busqueda["estado"].ToString());
-
             }
 
-
             return (nombre, estado);
-
-
         }
 
         //frmPerfiles
@@ -255,6 +225,7 @@ namespace CapaModelo
                 return null;
             }
         }
+
         public void funRecuperar(string Usuario, string Contraseña)
         {
             try
@@ -286,55 +257,36 @@ namespace CapaModelo
             }
         }
 
-
         //mantenimiento Perfil
 
         public void funInsertar(string Id, string Nombre, int estado)
         {
-
             string cadena = "INSERT INTO" +
             " `componenteseguridad`.`Perfil` VALUES (" + "'" + Id + "', '" + Nombre + "' , " + estado + ");";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
-
         }
-
 
         public void funModificar(string Id, string Nombre, int estado)
         {
-
             string cadena = "UPDATE componenteseguridad.perfil set pkId ='" + Id
               + "',nombre ='" + Nombre + "',estado = " + estado + "  where pkId= '" + Id + "';";
 
-
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
-
-
-
         }
 
         public void funEliminarPerfil(string Id)
         {
-
             string cadena = "delete from componenteseguridad.perfil where pkId ='" + Id + "';";
-
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
-
         }
-
-
-
 
         public (string, int) funBuscar(string id, string nombre, int estado)
         {
-
-
             string Query = "select * from `componenteseguridad`.`Perfil` where pkId='" + id + "';";
 
             OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
@@ -345,16 +297,12 @@ namespace CapaModelo
 
             if (busqueda.Read())
             {
-
                 nombre = busqueda["nombre"].ToString();
                 estado = int.Parse(busqueda["estado"].ToString());
-
             }
-
 
             return (nombre, estado);
         }
-
 
         //Aplicacion a perfiles
 
@@ -381,12 +329,14 @@ namespace CapaModelo
             OdbcDataAdapter dataName = new OdbcDataAdapter(sql, cn.conexion());
             return dataName;
         }
+
         public void agregarappaperf(string tabla3, string valor1, string valor2)
         {
             string sql = "INSERT INTO " + tabla3 + " (fkIdPerfil, fkIdAplicacion) Values( '" + valor1 + "', '" + valor2 + "');";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
+
         public void eliminarappaperf(string tabla3, string valor1, string valor2)
         {
             string sql = "DELETE FROM " + tabla3 + " WHERE fkidPerfil = '" + valor1 + "' AND  fkidAplicacion='" + valor2 + "';";
@@ -429,5 +379,18 @@ namespace CapaModelo
             }
         }
 
+        public void registrarUsuario(string pkId, string fkIdEmpleado, string nombre, string contraseña, string estado)
+        {
+            string sql = "INSERT INTO usuario (pkId, fkIdEmpleado, nombre, contraseña, estado, intento) Values( '" + pkId + "', '" + fkIdEmpleado + "', '" + nombre + "', '" + contraseña + "', '" + estado + "', '0');";
+            try
+            {
+                OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+                consulta.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Ya existe un usuario con ese id de empleado");
+            }
+        }
     }
 }

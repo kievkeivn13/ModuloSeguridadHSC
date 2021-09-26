@@ -25,7 +25,6 @@ namespace CapaVista
             var form2 = new frmLoginHSC();
             form2.Closed += (s, args) => this.Hide();
             form2.Show();
-
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -34,7 +33,6 @@ namespace CapaVista
             //form3.MdiParent = this.MdiParent;
 
             //form3.Show();
-
         }
 
         private void btnAplicacion_Click(object sender, EventArgs e)
@@ -47,7 +45,6 @@ namespace CapaVista
 
         private void btnModulos_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnPerfiles_Click(object sender, EventArgs e)
@@ -84,12 +81,27 @@ namespace CapaVista
 
         private void btnBitacora_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnAsiginaciónDePerfilesAUsuarios_Click(object sender, EventArgs e)
         {
             frmPerfiles form3 = new frmPerfiles();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
+
+        private void bitácoraDeLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBitacoraLogin form3 = new frmBitacoraLogin();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
+
+        private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistrarUsuario form3 = new frmRegistrarUsuario();
             form3.MdiParent = this.MdiParent;
 
             form3.Show();

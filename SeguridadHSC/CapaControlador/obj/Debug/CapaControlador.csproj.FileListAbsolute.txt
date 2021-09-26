@@ -43,3 +43,12 @@ C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\ob
 C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete

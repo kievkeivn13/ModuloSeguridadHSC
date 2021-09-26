@@ -12,7 +12,7 @@ namespace CapaControlador
 {
     public class Controlador
     {
-        Sentencias sn = new Sentencias();
+        private Sentencias sn = new Sentencias();
 
         //frmLogin
         public int InicarSesion(string Usuario, string Contraseña, int validar)
@@ -31,8 +31,6 @@ namespace CapaControlador
         public void modificarAplicacion(string Id, string Nombre, int Estado, string Ruta)
         {
             sn.funModificar(Id, Nombre, Estado, Ruta);
-
-
         }
 
         public (string, int, string) buscarAplicacion(string id, string nombre, int estado, string ruta)
@@ -55,7 +53,6 @@ namespace CapaControlador
             return table;
         }
 
-
         public DataTable PerfilllenarTblPersonal(string tabla2, string condicion)
         {
             OdbcDataAdapter dt = sn.PerfilllenarTblPersonal(tabla2, condicion);
@@ -64,7 +61,6 @@ namespace CapaControlador
             return table;
         }
 
-
         public DataTable PerfilllenarNombre(string tabla, string condicion)
         {
             OdbcDataAdapter dt = sn.PerfilllenarNombre(tabla, condicion);
@@ -72,7 +68,6 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-
 
         public void Perfilagregar(string tabla3, string valor1, string valor2)
         {
@@ -119,7 +114,6 @@ namespace CapaControlador
             return table;
         }
 
-
         public DataTable aplicacionllenarNombre(string tabla, string condicion)
         {
             OdbcDataAdapter dt = sn.aplicacionllenarNombre(tabla, condicion);
@@ -127,7 +121,6 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-
 
         public void aplicacionagregar(string tabla3, string valor1, string valor2)
         {
@@ -149,16 +142,13 @@ namespace CapaControlador
             sn.aplicacionagregartodo(tabla3, valor1, valor2, tabla2);
         }
 
-
-
-
         //frmRecuperarContraseña
         //frmRContraseña
         public void recuperarContraseña(string Usuario, string Contraseña)
         {
             try
-            {                             
-                    sn.funRecuperar(Usuario, Contraseña);                
+            {
+                sn.funRecuperar(Usuario, Contraseña);
             }
             catch
             {
@@ -171,9 +161,7 @@ namespace CapaControlador
             return sn.llenarcbxUsuario(sql);
         }
 
-
         //Mantenimiento Perfil
-
 
         public void insertarPerfil(string Id, string Nombre, int Estado)
         {
@@ -183,8 +171,6 @@ namespace CapaControlador
         public void modificarPerfil(string Id, string Nombre, int Estado)
         {
             sn.funModificar(Id, Nombre, Estado);
-
-
         }
 
         public (string, int) buscarPerfil(string id, string nombre, int estado, string ruta)
@@ -207,7 +193,6 @@ namespace CapaControlador
             return table;
         }
 
-
         public DataTable llenarTblPersonalappaperf(string tabla2, string condicion)
         {
             OdbcDataAdapter dt = sn.llenarTblPersonalappaperf(tabla2, condicion);
@@ -216,7 +201,6 @@ namespace CapaControlador
             return table;
         }
 
-
         public DataTable llenarNombreappaperf(string tabla, string condicion)
         {
             OdbcDataAdapter dt = sn.llenarNombreappaperf(tabla, condicion);
@@ -224,7 +208,6 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-
 
         public void agregarappaperf(string tabla3, string valor1, string valor2)
         {
@@ -252,6 +235,11 @@ namespace CapaControlador
         {
             string Consulta = "UPDATE usuario SET contraseña = '" + Contraseña + "' where nombre = '" + Usuario + "';";
             return sn.funcModificar(Consulta);
+        }
+
+        public void registrarUsuario(string pkId, string fkIdEmpleado, string nombre, string contraseña, string estado)
+        {
+            sn.registrarUsuario(pkId, fkIdEmpleado, nombre, contraseña, estado);
         }
     }
 }

@@ -8,41 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
-using System.Windows.Input;using System.Windows;
-
+using System.Windows.Input;
+using System.Windows;
+using BitacoraUsuario;
 
 namespace CapaVista
 {
     public partial class frmLoginHSC : Form
     {
-        Controlador conAplicacion = new Controlador();
-        
+        private Controlador conAplicacion = new Controlador();
+
         public frmLoginHSC()
         {
             InitializeComponent();
-           
+
             txtUsuario.Focus();
             CenterToScreen();
-
-
         }
-        string nombreUsuario = "";
-        
+
+        private string nombreUsuario = "";
+
         public string obtenerNombreUsuario()
         {
             nombreUsuario = txtUsuario.Text;
             return nombreUsuario;
         }
-        
+
         private void frmLoginHSC_Load(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             funValidarClave();
         }
+
         private void textBox_TextChanged(object sender, EventArgs e)
         {
             funValidarUsuario();
@@ -53,40 +53,37 @@ namespace CapaVista
             int validar = 0;
             string Usuario = txtUsuario.Text.Trim();
             string Contraseña = txtClave.Text.Trim();
-            validar=conAplicacion.InicarSesion(Usuario,Contraseña, validar);
-           
+            validar = conAplicacion.InicarSesion(Usuario, Contraseña, validar);
 
-            if ( txtUsuario.Text != "")
+            if (txtUsuario.Text != "")
             {
                 if (validar != 0)
                 {
-                   MessageBox.Show("Error 305: "+"Usuario o contraseña incorrectos. ");
+                    MessageBox.Show("Error 305: " + "Usuario o contraseña incorrectos. ");
                     funLimpiar();
                 }
                 else
                 {
                     //llamada a la forma
-                    MessageBox.Show(" Bienvenido "+Usuario);
+                    BitacoraLoginUsuario loggear = new BitacoraLoginUsuario();
+                    string id = loggear.obtenerIdDeUsuario(Usuario);
+                    loggear.guardarLoginUsuario(id, "1");
+                    MessageBox.Show(" Bienvenido " + Usuario);
                     funLimpiar();
                     this.Hide();
                     var form2 = new frmMIDSeguridad();
                     form2.Closed += (s, args) => this.Close();
                     form2.Show();
-
-
                 }
-
             }
             else
             {
                 MessageBox.Show("Debe ingresar su usuario ");
             }
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnPassword_Click(object sender, EventArgs e)
@@ -94,7 +91,6 @@ namespace CapaVista
             txtClave.UseSystemPasswordChar = false;
             btnPassword.Visible = false;
             btnPasswordn.Visible = true;
-
         }
 
         private void btnPasswordn_Click(object sender, EventArgs e)
@@ -112,8 +108,8 @@ namespace CapaVista
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
         }
+
         public void funLimpiar()
         {
             txtUsuario.Text = "";
@@ -123,9 +119,9 @@ namespace CapaVista
             adClave.Visible = false;
             adUser.Visible = false;
         }
+
         public void funValidarUsuario()
         {
-                     
             if (txtUsuario.Text.Trim() != "")
             {
                 lblUsuario.Text = "";
@@ -137,9 +133,9 @@ namespace CapaVista
                 adUser.Visible = true;
             }
         }
+
         public void funValidarClave()
         {
-
             if (txtClave.Text.Trim() != "")
             {
                 lblClave.Text = "";
@@ -150,14 +146,14 @@ namespace CapaVista
                 lblClave.Text = "Debe ingresar contraseña.";
                 adClave.Visible = true;
             }
-         
         }
 
         private void txtUsuario_EnabledChanged(object sender, EventArgs e)
         {
-            txtUsuario.Text = "";    
+            txtUsuario.Text = "";
         }
-        //Desplasamiento con botones 
+
+        //Desplasamiento con botones
         private void txtClave_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -185,8 +181,6 @@ namespace CapaVista
             var form2 = new frmRecuperarContraseña();
             form2.Closed += (s, args) => this.Close();
             form2.Show();
-
         }
     }
-
 }
