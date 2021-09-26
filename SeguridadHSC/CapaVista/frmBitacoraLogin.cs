@@ -15,6 +15,7 @@ namespace CapaVista
         public frmBitacoraLogin()
         {
             InitializeComponent();
+            CenterToScreen();
         }
     }
 }
