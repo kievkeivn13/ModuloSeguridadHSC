@@ -41,6 +41,34 @@ namespace CapaModelo
             return validar;
         }
 
+        public int funInicio(string Usuario, string Contrasena)
+        {
+            try
+            {
+                string Us = "";
+                string Con = "";
+                Comm = new OdbcCommand("SELECT nombre, contraseña FROM componenteseguridad.usuario WHERE nombre ='" + Usuario + "' AND contraseña ='" + Contrasena + "' AND estado = 1 ;", cn.conexion());
+                OdbcDataReader reader = Comm.ExecuteReader();
+                reader.Read();
+                Us = reader.GetString(0);
+                Con = reader.GetString(1);
+                reader.Close();
+                if (String.IsNullOrEmpty(Us) || String.IsNullOrEmpty(Con))
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al consular usuario:  " + ex);
+                return 0;
+            }
+        }
+
         //frmMantenimientoAplicacion
         public void funInsertar(string Id, string Nombre, int estado, string ruta)
         {

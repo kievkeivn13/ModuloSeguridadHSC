@@ -21,6 +21,19 @@ namespace CapaControlador
 
             return validar;
         }
+        
+        public int funIniciarSesion(string Usuario, string Contrasena)
+        {
+            int estado = sn.funInicio(Usuario, Contrasena);
+            return estado;
+        }
+        //Controlador de bloquear usuario.
+        public void funcBloquearUsuario(string Usuario)
+        {
+            string Consulta = "UPDATE componenteseguridad.usuario set estado= 0 where nombre= '" + Usuario + "';";
+            sn.funcModificar(Consulta);
+        }
+
 
         //frmMantenimientoAplicacion
         public void insertarAplicacion(string Id, string Nombre, int Estado, string Ruta)

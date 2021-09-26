@@ -17,7 +17,7 @@ namespace SeguridadHSC_Ejecutable_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMIDSeguridad());
+            Application.Run(new frmLoginHSC());
         }
     }
 }

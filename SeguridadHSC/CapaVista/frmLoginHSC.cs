@@ -50,6 +50,44 @@ namespace CapaVista
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+            string Usuario = txtUsuario.Text.Trim();
+            string Contraseña = txtClave.Text.Trim();
+            int contador = 0;
+            var key = "b14ca5898a4e4133bbce2ea2315a1916";
+            if (contador <= 3)
+            {
+                Encriptar encriptar = new Encriptar();
+                string password = encriptar.funcEncryptString(key, txtClave.Text);
+                Console.WriteLine(password);
+                if (conAplicacion.funIniciarSesion(txtUsuario.Text, password) == 1)
+                {
+                    //llamada a la forma
+                    BitacoraLoginUsuario loggear = new BitacoraLoginUsuario();
+                    string id = loggear.obtenerIdDeUsuario(Usuario);
+                    loggear.guardarLoginUsuario(id, "1");
+
+                    MessageBox.Show(" Bienvenido " + txtUsuario.Text);
+                    funLimpiar();
+                    this.Hide();
+                    var form2 = new frmMIDSeguridad();
+                    form2.Closed += (s, args) => this.Close();
+                    form2.Show();
+                }
+                else
+                {
+                    contador++;
+                    MessageBox.Show("Usuario o contraseña incorrectos");
+                    funLimpiar();
+                }
+            }
+            if (contador > 3)
+            {
+                conAplicacion.funcBloquearUsuario(txtUsuario.Text);
+                MessageBox.Show("El usuario a sido Bloqueado por seguridad.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                funLimpiar();
+            }
+
+            /*
             int validar = 0;
             string Usuario = txtUsuario.Text.Trim();
             string Contraseña = txtClave.Text.Trim();
@@ -79,7 +117,7 @@ namespace CapaVista
             else
             {
                 MessageBox.Show("Debe ingresar su usuario ");
-            }
+            }*/
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -55,7 +55,7 @@ namespace CapaVista
                     }
                 }  else
                 {
-                    MessageBox.Show("Una o más casillas están vacías!");
+                    MessageBox.Show("Una o más casillas vacías.");
                 }         
 
             }
