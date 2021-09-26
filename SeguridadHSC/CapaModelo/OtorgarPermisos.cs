@@ -47,6 +47,7 @@ namespace CapaModelo
             {
                 Console.WriteLine("CapaModelo Error al consular PermisosPorAplicacion:  " + ex);
                 return null;
+
             }
 
         }
