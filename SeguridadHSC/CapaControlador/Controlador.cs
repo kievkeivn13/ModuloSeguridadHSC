@@ -198,6 +198,60 @@ namespace CapaControlador
             sn.funEliminarPerfil(id);
         }
 
+        //Aplicacion a perfiles
+        public DataTable llenarTblappaperf(string tabla2)
+        {
+            OdbcDataAdapter dt = sn.llenarTblappaperf(tabla2);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
 
+
+        public DataTable llenarTblPersonalappaperf(string tabla2, string condicion)
+        {
+            OdbcDataAdapter dt = sn.llenarTblPersonalappaperf(tabla2, condicion);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+        public DataTable llenarNombreappaperf(string tabla, string condicion)
+        {
+            OdbcDataAdapter dt = sn.llenarNombreappaperf(tabla, condicion);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+        public void agregarappaperf(string tabla3, string valor1, string valor2)
+        {
+            sn.agregarappaperf(tabla3, valor1, valor2);
+        }
+
+        public void eliminarappaperf(string tabla3, string valor1, string valor2)
+        {
+            sn.eliminarappaperf(tabla3, valor1, valor2);
+        }
+
+        public void perfileliminartodoappaperf(string tabla3, string valor1)
+        {
+            sn.perfileliminartodoappaperf(tabla3, valor1);
+        }
+
+        public void perfilagregartodoappaperf(string tabla3, string valor1, string valor2, string tabla2)
+        {
+            sn.perfilagregartodoappaperf(tabla3, valor1, valor2, tabla2);
+        }
+
+        //Cambiar contraseña
+
+        public OdbcDataReader funcModificar_Contraseña(string Usuario, string Contraseña)
+        {
+            string Consulta = "UPDATE usuario SET contraseña = '" + Contraseña + "' where nombre = '" + Usuario + "';";
+            return sn.funcModificar(Consulta);
+        }
     }
 }

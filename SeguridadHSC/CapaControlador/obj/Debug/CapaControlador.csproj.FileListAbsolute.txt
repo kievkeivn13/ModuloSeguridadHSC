@@ -34,3 +34,12 @@ C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC\CapaControla
 C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC\CapaControlador\obj\Debug\CapaControlador.pdb

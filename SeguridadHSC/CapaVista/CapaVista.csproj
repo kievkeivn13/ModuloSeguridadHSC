@@ -76,11 +76,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmAplicacionAPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacionAPerfiles.designer.cs">
+      <DependentUpon>frmAplicacionAPerfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAplicaciones.designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioContraseña.designer.cs">
+      <DependentUpon>frmCambioContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoginHSC.cs">
       <SubType>Form</SubType>
@@ -132,8 +144,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAplicacionAPerfiles.resx">
+      <DependentUpon>frmAplicacionAPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioContraseña.resx">
+      <DependentUpon>frmCambioContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginHSC.resx">
       <DependentUpon>frmLoginHSC.cs</DependentUpon>

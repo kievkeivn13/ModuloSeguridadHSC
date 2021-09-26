@@ -353,8 +353,80 @@ namespace CapaModelo
 
 
             return (nombre, estado);
+        }
 
 
+        //Aplicacion a perfiles
+
+        public OdbcDataAdapter llenarTblappaperf(string tabla2)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT pkid, nombre FROM " + tabla2 + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public OdbcDataAdapter llenarTblPersonalappaperf(string tabla2, string condicion)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla2 + "  LEFT JOIN aplicacionperfil ON aplicacion.pkid = aplicacionperfil.fkidAplicacion LEFT JOIN perfil ON aplicacionperfil.fkidPerfil = perfil.pkid WHERE perfil.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public OdbcDataAdapter llenarNombreappaperf(string tabla, string condicion)// metodo  que obtinene el contenido
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT nombre FROM " + tabla + " WHERE pkid = " + condicion + "  ;";
+            OdbcDataAdapter dataName = new OdbcDataAdapter(sql, cn.conexion());
+            return dataName;
+        }
+        public void agregarappaperf(string tabla3, string valor1, string valor2)
+        {
+            string sql = "INSERT INTO " + tabla3 + " (fkIdPerfil, fkIdAplicacion) Values( '" + valor1 + "', '" + valor2 + "');";
+            OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+        public void eliminarappaperf(string tabla3, string valor1, string valor2)
+        {
+            string sql = "DELETE FROM " + tabla3 + " WHERE fkidPerfil = '" + valor1 + "' AND  fkidAplicacion='" + valor2 + "';";
+            OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+        public void perfileliminartodoappaperf(string tabla3, string valor1)
+        {
+            string sql = "DELETE FROM " + tabla3 + " WHERE fkidPerfil = '" + valor1 + "';";
+            OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+        public void perfilagregartodoappaperf(string tabla3, string valor1, string valor2, string tabla2)
+        {
+            string sql = "INSERT INTO usuarioperfil (fkidAplicacion, fkidPerfil) SELECT NULL, pkid FROM perfil;";
+            OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            string sql2 = "UPDATE aplicacionperfil SET " + tabla3 + " = '" + valor1 + "' WHERE fkidUsuario = '';";
+            OdbcCommand consulta2 = new OdbcCommand(sql2, cn.conexion());
+            consulta2.ExecuteNonQuery();
+        }
+
+        //Cambiar contraseña
+
+        public OdbcDataReader funcModificar(string Consulta)
+        {
+            try
+            {
+                Comm = new OdbcCommand(Consulta, cn.conexion());
+                OdbcDataReader mostrar = Comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception Error)
+            {
+                Console.WriteLine("Error en modelo-modificar ", Error);
+                return null;
+            }
         }
 
     }

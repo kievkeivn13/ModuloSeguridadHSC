@@ -60,7 +60,10 @@ namespace CapaVista
 
         private void btnAsignacionDeAplicacionAUsuarios_Click(object sender, EventArgs e)
         {
+            frmAplicacionAPerfiles form3 = new frmAplicacionAPerfiles();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
@@ -73,7 +76,10 @@ namespace CapaVista
 
         private void btnCambioContraseña_Click(object sender, EventArgs e)
         {
+            frmCambioContraseña form3 = new frmCambioContraseña();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnBitacora_Click(object sender, EventArgs e)
