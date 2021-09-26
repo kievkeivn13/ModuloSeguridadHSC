@@ -38,7 +38,6 @@ namespace CapaVista
             this.btnUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAplicacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnModulos = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPerfiles = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAsignacionDeAplicacionAUsuarios = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,7 +90,6 @@ namespace CapaVista
             this.mantenimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnUsuarios,
             this.btnAplicacion,
-            this.btnModulos,
             this.btnPerfiles});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
@@ -102,7 +100,7 @@ namespace CapaVista
             this.btnUsuarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarUsuarioToolStripMenuItem});
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(167, 24);
+            this.btnUsuarios.Size = new System.Drawing.Size(180, 24);
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
@@ -116,21 +114,14 @@ namespace CapaVista
             // btnAplicacion
             // 
             this.btnAplicacion.Name = "btnAplicacion";
-            this.btnAplicacion.Size = new System.Drawing.Size(167, 24);
+            this.btnAplicacion.Size = new System.Drawing.Size(180, 24);
             this.btnAplicacion.Text = "Aplicaciones";
             this.btnAplicacion.Click += new System.EventHandler(this.btnAplicacion_Click);
-            // 
-            // btnModulos
-            // 
-            this.btnModulos.Name = "btnModulos";
-            this.btnModulos.Size = new System.Drawing.Size(167, 24);
-            this.btnModulos.Text = "Módulos";
-            this.btnModulos.Click += new System.EventHandler(this.btnModulos_Click);
             // 
             // btnPerfiles
             // 
             this.btnPerfiles.Name = "btnPerfiles";
-            this.btnPerfiles.Size = new System.Drawing.Size(167, 24);
+            this.btnPerfiles.Size = new System.Drawing.Size(180, 24);
             this.btnPerfiles.Text = "Perfiles";
             this.btnPerfiles.Click += new System.EventHandler(this.btnPerfiles_Click);
             // 
@@ -216,7 +207,6 @@ namespace CapaVista
         private System.Windows.Forms.ToolStripMenuItem mantenimientosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnUsuarios;
         private System.Windows.Forms.ToolStripMenuItem btnAplicacion;
-        private System.Windows.Forms.ToolStripMenuItem btnModulos;
         private System.Windows.Forms.ToolStripMenuItem btnPerfiles;
         private System.Windows.Forms.ToolStripMenuItem asignacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem btnAsignacionDeAplicacionAUsuarios;
