@@ -43,4 +43,207 @@ C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecuta
 C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
 C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
-C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe.config
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+G:\Git\HSC\2DA\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\USUARIO 1\Downloads\hsc\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\Danny\Luis\luis\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\git\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\RM\Desktop\seguridad\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BitacoraRegistrarLogin.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Dapper.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BitacoraRegistrarLogin.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Dapper.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVista.dll.config
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControlador.pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.xml
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModelo.pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.AssemblyReference.cache
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.dll
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BitacoraRegistrarLogin.dll
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Dapper.dll
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll

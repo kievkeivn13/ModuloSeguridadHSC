@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientoAplicacion));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.gbxEstado = new System.Windows.Forms.GroupBox();
@@ -46,13 +47,13 @@
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idReporteAsociadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aplicacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.componenteseguridadDataSet = new CapaVista.componenteseguridadDataSet();
-            this.aplicacionTableAdapter = new CapaVista.componenteseguridadDataSetTableAdapters.aplicacionTableAdapter();
+            this.aplicacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new CapaVista.DataSet1();
+            this.aplicacionTableAdapter1 = new CapaVista.DataSet1TableAdapters.aplicacionTableAdapter();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.componenteseguridadDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -184,7 +185,7 @@
             this.nombreDataGridViewTextBoxColumn,
             this.estadoDataGridViewTextBoxColumn,
             this.idReporteAsociadoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.aplicacionBindingSource;
+            this.dataGridView1.DataSource = this.aplicacionBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(50, 294);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(525, 150);
@@ -215,19 +216,19 @@
             this.idReporteAsociadoDataGridViewTextBoxColumn.HeaderText = "idReporteAsociado";
             this.idReporteAsociadoDataGridViewTextBoxColumn.Name = "idReporteAsociadoDataGridViewTextBoxColumn";
             // 
-            // aplicacionBindingSource
+            // aplicacionBindingSource1
             // 
-            this.aplicacionBindingSource.DataMember = "aplicacion";
-            this.aplicacionBindingSource.DataSource = this.componenteseguridadDataSet;
+            this.aplicacionBindingSource1.DataMember = "aplicacion";
+            this.aplicacionBindingSource1.DataSource = this.dataSet1;
             // 
-            // componenteseguridadDataSet
+            // dataSet1
             // 
-            this.componenteseguridadDataSet.DataSetName = "componenteseguridadDataSet";
-            this.componenteseguridadDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // aplicacionTableAdapter
+            // aplicacionTableAdapter1
             // 
-            this.aplicacionTableAdapter.ClearBeforeFill = true;
+            this.aplicacionTableAdapter1.ClearBeforeFill = true;
             // 
             // frmMantenimientoAplicacion
             // 
@@ -247,14 +248,16 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelNombreaplicacion);
             this.Controls.Add(this.labelIdaplicacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmMantenimientoAplicacion";
             this.Text = "frmMantenimientoAplicacion";
             this.Load += new System.EventHandler(this.frmMantenimientoAplicacion_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.componenteseguridadDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,9 +278,9 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private componenteseguridadDataSet componenteseguridadDataSet;
-        private System.Windows.Forms.BindingSource aplicacionBindingSource;
-        private componenteseguridadDataSetTableAdapters.aplicacionTableAdapter aplicacionTableAdapter;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource aplicacionBindingSource1;
+        private DataSet1TableAdapters.aplicacionTableAdapter aplicacionTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn pkIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;

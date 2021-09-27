@@ -19,6 +19,7 @@ namespace CapaVista
         public frmMantenimientoAplicacion()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         
@@ -47,9 +48,17 @@ namespace CapaVista
 
         private void frmMantenimientoAplicacion_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'dataSet1.aplicacion' Puede moverla o quitarla según sea necesario.
+            //this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
             // TODO: esta línea de código carga datos en la tabla 'componenteseguridadDataSet.aplicacion' Puede moverla o quitarla según sea necesario.
-            this.aplicacionTableAdapter.Fill(this.componenteseguridadDataSet.aplicacion);
-           
+            try
+            {
+                this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
 
         }
 
@@ -94,25 +103,39 @@ namespace CapaVista
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex);
+                MessageBox.Show("Error: Debes llenar todos los campos");
             }
             actualizarTabla();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            conAplicacion.modificarAplicacion(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), " ");
-            MessageBox.Show("Modificacion realizada");
-            funLimpiar();
-            actualizarTabla();
+            try
+            {
+                conAplicacion.modificarAplicacion(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), " ");
+                MessageBox.Show("Modificacion realizada");
+                funLimpiar();
+                actualizarTabla();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: Debes llenar todos los campos");
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            conAplicacion.eliminarAplicacion(textBox1.Text);
-            MessageBox.Show("Eliminacion realizada");
-            funLimpiar();
-            actualizarTabla();
+            try
+            {
+                conAplicacion.eliminarAplicacion(textBox1.Text);
+                MessageBox.Show("Eliminacion realizada");
+                funLimpiar();
+                actualizarTabla();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: No has ingresado Id del registro a eliminar");
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -123,8 +146,16 @@ namespace CapaVista
 
         public void actualizarTabla()
         {
-            this.aplicacionTableAdapter.Fill(this.componenteseguridadDataSet.aplicacion);
-            //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
+            try
+            {
+                this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
+                //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+
         }
 
         private void dataGridView1_RowHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)

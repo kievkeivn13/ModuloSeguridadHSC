@@ -25,7 +25,6 @@ namespace CapaVista
             var form2 = new frmLoginHSC();
             form2.Closed += (s, args) => this.Hide();
             form2.Show();
-
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -34,7 +33,6 @@ namespace CapaVista
             //form3.MdiParent = this.MdiParent;
 
             //form3.Show();
-
         }
 
         private void btnAplicacion_Click(object sender, EventArgs e)
@@ -47,32 +45,74 @@ namespace CapaVista
 
         private void btnModulos_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnPerfiles_Click(object sender, EventArgs e)
         {
+            frmMantenimientoPerfil form3 = new frmMantenimientoPerfil();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnAsignacionDeAplicacionAUsuarios_Click(object sender, EventArgs e)
         {
+            frmAplicacionAPerfiles form3 = new frmAplicacionAPerfiles();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
         {
+            frmAplicaciones form3 = new frmAplicaciones();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnCambioContraseña_Click(object sender, EventArgs e)
         {
+            frmCambioContraseña form3 = new frmCambioContraseña();
+            form3.MdiParent = this.MdiParent;
 
+            form3.Show();
         }
 
         private void btnBitacora_Click(object sender, EventArgs e)
         {
+        }
 
+        private void btnAsiginaciónDePerfilesAUsuarios_Click(object sender, EventArgs e)
+        {
+            frmPerfiles form3 = new frmPerfiles();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
+
+        private void bitácoraDeLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBitacoraLogin form3 = new frmBitacoraLogin();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
+
+        private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistrarUsuario form3 = new frmRegistrarUsuario();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
+
+        private void btnPermisos_Click(object sender, EventArgs e)
+        {
+            frmPermisos form3 = new frmPermisos();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
         }
     }
 }

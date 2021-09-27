@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginHSC));
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.btnPasswordn = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@ namespace CapaVista
             this.lblClave = new System.Windows.Forms.Label();
             this.adUser = new System.Windows.Forms.Panel();
             this.adClave = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lkbRecuperarContraseña = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -179,18 +180,19 @@ namespace CapaVista
             this.adClave.TabIndex = 5;
             this.adClave.Visible = false;
             // 
-            // linkLabel1
+            // lkbRecuperarContraseña
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.LightGray;
-            this.linkLabel1.Location = new System.Drawing.Point(149, 517);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(187, 16);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Has olvidado la contraseña?";
+            this.lkbRecuperarContraseña.AutoSize = true;
+            this.lkbRecuperarContraseña.BackColor = System.Drawing.Color.Transparent;
+            this.lkbRecuperarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkbRecuperarContraseña.LinkColor = System.Drawing.Color.LightGray;
+            this.lkbRecuperarContraseña.Location = new System.Drawing.Point(149, 517);
+            this.lkbRecuperarContraseña.Name = "lkbRecuperarContraseña";
+            this.lkbRecuperarContraseña.Size = new System.Drawing.Size(187, 16);
+            this.lkbRecuperarContraseña.TabIndex = 6;
+            this.lkbRecuperarContraseña.TabStop = true;
+            this.lkbRecuperarContraseña.Text = "¿Has olvidado la contraseña?";
+            this.lkbRecuperarContraseña.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkbRecuperarContraseña_LinkClicked);
             // 
             // pictureBox2
             // 
@@ -221,7 +223,7 @@ namespace CapaVista
             this.BackgroundImage = global::CapaVista.Properties.Resources.FondoN;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(471, 590);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lkbRecuperarContraseña);
             this.Controls.Add(this.adClave);
             this.Controls.Add(this.adUser);
             this.Controls.Add(this.pictureBox1);
@@ -234,6 +236,7 @@ namespace CapaVista
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.btnAyuda);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLoginHSC";
             this.Text = "frmLoginHSC";
@@ -257,7 +260,7 @@ namespace CapaVista
         private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.Panel adUser;
         private System.Windows.Forms.Panel adClave;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lkbRecuperarContraseña;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
