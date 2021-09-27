@@ -37,7 +37,13 @@ INSERT INTO aplicacion VALUES ("2","Registro de Usuario",1,"");
 INSERT INTO aplicacion VALUES ("3","Asignación de Perfiles a Usuario",1,"");
 INSERT INTO aplicacion VALUES ("4","Permisos Usuario Aplicación",1,"");
 
+CREATE TABLE UsuarioAplicacionAsignados(
+fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdAplicacion VARCHAR(15) NOT NULL,
 
+FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
+FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
+)ENGINE = InnoDB;
 
 CREATE TABLE BitacoraUsuario(
 pkId INT AUTO_INCREMENT PRIMARY KEY,
