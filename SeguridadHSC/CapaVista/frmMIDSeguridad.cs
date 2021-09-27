@@ -65,10 +65,7 @@ namespace CapaVista
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form3 = new frmAplicaciones();
-            form3.MdiParent = this.MdiParent;
-
-            form3.Show();
+            
         }
 
         private void btnCambioContraseña_Click(object sender, EventArgs e)
