@@ -4,6 +4,7 @@ using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CapaModelo
 {
@@ -147,6 +148,7 @@ namespace CapaModelo
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
+
 
         public void Perfileliminar(string tabla3, string valor1, string valor2)
         {
@@ -333,7 +335,6 @@ namespace CapaModelo
         }
 
         //Aplicacion a perfiles
-
         public OdbcDataAdapter llenarTblappaperf(string tabla2)// metodo  que obtinene el contenido de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
@@ -419,6 +420,244 @@ namespace CapaModelo
             {
                 Console.WriteLine("Ya existe un usuario con ese id de empleado");
             }
+        }
+
+        //frmPermisos
+        public OdbcDataReader llenarcbxPerfil(string sql)
+        {
+            try
+            {
+                OdbcCommand datos = new OdbcCommand(sql, cn.conexion());
+                OdbcDataReader leer = datos.ExecuteReader();
+                return leer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public OdbcDataReader llenarcbxUsuarios(string sql)
+        {
+            try
+            {
+                OdbcCommand datos = new OdbcCommand(sql, cn.conexion());
+                OdbcDataReader leer = datos.ExecuteReader();
+                return leer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public OdbcDataReader llenarcbxAplicacion(string sql)
+        {
+            try
+            {
+                OdbcCommand datos = new OdbcCommand(sql, cn.conexion());
+                OdbcDataReader leer = datos.ExecuteReader();
+                return leer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public string consultaperfil(string nombre)
+        {
+
+            string id = "";
+            string Query = "select * from `componenteseguridad`.`Perfil` where nombre='" + nombre + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                id = busqueda["pkid"].ToString();
+
+            }
+
+
+            return id;
+        }
+
+        public string consultausuario(string nombre)
+        {
+
+            string id = "";
+            string Query = "select * from `componenteseguridad`.`Usuario` where nombre='" + nombre + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                id = busqueda["pkid"].ToString();
+
+            }
+
+
+            return id;
+        }
+
+        public string consultaaplicacion(string nombre)
+        {
+
+            string id = "";
+            string Query = "select * from `componenteseguridad`.`Aplicacion` where nombre='" + nombre + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                id = busqueda["pkid"].ToString();
+
+            }
+
+
+            return id;
+        }
+
+        public void InsertarPUsuApl(string usuario, string aplicacion, int escribir, int leer, int modificar, int eliminar, int imprimir)
+        {
+
+            try
+            {
+                string cadena = "UPDATE usuarioaplicacion SET permisoEscritura=" + escribir + ",permisoLectura=" + leer + ",permisoModificar=" + modificar + ",permisoEliminar=" + eliminar + ",permisoImprimir=" + imprimir + " WHERE fkIdUsuario=" + usuario + " AND fkIdAplicacion=" + aplicacion + ";";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+                MessageBox.Show("Asignación Exitosa");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en Asignación:" + ex);
+            }
+
+
+        }
+
+        public void InsertarPPerApl(string perfil, string aplicacion, int escribir, int leer, int modificar, int eliminar, int imprimir)
+        {
+
+            try
+            {
+                string cadena = "UPDATE aplicacionperfil SET permisoEscritura=" + escribir + ",permisoLectura=" + leer + ",permisoModificar=" + modificar + ",permisoEliminar=" + eliminar + ",permisoImprimir=" + imprimir + " WHERE fkIdPerfil=" + perfil + " AND fkIdAplicacion=" + aplicacion + ";";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+                MessageBox.Show("Asignación Exitosa");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en Asignación:" + ex);
+            }
+
+        }
+
+        public OdbcDataAdapter llenarpermisosUA(string tabla1)// metodo  que obtinene el contenido de una tabla
+        {
+
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT * FROM " + tabla1 + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public OdbcDataAdapter llenarpermisosPA(string tabla2)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT * FROM " + tabla2 + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public string consultaperfiln(string id)
+        {
+
+            string nombre = "";
+            string Query = "select * from `componenteseguridad`.`Perfil` where pkid='" + id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                nombre = busqueda["nombre"].ToString();
+
+            }
+
+
+            return nombre;
+        }
+
+        public string consultausuarion(string id)
+        {
+
+            string nombre = "";
+            string Query = "select * from `componenteseguridad`.`Usuario` where pkid='" + id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                nombre = busqueda["nombre"].ToString();
+
+            }
+
+
+            return nombre;
+        }
+
+        public string consultaaplicacionn(string id)
+        {
+
+            string nombre = "";
+            string Query = "select * from `componenteseguridad`.`Aplicacion` where pkid='" + id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                nombre = busqueda["nombre"].ToString();
+
+            }
+
+
+            return nombre;
         }
     }
 }

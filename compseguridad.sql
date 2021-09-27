@@ -1,193 +1,148 @@
--- MySQL Workbench Forward Engineering
 
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+DROP DATABASE ComponenteSeguridad;
+CREATE DATABASE ComponenteSeguridad;
 
--- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
--- -----------------------------------------------------
--- Schema componenteseguridad
--- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `componenteseguridad` ;
+USE ComponenteSeguridad;
 
--- -----------------------------------------------------
--- Schema componenteseguridad
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `componenteseguridad` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `componenteseguridad` ;
+CREATE TABLE Empleado(
+pkIdEmpleado varchar(15) PRIMARY KEY,
+nombre varchar(25) NOT NULL,
+apellido varchar(25) NOT NULL
+)ENGINE = InnoDB;
+insert into empleado values("1","María","Hernandez");
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`aplicacion`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`aplicacion` ;
+CREATE TABLE Usuario(
+pkId VARCHAR(15) PRIMARY KEY,
+fkIdEmpleado varchar(15) NOT NULL, 
+nombre VARCHAR(30) NOT NULL,
+contraseña VARCHAR(100) NOT NULL,
+estado VARCHAR(1) NOT NULL,
+intento INT NULL,
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`aplicacion` (
-  `pkId` VARCHAR(15) NOT NULL,
-  `nombre` VARCHAR(45) NULL DEFAULT NULL,
-  `estado` INT NOT NULL,
-  `idReporteAsociado` VARCHAR(15) NULL DEFAULT NULL,
-  PRIMARY KEY (`pkId`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+FOREIGN KEY (fkIdEmpleado) REFERENCES  Empleado(pkIdEmpleado)
+)ENGINE = InnoDB;
+INSERT INTO usuario(pkId,fkIdEmpleado, nombre, contraseña,estado,intento) VALUES ("1", "1", "admin","LKAekHU9EtweB49HAaTRfg==","1","0");
+#usuario: admin
+#contraseña: 12345
 
+CREATE TABLE Aplicacion(
+pkId VARCHAR(15) PRIMARY KEY,
+nombre VARCHAR(45) NULL,
+estado INT NOT NULL,
+idReporteAsociado varchar(15)
+)ENGINE = InnoDB;
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`perfil`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`perfil` ;
-
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`perfil` (
-  `pkId` VARCHAR(15) NOT NULL,
-  `fkIdTipoUsuario` VARCHAR(15) NOT NULL,
-  `nombre` VARCHAR(45) NULL DEFAULT NULL,
-  `estado` VARCHAR(45) NULL DEFAULT NULL,
-  PRIMARY KEY (`pkId`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+INSERT INTO aplicacion (pkId, nombre, estado, idReporteAsociado) VALUES ("1", "Inicio de Sesión", "1", "1");
+INSERT INTO aplicacion VALUES ("2","Registro de Usuario",1,"");
+INSERT INTO aplicacion VALUES ("3","Asignación de Perfiles a Usuario",1,"");
+INSERT INTO aplicacion VALUES ("4","Permisos Usuario Aplicación",1,"");
 
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`aplicacionperfil`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`aplicacionperfil` ;
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`aplicacionperfil` (
-  `fkIdPerfil` VARCHAR(15) NOT NULL,
-  `fkIdAplicacion` VARCHAR(15) NOT NULL,
-  `permisoEscritura` INT NOT NULL,
-  `permisoLectura` INT NOT NULL,
-  `permisoModificar` INT NOT NULL,
-  `permisoEliminar` INT NOT NULL,
-  `permisoImprimir` INT NOT NULL,
-  PRIMARY KEY (`fkIdPerfil`),
-  INDEX `fkIdAplicacion` (`fkIdAplicacion` ASC) VISIBLE,
-  CONSTRAINT `aplicacionperfil_ibfk_1`
-    FOREIGN KEY (`fkIdAplicacion`)
-    REFERENCES `componenteseguridad`.`aplicacion` (`pkId`),
-  CONSTRAINT `aplicacionperfil_ibfk_2`
-    FOREIGN KEY (`fkIdPerfil`)
-    REFERENCES `componenteseguridad`.`perfil` (`pkId`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+CREATE TABLE BitacoraUsuario(
+pkId INT AUTO_INCREMENT PRIMARY KEY,
+ `host` VARCHAR(45) NULL DEFAULT NULL,
+ip VARCHAR(20) NULL,
+conexionFecha DATE NULL,
+conexionHora TIME NULL,
+fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdAplicacion VARCHAR(15) NOT NULL,
 
+FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId),
+FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion(pkID)
+)ENGINE = InnoDB;
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`empleado`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`empleado` ;
+CREATE TABLE Perfil(
+pkId VARCHAR(15) PRIMARY KEY,
+nombre VARCHAR(45) NULL,
+estado VARCHAR(45) NULL
+)ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`empleado` (
-  `pkIdEmpleado` VARCHAR(15) NOT NULL,
-  `nombre` VARCHAR(25) NOT NULL,
-  `apellido` VARCHAR(25) NOT NULL,
-  PRIMARY KEY (`pkIdEmpleado`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+insert into perfil values("1","Administrador","1");
+insert into perfil values("2","Vendedor","1");
 
+CREATE TABLE UsuarioPerfil(
+fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdPerfil VARCHAR(15) NOT NULL,
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`usuario`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`usuario` ;
+FOREIGN KEY (fkIdPerfil) REFERENCES Perfil (pkId),
+FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
+)ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`usuario` (
-  `pkId` VARCHAR(15) NOT NULL,
-  `fkIdEmpleado` VARCHAR(15) NOT NULL,
-  `nombre` VARCHAR(30) NOT NULL,
-  `contraseña` VARCHAR(100) NOT NULL,
-  `estado` VARCHAR(1) NOT NULL,
-  `intento` INT NULL DEFAULT NULL,
-  PRIMARY KEY (`pkId`),
-  INDEX `fkIdEmpleado` (`fkIdEmpleado` ASC) VISIBLE,
-  CONSTRAINT `usuario_ibfk_1`
-    FOREIGN KEY (`fkIdEmpleado`)
-    REFERENCES `componenteseguridad`.`empleado` (`pkIdEmpleado`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+CREATE TABLE UsuarioAplicacion(
+fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdAplicacion VARCHAR(15) NOT NULL,
+permisoEscritura int,
+permisoLectura int,
+permisoModificar int,
+permisoEliminar int,
+permisoImprimir int,
 
+FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
+FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
+)ENGINE = InnoDB;
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`bitacorausuario`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`bitacorausuario` ;
+insert into usuarioaplicacion VALUES (1,1,null,null,null,null,null);      
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`bitacorausuario` (
-  `pkId` INT NOT NULL AUTO_INCREMENT,
-  `host` VARCHAR(45) NULL DEFAULT NULL,
-  `ip` VARCHAR(20) NULL DEFAULT NULL,
-  `conexionFecha` DATE NULL DEFAULT NULL,
-  `conexionHora` TIME NULL DEFAULT NULL,
-  `fkIdUsuario` VARCHAR(15) NOT NULL,
-  `fkIdAplicacion` VARCHAR(15) NOT NULL,
-  PRIMARY KEY (`pkId`),
-  INDEX `fkIdUsuario` (`fkIdUsuario` ASC) VISIBLE,
-  INDEX `fkIdAplicacion` (`fkIdAplicacion` ASC) VISIBLE,
-  CONSTRAINT `bitacorausuario_ibfk_1`
-    FOREIGN KEY (`fkIdUsuario`)
-    REFERENCES `componenteseguridad`.`usuario` (`pkId`),
-  CONSTRAINT `bitacorausuario_ibfk_2`
-    FOREIGN KEY (`fkIdAplicacion`)
-    REFERENCES `componenteseguridad`.`aplicacion` (`pkId`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+CREATE TABLE IF NOT EXISTS AplicacionPerfil (
+fkIdPerfil VARCHAR(15) NOT NULL,
+fkIdAplicacion VARCHAR(15) NOT NULL,
+permisoEscritura int,
+permisoLectura int,
+permisoModificar int,
+permisoEliminar int,
+permisoImprimir int,
 
+FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
+FOREIGN KEY (fkIdPerfil) REFERENCES Perfil (pkId)
+)ENGINE = InnoDB;
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`usuarioaplicacion`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`usuarioaplicacion` ;
+insert into aplicacionperfil VALUES (1,1,null,null,null,null,null);
+insert into aplicacionperfil VALUES (2,1,1,1,1,1,1);
+insert into aplicacionperfil VALUES (1,2,1,1,1,1,1);
 
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`usuarioaplicacion` (
-  `fkIdUsuario` VARCHAR(15) NOT NULL,
-  `fkIdAplicacion` VARCHAR(15) NOT NULL,
-  `permisoEscritura` INT NOT NULL,
-  `permisoLectura` INT NOT NULL,
-  `permisoModificar` INT NOT NULL,
-  `permisoEliminar` INT NOT NULL,
-  `permisoImprimir` INT NOT NULL,
-  PRIMARY KEY (`fkIdUsuario`),
-  INDEX `fkIdAplicacion` (`fkIdAplicacion` ASC) VISIBLE,
-  CONSTRAINT `usuarioaplicacion_ibfk_1`
-    FOREIGN KEY (`fkIdAplicacion`)
-    REFERENCES `componenteseguridad`.`aplicacion` (`pkId`),
-  CONSTRAINT `usuarioaplicacion_ibfk_2`
-    FOREIGN KEY (`fkIdUsuario`)
-    REFERENCES `componenteseguridad`.`usuario` (`pkId`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `componenteseguridad`.`vwpermisosperfil` AS
+    SELECT 
+        `a`.`permisoEscritura` AS `permisoEscritura`,
+        `a`.`permisoLectura` AS `permisoLectura`,
+        `a`.`permisoModificar` AS `permisoModificar`,
+        `a`.`permisoEliminar` AS `permisoEliminar`,
+        `a`.`permisoImprimir` AS `permisoImprimir`,
+        `b`.`pkId` AS `pkIdPerfil`,
+        `b`.`nombre` AS `Perfil`,
+        `c`.`pkId` AS `pkIdAplicacion`,
+        `c`.`nombre` AS `Aplicacion`
+    FROM
+        ((`componenteseguridad`.`aplicacionperfil` `a`
+        JOIN `componenteseguridad`.`perfil` `b` ON ((`b`.`pkId` = `a`.`fkIdPerfil`)))
+        JOIN `componenteseguridad`.`aplicacion` `c` ON ((`c`.`pkId` = `a`.`fkIdAplicacion`)))
+    ORDER BY `a`.`fkIdPerfil`;
 
+select * from vwpermisosperfil;
 
--- -----------------------------------------------------
--- Table `componenteseguridad`.`usuarioperfil`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `componenteseguridad`.`usuarioperfil` ;
-
-CREATE TABLE IF NOT EXISTS `componenteseguridad`.`usuarioperfil` (
-  `fkIdUsuario` VARCHAR(15) NOT NULL,
-  `fkIdPerfil` VARCHAR(15) NOT NULL,
-  PRIMARY KEY (`fkIdUsuario`),
-  INDEX `fkIdPerfil` (`fkIdPerfil` ASC) VISIBLE,
-  CONSTRAINT `usuarioperfil_ibfk_1`
-    FOREIGN KEY (`fkIdPerfil`)
-    REFERENCES `componenteseguridad`.`perfil` (`pkId`),
-  CONSTRAINT `usuarioperfil_ibfk_2`
-    FOREIGN KEY (`fkIdUsuario`)
-    REFERENCES `componenteseguridad`.`usuario` (`pkId`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `componenteseguridad`.`vwpermisosusuario` AS
+    SELECT 
+        `a`.`permisoEscritura` AS `permisoEscritura`,
+        `a`.`permisoLectura` AS `permisoLectura`,
+        `a`.`permisoModificar` AS `permisoModificar`,
+        `a`.`permisoEliminar` AS `permisoEliminar`,
+        `a`.`permisoImprimir` AS `permisoImprimir`,
+        `b`.`pkId` AS `pkIdUsuario`,
+        `b`.`nombre` AS `Usuario`,
+        `c`.`pkId` AS `pkIdAplicacion`,
+        `c`.`nombre` AS `Aplicacion`
+    FROM
+        ((`componenteseguridad`.`usuarioaplicacion` `a`
+        JOIN `componenteseguridad`.`usuario` `b` ON ((`b`.`pkId` = `a`.`fkIdUsuario`)))
+        JOIN `componenteseguridad`.`aplicacion` `c` ON ((`c`.`pkId` = `a`.`fkIdAplicacion`)))
+    ORDER BY `a`.`fkIdUsuario`;
+    
+    select * from vwpermisosusuario;

@@ -270,3 +270,4 @@ C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaVista\o
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmPermisos.resources

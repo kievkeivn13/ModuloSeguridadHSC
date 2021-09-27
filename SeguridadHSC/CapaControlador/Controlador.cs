@@ -254,5 +254,86 @@ namespace CapaControlador
         {
             sn.registrarUsuario(pkId, fkIdEmpleado, nombre, contraseña, estado);
         }
+
+        //frmPermisos
+        public OdbcDataReader llenarcbxPerfil()
+        {
+            string sql = "SELECT nombre FROM componenteseguridad.perfil;";
+            return sn.llenarcbxUsuario(sql);
+        }
+        public OdbcDataReader llenarcbxUsuarios()
+        {
+            string sql = "SELECT nombre FROM componenteseguridad.usuario;";
+            return sn.llenarcbxUsuario(sql);
+        }
+
+        public OdbcDataReader llenarcbxAplicacion()
+        {
+            string sql = "SELECT nombre FROM componenteseguridad.aplicacion;";
+            return sn.llenarcbxUsuario(sql);
+        }
+
+        public string consultausuario(string nombre)
+        {
+            string id = sn.consultausuario(nombre);
+            return id;
+        }
+
+        public string consultaperfil(string nombre)
+        {
+            string id = sn.consultaperfil(nombre);
+            return id;
+        }
+
+        public string consultaaplicacion(string nombre)
+        {
+            string id = sn.consultaaplicacion(nombre);
+            return id;
+        }
+
+        public void InsertarPPerApl(string perfil, string aplicacion, int escribir, int leer, int modificar, int eliminar, int imprimir)
+        {
+            sn.InsertarPPerApl(perfil, aplicacion, escribir, leer, modificar, eliminar, imprimir);
+        }
+
+        public void InsertarUsuApl(string usuario, string aplicacion, int escribir, int leer, int modificar, int eliminar, int imprimir)
+        {
+            sn.InsertarPUsuApl(usuario, aplicacion, escribir, leer, modificar, eliminar, imprimir);
+        }
+
+        public DataTable llenarpermisosUA(string tabla1)
+        {
+            OdbcDataAdapter dt = sn.llenarpermisosUA(tabla1);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public DataTable llenarpermisosPA(string tabla2)
+        {
+            OdbcDataAdapter dt = sn.llenarpermisosPA(tabla2);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public string consultausuarion(string id)
+        {
+            string nombre = sn.consultausuarion(id);
+            return nombre;
+        }
+
+        public string consultaperfiln(string id)
+        {
+            string nombre = sn.consultaperfiln(id);
+            return nombre;
+        }
+
+        public string consultaaplicacionn(string id)
+        {
+            string nombre = sn.consultaaplicacionn(id);
+            return nombre;
+        }
+
     }
 }

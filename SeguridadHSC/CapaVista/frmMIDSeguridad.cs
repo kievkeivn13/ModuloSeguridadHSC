@@ -106,5 +106,13 @@ namespace CapaVista
 
             form3.Show();
         }
+
+        private void btnPermisos_Click(object sender, EventArgs e)
+        {
+            frmPermisos form3 = new frmPermisos();
+            form3.MdiParent = this.MdiParent;
+
+            form3.Show();
+        }
     }
 }
