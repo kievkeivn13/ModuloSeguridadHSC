@@ -146,3 +146,11 @@ VIEW `componenteseguridad`.`vwpermisosusuario` AS
     ORDER BY `a`.`fkIdUsuario`;
     
     select * from vwpermisosusuario;
+    
+    CREATE TABLE UsuarioAplicacionAsignados(
+fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdAplicacion VARCHAR(15) NOT NULL,
+
+FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
+FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
+)ENGINE = InnoDB;
