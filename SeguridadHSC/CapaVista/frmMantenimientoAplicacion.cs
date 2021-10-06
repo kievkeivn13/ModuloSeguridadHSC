@@ -103,7 +103,7 @@ namespace CapaVista
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex);
+                MessageBox.Show("Error: Debes llenar todos los campos");
             }
             actualizarTabla();
         }
@@ -119,7 +119,7 @@ namespace CapaVista
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex);
+                MessageBox.Show("Error: Debes llenar todos los campos");
             }
         }
 
@@ -134,7 +134,7 @@ namespace CapaVista
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex);
+                MessageBox.Show("Error: No has ingresado Id del registro a eliminar");
             }
         }
 

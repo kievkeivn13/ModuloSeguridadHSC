@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
 using System.Linq;
@@ -195,7 +195,7 @@ namespace CapaModelo
         public OdbcDataAdapter aplicacionllenarTblPersonal(string tabla2, string condicion)// metodo  que obtinene el contenido de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla2 + "  LEFT JOIN UsuarioAplicacionAsignados ON aplicacion.pkid = UsuarioAplicacionAsignados.fkidaplicacion LEFT JOIN usuario ON UsuarioAplicacionAsignados.fkidusuario = usuario.pkid WHERE usuario.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
+            string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla2 + "  LEFT JOIN aplicacionperfil ON aplicacion.pkid = aplicacionperfil.fkidAplicacion LEFT JOIN perfil ON aplicacionperfil.fkidPerfil = perfil.pkid WHERE perfil.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
@@ -210,14 +210,14 @@ namespace CapaModelo
 
         public void aplicacionagregar(string tabla3, string valor1, string valor2)
         {
-            string sql = "INSERT INTO " + tabla3 + " (fkidUsuario, fkidaplicacion) Values( '" + valor1 + "', '" + valor2 + "');";
+            string sql = "INSERT INTO " + tabla3 + "  Values('" +valor1+ "','" + valor2 + "',1,1,1,1,1);";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
 
         public void aplicacioneliminar(string tabla3, string valor1, string valor2)
         {
-            string sql = "DELETE FROM " + tabla3 + " WHERE fkidUsuario = '" + valor1 + "' AND  fkidaplicacion='" + valor2 + "';";
+            string sql = "DELETE FROM " + tabla3 + " WHERE fkidPerfil = '" + valor1 + "' AND  fkidAplicacion='" + valor2 + "';";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
