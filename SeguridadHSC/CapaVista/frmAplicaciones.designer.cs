@@ -289,7 +289,7 @@ namespace CapaVista
             this.MaximizeBox = false;
             this.Name = "frmAplicaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aplicaciones";
+            this.Text = "Asignación de Aplicación a Usuarios";
             this.Load += new System.EventHandler(this.fmConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

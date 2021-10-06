@@ -184,7 +184,7 @@ namespace CapaVista
             this.Eliminacion.AutoSize = true;
             this.Eliminacion.BackColor = System.Drawing.Color.Transparent;
             this.Eliminacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Eliminacion.Location = new System.Drawing.Point(33, 257);
+            this.Eliminacion.Location = new System.Drawing.Point(73, 256);
             this.Eliminacion.Name = "Eliminacion";
             this.Eliminacion.Size = new System.Drawing.Size(108, 24);
             this.Eliminacion.TabIndex = 10;
@@ -197,7 +197,7 @@ namespace CapaVista
             this.Impresion.AutoSize = true;
             this.Impresion.BackColor = System.Drawing.Color.Transparent;
             this.Impresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Impresion.Location = new System.Drawing.Point(156, 257);
+            this.Impresion.Location = new System.Drawing.Point(196, 256);
             this.Impresion.Name = "Impresion";
             this.Impresion.Size = new System.Drawing.Size(98, 24);
             this.Impresion.TabIndex = 11;
