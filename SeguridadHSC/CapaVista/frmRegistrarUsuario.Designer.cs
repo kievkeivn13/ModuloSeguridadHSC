@@ -160,6 +160,7 @@ namespace CapaVista
             this.Controls.Add(this.txtIdUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistrarUsuario";
             this.ResumeLayout(false);
             this.PerformLayout();

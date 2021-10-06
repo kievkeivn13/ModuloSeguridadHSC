@@ -38,7 +38,7 @@ namespace CapaVista
         private void btnAplicacion_Click(object sender, EventArgs e)
         {
             frmMantenimientoAplicacion form3 = new frmMantenimientoAplicacion();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -50,23 +50,23 @@ namespace CapaVista
         private void btnPerfiles_Click(object sender, EventArgs e)
         {
             frmMantenimientoPerfil form3 = new frmMantenimientoPerfil();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
 
         private void btnAsignacionDeAplicacionAUsuarios_Click(object sender, EventArgs e)
         {
-            frmAplicacionAPerfiles form3 = new frmAplicacionAPerfiles();
-            form3.MdiParent = this.MdiParent;
+            frmAplicaciones form3 = new frmAplicaciones();
+            form3.MdiParent = this;
 
             form3.Show();
         }
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form3 = new frmAplicaciones();
-            form3.MdiParent = this.MdiParent;
+            frmAplicacionAPerfiles form3 = new frmAplicacionAPerfiles();
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -74,7 +74,7 @@ namespace CapaVista
         private void btnCambioContraseña_Click(object sender, EventArgs e)
         {
             frmCambioContraseña form3 = new frmCambioContraseña();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -86,7 +86,7 @@ namespace CapaVista
         private void btnAsiginaciónDePerfilesAUsuarios_Click(object sender, EventArgs e)
         {
             frmPerfiles form3 = new frmPerfiles();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -94,7 +94,7 @@ namespace CapaVista
         private void bitácoraDeLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBitacoraLogin form3 = new frmBitacoraLogin();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -102,7 +102,7 @@ namespace CapaVista
         private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRegistrarUsuario form3 = new frmRegistrarUsuario();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }
@@ -110,7 +110,7 @@ namespace CapaVista
         private void btnPermisos_Click(object sender, EventArgs e)
         {
             frmPermisos form3 = new frmPermisos();
-            form3.MdiParent = this.MdiParent;
+            form3.MdiParent = this;
 
             form3.Show();
         }

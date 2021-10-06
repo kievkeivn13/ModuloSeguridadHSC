@@ -58,13 +58,13 @@ namespace CapaVista
             this.dtgConsulta.AllowUserToAddRows = false;
             this.dtgConsulta.AllowUserToDeleteRows = false;
             this.dtgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgConsulta.Location = new System.Drawing.Point(369, 129);
+            this.dtgConsulta.Location = new System.Drawing.Point(412, 125);
             this.dtgConsulta.Margin = new System.Windows.Forms.Padding(2);
             this.dtgConsulta.Name = "dtgConsulta";
             this.dtgConsulta.ReadOnly = true;
             this.dtgConsulta.RowHeadersWidth = 51;
             this.dtgConsulta.RowTemplate.Height = 24;
-            this.dtgConsulta.Size = new System.Drawing.Size(223, 254);
+            this.dtgConsulta.Size = new System.Drawing.Size(255, 335);
             this.dtgConsulta.TabIndex = 0;
             this.dtgConsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgConsulta_CellContentClick);
             // 
@@ -103,18 +103,18 @@ namespace CapaVista
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 224);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 305);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(223, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(255, 158);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(286, 268);
+            this.button2.Location = new System.Drawing.Point(320, 223);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 27);
@@ -126,7 +126,7 @@ namespace CapaVista
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(286, 170);
+            this.button3.Location = new System.Drawing.Point(320, 125);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 27);
@@ -138,12 +138,11 @@ namespace CapaVista
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(30, 170);
+            this.textBox3.Location = new System.Drawing.Point(30, 186);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(138, 20);
             this.textBox3.TabIndex = 7;
-            this.textBox3.Visible = false;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
@@ -160,19 +159,20 @@ namespace CapaVista
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(286, 170);
+            this.button4.Location = new System.Drawing.Point(320, 156);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 27);
             this.button4.TabIndex = 10;
             this.button4.Text = "<<";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button4_KeyDown);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(286, 300);
+            this.button5.Location = new System.Drawing.Point(320, 255);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 27);
@@ -186,7 +186,7 @@ namespace CapaVista
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(292, 154);
+            this.label2.Location = new System.Drawing.Point(326, 109);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
@@ -197,7 +197,7 @@ namespace CapaVista
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(299, 252);
+            this.label3.Location = new System.Drawing.Point(333, 207);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
@@ -211,15 +211,15 @@ namespace CapaVista
             this.label4.Location = new System.Drawing.Point(35, 110);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.Size = new System.Drawing.Size(100, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Perfiles Asignados";
+            this.label4.Text = "Usuarios Asignados";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(366, 113);
+            this.label5.Location = new System.Drawing.Point(409, 109);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 13);
@@ -228,7 +228,7 @@ namespace CapaVista
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(286, 355);
+            this.button6.Location = new System.Drawing.Point(320, 415);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 23);
@@ -241,19 +241,19 @@ namespace CapaVista
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(30, 129);
+            this.dataGridView2.Location = new System.Drawing.Point(30, 125);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(223, 58);
+            this.dataGridView2.Size = new System.Drawing.Size(255, 145);
             this.dataGridView2.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(28, 208);
+            this.label6.Location = new System.Drawing.Point(27, 280);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 13);
@@ -265,7 +265,7 @@ namespace CapaVista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
-            this.ClientSize = new System.Drawing.Size(629, 450);
+            this.ClientSize = new System.Drawing.Size(700, 492);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button6);
@@ -288,6 +288,7 @@ namespace CapaVista
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "frmAplicaciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplicaciones";
             this.Load += new System.EventHandler(this.fmConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();

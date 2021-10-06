@@ -23,7 +23,7 @@ namespace CapaVista
         //Mostrar los datos CAPA VISTA
         string tabla = "usuario";
         string tabla2 = "aplicacion"; //aplicacion
-        string tabla3 = "usuarioaplicacion"; //Usuario
+        string tabla3 = "UsuarioAplicacion"; //Usuario
         string tabla4 = "perfil";
         public void actualizardatagriew()
         {
@@ -33,15 +33,22 @@ namespace CapaVista
 
         public void aplicacionllenarTbl()
         {
-            DataTable dt = cn.aplicacionllenarTblPerfil(tabla4);
+            DataTable dt = cn.aplicacionllenarTblPerfil(tabla);
             dataGridView2.DataSource = dt;
         }
 
         public void actualizardatagriewpersonal()
         {
-            string condicion = textBox1.Text;
-            DataTable dt = cn.aplicacionllenarTblPersonal(tabla2, condicion);
-            dataGridView1.DataSource = dt;
+            try
+            {
+                string condicion = textBox1.Text;
+                DataTable dt = cn.aplicacionllenarTblPersonal(tabla2, condicion);
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
         }
 
         public void aplicacionllenarNombre()
@@ -167,6 +174,7 @@ namespace CapaVista
             textBox3.Text = "";
             dtgConsulta.DataSource = null;
             dataGridView1.DataSource = null;
+            dataGridView2.DataSource = null;
         }
 
 
@@ -233,5 +241,7 @@ namespace CapaVista
                 textBox1.Focus();//Mueve al siguiente boton
             }
         }
+
+        
     }
 }

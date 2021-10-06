@@ -179,7 +179,7 @@ namespace CapaModelo
         public OdbcDataAdapter aplicacionllenarTbl(string tabla2)// metodo  que obtinene el contenido de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "SELECT pkid, nombre FROM " + tabla2 + "  ;";
+            string sql = "SELECT pkId, nombre FROM " + tabla2 + "  ;";
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
@@ -192,12 +192,15 @@ namespace CapaModelo
             return dataTable;
         }
 
-        public OdbcDataAdapter aplicacionllenarTblPersonal(string tabla2, string condicion)// metodo  que obtinene el contenido de una tabla
+        public OdbcDataAdapter aplicacionllenarTblPersonal(string tabla3, string condicion)// metodo  que obtinene el contenido de una tabla
         {
-            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla2 + "  LEFT JOIN aplicacionperfil ON aplicacion.pkid = aplicacionperfil.fkidAplicacion LEFT JOIN perfil ON aplicacionperfil.fkidPerfil = perfil.pkid WHERE perfil.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
-            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
-            return dataTable;
+            
+                //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+                string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla3 + "  LEFT JOIN usuarioaplicacion ON aplicacion.pkid = usuarioaplicacion.fkidAplicacion LEFT JOIN usuario ON usuarioaplicacion.fkIdUsuario = usuario.pkid WHERE usuario.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
+                OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+                return dataTable;
+          
+            
         }
 
         public OdbcDataAdapter aplicacionllenarNombre(string tabla, string condicion)// metodo  que obtinene el contenido
@@ -210,14 +213,14 @@ namespace CapaModelo
 
         public void aplicacionagregar(string tabla3, string valor1, string valor2)
         {
-            string sql = "INSERT INTO " + tabla3 + "  Values('" +valor1+ "','" + valor2 + "',1,1,1,1,1);";
+            string sql = "INSERT INTO " + tabla3 + "  Values('" +valor1+ "','" + valor2 + "',null,null,null,null,null);";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
 
         public void aplicacioneliminar(string tabla3, string valor1, string valor2)
         {
-            string sql = "DELETE FROM " + tabla3 + " WHERE fkidPerfil = '" + valor1 + "' AND  fkidAplicacion='" + valor2 + "';";
+            string sql = "DELETE FROM " + tabla3 + " WHERE fkidUsuario = '" + valor1 + "' AND  fkidAplicacion='" + valor2 + "';";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
@@ -231,11 +234,11 @@ namespace CapaModelo
 
         public void aplicacionagregartodo(string tabla3, string valor1, string valor2, string tabla2)
         {
-            string sql = "INSERT INTO UsuarioAplicacionAsignados (fkidUsuario, fkidaplicacion) SELECT NULL, pkid FROM aplicacion;";
+            string sql = "INSERT INTO UsuarioAplicacion (fkidUsuario, fkidaplicacion) SELECT *, pkid FROM aplicacion;";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
 
-            string sql2 = "UPDATE UsuarioAplicacionAsignados SET " + tabla3 + " = '" + valor1 + "' WHERE fkidUsuario = '';";
+            string sql2 = "UPDATE UsuarioAplicacion SET " + tabla3 + " = '" + valor1 + "' WHERE fkidUsuario = '';";
             OdbcCommand consulta2 = new OdbcCommand(sql2, cn.conexion());
             consulta2.ExecuteNonQuery();
         }

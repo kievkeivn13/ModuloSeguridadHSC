@@ -64,7 +64,7 @@ namespace CapaVista
             this.bnUsuario.AutoSize = true;
             this.bnUsuario.BackColor = System.Drawing.Color.Transparent;
             this.bnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnUsuario.Location = new System.Drawing.Point(12, 35);
+            this.bnUsuario.Location = new System.Drawing.Point(33, 58);
             this.bnUsuario.Name = "bnUsuario";
             this.bnUsuario.Size = new System.Drawing.Size(82, 24);
             this.bnUsuario.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace CapaVista
             this.rbPerfil.AutoSize = true;
             this.rbPerfil.BackColor = System.Drawing.Color.Transparent;
             this.rbPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPerfil.Location = new System.Drawing.Point(89, 35);
+            this.rbPerfil.Location = new System.Drawing.Point(110, 58);
             this.rbPerfil.Name = "rbPerfil";
             this.rbPerfil.Size = new System.Drawing.Size(62, 24);
             this.rbPerfil.TabIndex = 1;
@@ -92,7 +92,7 @@ namespace CapaVista
             this.labelEntidad.AutoSize = true;
             this.labelEntidad.BackColor = System.Drawing.Color.Transparent;
             this.labelEntidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntidad.Location = new System.Drawing.Point(9, 9);
+            this.labelEntidad.Location = new System.Drawing.Point(30, 32);
             this.labelEntidad.Name = "labelEntidad";
             this.labelEntidad.Size = new System.Drawing.Size(132, 20);
             this.labelEntidad.TabIndex = 2;
@@ -103,7 +103,7 @@ namespace CapaVista
             this.labelenti.AutoSize = true;
             this.labelenti.BackColor = System.Drawing.Color.Transparent;
             this.labelenti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelenti.Location = new System.Drawing.Point(12, 75);
+            this.labelenti.Location = new System.Drawing.Point(33, 98);
             this.labelenti.Name = "labelenti";
             this.labelenti.Size = new System.Drawing.Size(64, 20);
             this.labelenti.TabIndex = 3;
@@ -114,7 +114,7 @@ namespace CapaVista
             this.labelaplicacion.AutoSize = true;
             this.labelaplicacion.BackColor = System.Drawing.Color.Transparent;
             this.labelaplicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelaplicacion.Location = new System.Drawing.Point(212, 75);
+            this.labelaplicacion.Location = new System.Drawing.Point(233, 98);
             this.labelaplicacion.Name = "labelaplicacion";
             this.labelaplicacion.Size = new System.Drawing.Size(98, 20);
             this.labelaplicacion.TabIndex = 4;
@@ -124,7 +124,7 @@ namespace CapaVista
             // 
             this.cbxEntidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEntidad.FormattingEnabled = true;
-            this.cbxEntidad.Location = new System.Drawing.Point(12, 98);
+            this.cbxEntidad.Location = new System.Drawing.Point(33, 121);
             this.cbxEntidad.Name = "cbxEntidad";
             this.cbxEntidad.Size = new System.Drawing.Size(121, 28);
             this.cbxEntidad.TabIndex = 5;
@@ -134,7 +134,7 @@ namespace CapaVista
             // 
             this.cbxAplicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAplicacion.FormattingEnabled = true;
-            this.cbxAplicacion.Location = new System.Drawing.Point(215, 98);
+            this.cbxAplicacion.Location = new System.Drawing.Point(236, 121);
             this.cbxAplicacion.Name = "cbxAplicacion";
             this.cbxAplicacion.Size = new System.Drawing.Size(121, 28);
             this.cbxAplicacion.TabIndex = 6;
@@ -145,7 +145,7 @@ namespace CapaVista
             this.Escritura.AutoSize = true;
             this.Escritura.BackColor = System.Drawing.Color.Transparent;
             this.Escritura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Escritura.Location = new System.Drawing.Point(12, 189);
+            this.Escritura.Location = new System.Drawing.Point(33, 212);
             this.Escritura.Name = "Escritura";
             this.Escritura.Size = new System.Drawing.Size(91, 24);
             this.Escritura.TabIndex = 7;
@@ -158,7 +158,7 @@ namespace CapaVista
             this.Lectura.AutoSize = true;
             this.Lectura.BackColor = System.Drawing.Color.Transparent;
             this.Lectura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lectura.Location = new System.Drawing.Point(135, 189);
+            this.Lectura.Location = new System.Drawing.Point(156, 212);
             this.Lectura.Name = "Lectura";
             this.Lectura.Size = new System.Drawing.Size(82, 24);
             this.Lectura.TabIndex = 8;
@@ -171,7 +171,7 @@ namespace CapaVista
             this.Modificacion.AutoSize = true;
             this.Modificacion.BackColor = System.Drawing.Color.Transparent;
             this.Modificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modificacion.Location = new System.Drawing.Point(240, 189);
+            this.Modificacion.Location = new System.Drawing.Point(261, 212);
             this.Modificacion.Name = "Modificacion";
             this.Modificacion.Size = new System.Drawing.Size(116, 24);
             this.Modificacion.TabIndex = 9;
@@ -184,7 +184,7 @@ namespace CapaVista
             this.Eliminacion.AutoSize = true;
             this.Eliminacion.BackColor = System.Drawing.Color.Transparent;
             this.Eliminacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Eliminacion.Location = new System.Drawing.Point(12, 234);
+            this.Eliminacion.Location = new System.Drawing.Point(33, 257);
             this.Eliminacion.Name = "Eliminacion";
             this.Eliminacion.Size = new System.Drawing.Size(108, 24);
             this.Eliminacion.TabIndex = 10;
@@ -197,7 +197,7 @@ namespace CapaVista
             this.Impresion.AutoSize = true;
             this.Impresion.BackColor = System.Drawing.Color.Transparent;
             this.Impresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Impresion.Location = new System.Drawing.Point(135, 234);
+            this.Impresion.Location = new System.Drawing.Point(156, 257);
             this.Impresion.Name = "Impresion";
             this.Impresion.Size = new System.Drawing.Size(98, 24);
             this.Impresion.TabIndex = 11;
@@ -210,7 +210,7 @@ namespace CapaVista
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 160);
+            this.label1.Location = new System.Drawing.Point(30, 183);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 20);
             this.label1.TabIndex = 12;
@@ -220,7 +220,7 @@ namespace CapaVista
             // 
             this.labelidentidad.AutoSize = true;
             this.labelidentidad.BackColor = System.Drawing.Color.Transparent;
-            this.labelidentidad.Location = new System.Drawing.Point(151, 101);
+            this.labelidentidad.Location = new System.Drawing.Point(172, 124);
             this.labelidentidad.Name = "labelidentidad";
             this.labelidentidad.Size = new System.Drawing.Size(10, 13);
             this.labelidentidad.TabIndex = 13;
@@ -231,7 +231,7 @@ namespace CapaVista
             // 
             this.labelidaplicacion.AutoSize = true;
             this.labelidaplicacion.BackColor = System.Drawing.Color.Transparent;
-            this.labelidaplicacion.Location = new System.Drawing.Point(354, 101);
+            this.labelidaplicacion.Location = new System.Drawing.Point(375, 124);
             this.labelidaplicacion.Name = "labelidaplicacion";
             this.labelidaplicacion.Size = new System.Drawing.Size(10, 13);
             this.labelidaplicacion.TabIndex = 14;
@@ -242,7 +242,7 @@ namespace CapaVista
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(328, 238);
+            this.btnGuardar.Location = new System.Drawing.Point(249, 332);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(82, 29);
             this.btnGuardar.TabIndex = 15;
@@ -255,10 +255,10 @@ namespace CapaVista
             this.dtgPermisosUA.AllowUserToAddRows = false;
             this.dtgPermisosUA.AllowUserToDeleteRows = false;
             this.dtgPermisosUA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgPermisosUA.Location = new System.Drawing.Point(456, 65);
+            this.dtgPermisosUA.Location = new System.Drawing.Point(411, 65);
             this.dtgPermisosUA.Name = "dtgPermisosUA";
             this.dtgPermisosUA.ReadOnly = true;
-            this.dtgPermisosUA.Size = new System.Drawing.Size(401, 150);
+            this.dtgPermisosUA.Size = new System.Drawing.Size(546, 150);
             this.dtgPermisosUA.TabIndex = 16;
             this.dtgPermisosUA.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
@@ -267,7 +267,7 @@ namespace CapaVista
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(523, 35);
+            this.label2.Location = new System.Drawing.Point(407, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(257, 20);
             this.label2.TabIndex = 17;
@@ -276,9 +276,9 @@ namespace CapaVista
             // dtgPermisosPA
             // 
             this.dtgPermisosPA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgPermisosPA.Location = new System.Drawing.Point(456, 256);
+            this.dtgPermisosPA.Location = new System.Drawing.Point(411, 256);
             this.dtgPermisosPA.Name = "dtgPermisosPA";
-            this.dtgPermisosPA.Size = new System.Drawing.Size(401, 150);
+            this.dtgPermisosPA.Size = new System.Drawing.Size(546, 150);
             this.dtgPermisosPA.TabIndex = 18;
             this.dtgPermisosPA.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgPermisosPA_RowHeaderMouseClick);
             // 
@@ -287,7 +287,7 @@ namespace CapaVista
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(543, 225);
+            this.label3.Location = new System.Drawing.Point(407, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 20);
             this.label3.TabIndex = 19;
@@ -296,7 +296,7 @@ namespace CapaVista
             // lbi
             // 
             this.lbi.AutoSize = true;
-            this.lbi.Location = new System.Drawing.Point(78, 309);
+            this.lbi.Location = new System.Drawing.Point(99, 332);
             this.lbi.Name = "lbi";
             this.lbi.Size = new System.Drawing.Size(35, 13);
             this.lbi.TabIndex = 20;
@@ -306,7 +306,7 @@ namespace CapaVista
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(119, 309);
+            this.lbl.Location = new System.Drawing.Point(140, 332);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(35, 13);
             this.lbl.TabIndex = 21;
@@ -316,7 +316,7 @@ namespace CapaVista
             // lbe
             // 
             this.lbe.AutoSize = true;
-            this.lbe.Location = new System.Drawing.Point(78, 335);
+            this.lbe.Location = new System.Drawing.Point(99, 358);
             this.lbe.Name = "lbe";
             this.lbe.Size = new System.Drawing.Size(35, 13);
             this.lbe.TabIndex = 22;
@@ -326,7 +326,7 @@ namespace CapaVista
             // lbel
             // 
             this.lbel.AutoSize = true;
-            this.lbel.Location = new System.Drawing.Point(119, 335);
+            this.lbel.Location = new System.Drawing.Point(140, 358);
             this.lbel.Name = "lbel";
             this.lbel.Size = new System.Drawing.Size(35, 13);
             this.lbel.TabIndex = 23;
@@ -336,7 +336,7 @@ namespace CapaVista
             // lbm
             // 
             this.lbm.AutoSize = true;
-            this.lbm.Location = new System.Drawing.Point(172, 309);
+            this.lbm.Location = new System.Drawing.Point(193, 332);
             this.lbm.Name = "lbm";
             this.lbm.Size = new System.Drawing.Size(35, 13);
             this.lbm.TabIndex = 24;
@@ -348,7 +348,7 @@ namespace CapaVista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
-            this.ClientSize = new System.Drawing.Size(869, 418);
+            this.ClientSize = new System.Drawing.Size(983, 418);
             this.Controls.Add(this.lbm);
             this.Controls.Add(this.lbel);
             this.Controls.Add(this.lbe);
@@ -376,6 +376,7 @@ namespace CapaVista
             this.Controls.Add(this.bnUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPermisos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPermisos";
             ((System.ComponentModel.ISupportInitialize)(this.dtgPermisosUA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPermisosPA)).EndInit();

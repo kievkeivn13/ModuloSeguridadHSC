@@ -30,8 +30,8 @@ namespace CapaVista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacoraLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvBitacoraLogin1 = new VistaBitacoraLogin.DGVBitacoraLogin();
@@ -65,10 +65,10 @@ namespace CapaVista
             this.dgvBitacoraLogin1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvBitacoraLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBitacoraLogin1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacoraLogin1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacoraLogin1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBitacoraLogin1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBitacoraLogin1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pkIdDataGridViewTextBoxColumn,
@@ -84,10 +84,10 @@ namespace CapaVista
             this.dgvBitacoraLogin1.MultiSelect = false;
             this.dgvBitacoraLogin1.Name = "dgvBitacoraLogin1";
             this.dgvBitacoraLogin1.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacoraLogin1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacoraLogin1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBitacoraLogin1.RowHeadersVisible = false;
             this.dgvBitacoraLogin1.Size = new System.Drawing.Size(902, 449);
             this.dgvBitacoraLogin1.TabIndex = 0;
@@ -163,6 +163,7 @@ namespace CapaVista
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBitacoraLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBitacoraLogin";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBitacoraLogin1)).EndInit();

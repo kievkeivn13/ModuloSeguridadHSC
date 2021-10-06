@@ -205,6 +205,7 @@ namespace CapaVista
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmRecuperarContraseña";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRecuperarContraseña";
             this.ResumeLayout(false);
             this.PerformLayout();

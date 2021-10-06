@@ -111,17 +111,17 @@ namespace CapaControlador
             return table;
         }
 
-        public DataTable aplicacionllenarTblPerfil(string tabla4)
+        public DataTable aplicacionllenarTblPerfil(string tabla)
         {
-            OdbcDataAdapter dt = sn.aplicacionllenarTbl(tabla4);
+            OdbcDataAdapter dt = sn.aplicacionllenarTbl(tabla);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
         }
 
-        public DataTable aplicacionllenarTblPersonal(string tabla2, string condicion)
+        public DataTable aplicacionllenarTblPersonal(string tabla3, string condicion)
         {
-            OdbcDataAdapter dt = sn.aplicacionllenarTblPersonal(tabla2, condicion);
+            OdbcDataAdapter dt = sn.aplicacionllenarTblPersonal(tabla3, condicion);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;

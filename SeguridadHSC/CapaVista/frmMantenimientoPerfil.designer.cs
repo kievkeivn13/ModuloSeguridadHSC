@@ -244,6 +244,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMantenimientoPerfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento Perfil";
             this.Load += new System.EventHandler(this.frmMantenimientoPerfil_Load);
             this.gbxEstado.ResumeLayout(false);
