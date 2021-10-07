@@ -15,14 +15,21 @@ namespace CapaVista
 {
     public partial class frmMantenimientoPerfil : Form
     {
-        Controlador conAplicacion = new Controlador();
+        Controlador cn = new Controlador();
         public frmMantenimientoPerfil()
         {
             InitializeComponent();
             CenterToScreen();
+            actualizardatagriew();
         }
 
-        
+        string tabla = "perfil";
+
+        public void actualizardatagriew()
+        {
+            DataTable dt = cn.llenarTbl(tabla);
+            perfilTabla.DataSource = dt;
+        }
 
         public void funLimpiar()
         {
@@ -48,14 +55,11 @@ namespace CapaVista
 
         private void frmMantenimientoPerfil_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'dataSet5.perfil' Puede moverla o quitarla según sea necesario.
-            this.perfilTableAdapter.Fill(this.dataSet5.perfil);
-            // TODO: esta línea de código carga datos en la tabla 'dataSet4.perfil' Puede moverla o quitarla según sea necesario.
-            this.perfilTableAdapter.Fill(this.dataSet5.perfil);
+           
             try
             {
                 // TODO: esta línea de código carga datos en la tabla 'dataSet3.perfil' Puede moverla o quitarla según sea necesario.
-                this.perfilTableAdapter.Fill(this.dataSet5.perfil);
+                
             }
             catch (Exception Error)
             {
@@ -81,7 +85,7 @@ namespace CapaVista
                 if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
                 {
 
-                    conAplicacion.insertarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
+                    cn.insertarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
                     MessageBox.Show("Insercion realizada");
                     funLimpiar();
                 }
@@ -96,7 +100,7 @@ namespace CapaVista
             {
                 MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
             }
-            actualizarTablaDeporte();
+            actualizardatagriew();
         }
 
 
@@ -107,7 +111,7 @@ namespace CapaVista
             if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
             {
 
-                conAplicacion.modificarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
+                cn.modificarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
                 MessageBox.Show("Insercion realizada");
                 funLimpiar();
             }
@@ -117,14 +121,14 @@ namespace CapaVista
                 MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
 
             }
-            actualizarTablaDeporte();
+            actualizardatagriew(); 
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            conAplicacion.eliminarPerfil(textBox1.Text);
+            cn.eliminarPerfil(textBox1.Text);
             MessageBox.Show("Eliminacion realizada");
             funLimpiar();
-            actualizarTablaDeporte();
+            actualizardatagriew();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -137,7 +141,7 @@ namespace CapaVista
         {
             try
             {
-                this.perfilTableAdapter.Fill(this.dataSet5.perfil);
+                
                 //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
             }
             catch (Exception Error)

@@ -40,3 +40,9 @@ C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModelo.pdb
