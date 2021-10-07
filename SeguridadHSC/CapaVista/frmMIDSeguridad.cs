@@ -93,7 +93,7 @@ namespace CapaVista
 
         private void bitácoraDeLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBitacoraLogin form3 = new frmBitacoraLogin();
+            frmBitacora form3 = new frmBitacora();
             form3.MdiParent = this;
 
             form3.Show();

@@ -31,7 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BitacoraRegistrarLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Bitacora, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bitacora.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
     <Reference Include="CapaControlador">
       <HintPath>..\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
@@ -94,6 +97,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="datosUsuario.cs" />
     <Compile Include="frmAplicacionAPerfiles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +110,11 @@
     <Compile Include="frmAplicaciones.designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBitacoraLogin.cs">
+    <Compile Include="frmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBitacoraLogin.Designer.cs">
-      <DependentUpon>frmBitacoraLogin.cs</DependentUpon>
+    <Compile Include="frmBitacora.Designer.cs">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCambioContraseña.cs">
       <SubType>Form</SubType>
@@ -186,8 +190,8 @@
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBitacoraLogin.resx">
-      <DependentUpon>frmBitacoraLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmBitacora.resx">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCambioContraseña.resx">
       <DependentUpon>frmCambioContraseña.cs</DependentUpon>

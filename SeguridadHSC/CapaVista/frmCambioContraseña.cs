@@ -1,14 +1,16 @@
 ﻿using System;
 
 using System.Windows.Forms;
+using BitacoraUsuario;
 using CapaControlador;
-
+using static datosUsuario;
 
 namespace CapaVista
 {
     public partial class frmCambioContraseña : Form
     {
-        string Usuario = "";
+        private string Usuario = "";
+
         public frmCambioContraseña()
         {
             InitializeComponent();
@@ -33,6 +35,11 @@ namespace CapaVista
                     MessageBox.Show("Contraseña Actualizada");
                     txtNuevaContraseña.Text = "";
                     txtConfirmarContraseña.Text = "";
+                    // Prueba bitácora
+                    Bitacora loggear = new Bitacora();
+                    loggear.guardarEnBitacora(IdUsuario, "2", "1", "Cambio de Contraseña");
+                    // Fin bitácora
+
                     this.Hide();
                 }
                 else

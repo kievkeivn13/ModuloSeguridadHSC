@@ -11,6 +11,7 @@ using CapaControlador;
 using System.Windows.Input;
 using System.Windows;
 using BitacoraUsuario;
+using static datosUsuario;
 
 namespace CapaVista
 {
@@ -61,10 +62,11 @@ namespace CapaVista
                 Console.WriteLine(password);
                 if (conAplicacion.funIniciarSesion(txtUsuario.Text, password) == 1)
                 {
-                    //llamada a la forma
-                    BitacoraLoginUsuario loggear = new BitacoraLoginUsuario();
-                    string id = loggear.obtenerIdDeUsuario(Usuario);
-                    loggear.guardarLoginUsuario(id, "1");
+                    // Bitácora
+                    Bitacora loggear = new Bitacora();
+                    IdUsuario = loggear.obtenerIdDeUsuario(Usuario);
+                    loggear.guardarEnBitacora(IdUsuario, "1", "1", "Login");
+                    // Fin bitácora
 
                     MessageBox.Show(" Bienvenido " + txtUsuario.Text);
                     funLimpiar();

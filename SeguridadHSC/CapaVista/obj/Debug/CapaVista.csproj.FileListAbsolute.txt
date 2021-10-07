@@ -217,7 +217,6 @@ C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadH
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmAplicacionAPerfiles.resources
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmAplicaciones.resources
-C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmBitacoraLogin.resources
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmCambioContraseña.resources
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmLoginHSC.resources
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmMantenimientoAplicacion.resources
@@ -310,3 +309,7 @@ C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaVis
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\MySql.Data.xml
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\CapaModelo.pdb
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmPermisos.resources
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\Bitacora.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\VistaBitacoraLogin.pdb
+C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmBitacora.resources
