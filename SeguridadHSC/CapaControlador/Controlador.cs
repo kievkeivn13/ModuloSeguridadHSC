@@ -197,6 +197,14 @@ namespace CapaControlador
             sn.funEliminarPerfil(id);
         }
 
+        public DataTable llenarTbl(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTbl(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
         //Aplicacion a perfiles
         public DataTable llenarTblappaperf(string tabla2)
         {

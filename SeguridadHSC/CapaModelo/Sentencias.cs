@@ -337,6 +337,14 @@ namespace CapaModelo
             return (nombre, estado);
         }
 
+        public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT pkid, nombre, estado FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
         //Aplicacion a perfiles
         public OdbcDataAdapter llenarTblappaperf(string tabla2)// metodo  que obtinene el contenido de una tabla
         {

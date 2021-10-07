@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientoPerfil));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,16 +42,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.perfilTabla = new System.Windows.Forms.DataGridView();
-            this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.perfilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet5 = new CapaVista.DataSet5();
-            this.perfilTableAdapter = new CapaVista.DataSet5TableAdapters.perfilTableAdapter();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -176,51 +167,13 @@
             // 
             // perfilTabla
             // 
-            this.perfilTabla.AutoGenerateColumns = false;
             this.perfilTabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.perfilTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.perfilTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pkIdDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.estadoDataGridViewTextBoxColumn});
-            this.perfilTabla.DataSource = this.perfilBindingSource;
-            this.perfilTabla.Location = new System.Drawing.Point(41, 270);
+            this.perfilTabla.Location = new System.Drawing.Point(12, 281);
             this.perfilTabla.Name = "perfilTabla";
-            this.perfilTabla.Size = new System.Drawing.Size(534, 183);
+            this.perfilTabla.Size = new System.Drawing.Size(634, 183);
             this.perfilTabla.TabIndex = 27;
             this.perfilTabla.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.perfilTabla_RowHeaderMouseClick);
-            // 
-            // pkIdDataGridViewTextBoxColumn
-            // 
-            this.pkIdDataGridViewTextBoxColumn.DataPropertyName = "pkId";
-            this.pkIdDataGridViewTextBoxColumn.HeaderText = "pkId";
-            this.pkIdDataGridViewTextBoxColumn.Name = "pkIdDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // estadoDataGridViewTextBoxColumn
-            // 
-            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
-            this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
-            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
-            // 
-            // perfilBindingSource
-            // 
-            this.perfilBindingSource.DataMember = "perfil";
-            this.perfilBindingSource.DataSource = this.dataSet5;
-            // 
-            // dataSet5
-            // 
-            this.dataSet5.DataSetName = "DataSet5";
-            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // perfilTableAdapter
-            // 
-            this.perfilTableAdapter.ClearBeforeFill = true;
             // 
             // frmMantenimientoPerfil
             // 
@@ -250,8 +203,6 @@
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,11 +223,5 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView perfilTabla;
-        private DataSet5 dataSet5;
-        private System.Windows.Forms.BindingSource perfilBindingSource;
-        private DataSet5TableAdapters.perfilTableAdapter perfilTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pkIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
     }
 }
