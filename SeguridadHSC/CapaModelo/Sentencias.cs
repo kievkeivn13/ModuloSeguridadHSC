@@ -5,6 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+
+
+
 
 namespace CapaModelo
 {
@@ -115,6 +119,16 @@ namespace CapaModelo
 
             return (nombre, estado);
         }
+
+        public OdbcDataAdapter llenarTblAplicacion(string tabla)// metodo  que obtinene el contenio de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT * FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+
 
         //frmPerfiles
 

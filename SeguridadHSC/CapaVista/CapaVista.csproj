@@ -97,6 +97,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetModulos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetModulos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="datosUsuario.cs" />
     <Compile Include="frmAplicacionAPerfiles.cs">
       <SubType>Form</SubType>
@@ -238,6 +248,28 @@
     <Content Include="Recursos\login_50px.png" />
     <Content Include="Recursos\Logopng.png" />
     <Content Include="Recursos\see %281%29.png" />
+    <None Include="DataSet6.xsc">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet6.xss">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetModulos.xsc">
+      <DependentUpon>DataSetModulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetModulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetModulos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetModulos.xss">
+      <DependentUpon>DataSetModulos.xsd</DependentUpon>
+    </None>
     <None Include="Recursos\seguridad.jpg" />
   </ItemGroup>
   <ItemGroup />

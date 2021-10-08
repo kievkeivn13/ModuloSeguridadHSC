@@ -57,6 +57,20 @@ namespace CapaControlador
             sn.funEliminar(id);
         }
 
+        public DataTable llenarTblAplicacion(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTblAplicacion(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public OdbcDataReader llenarcbxModulo()
+        {
+            string sql = "SELECT nombre FROM componenteseguridad.modulo;";
+            return sn.llenarcbxUsuario(sql);
+        }
+
         //frmPerfiles
         public DataTable PerfilllenarTbl(string tabla2)
         {

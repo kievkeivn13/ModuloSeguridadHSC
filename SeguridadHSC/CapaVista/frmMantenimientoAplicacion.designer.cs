@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientoAplicacion));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,23 +42,23 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idReporteAsociadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aplicacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new CapaVista.DataSet1();
-            this.aplicacionTableAdapter1 = new CapaVista.DataSet1TableAdapters.aplicacionTableAdapter();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbxModulo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
             // 
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(349, 205);
+            this.textBox3.Location = new System.Drawing.Point(350, 216);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(27, 20);
             this.textBox3.TabIndex = 22;
@@ -67,7 +66,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 111);
+            this.textBox2.Location = new System.Drawing.Point(143, 142);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(212, 20);
             this.textBox2.TabIndex = 1;
@@ -77,7 +76,7 @@
             this.gbxEstado.BackColor = System.Drawing.Color.Transparent;
             this.gbxEstado.Controls.Add(this.btnInhabilitado);
             this.gbxEstado.Controls.Add(this.btnHabilitado);
-            this.gbxEstado.Location = new System.Drawing.Point(143, 164);
+            this.gbxEstado.Location = new System.Drawing.Point(144, 175);
             this.gbxEstado.Name = "gbxEstado";
             this.gbxEstado.Size = new System.Drawing.Size(200, 100);
             this.gbxEstado.TabIndex = 20;
@@ -129,7 +128,7 @@
             // 
             this.labelNombreaplicacion.AutoSize = true;
             this.labelNombreaplicacion.BackColor = System.Drawing.Color.Transparent;
-            this.labelNombreaplicacion.Location = new System.Drawing.Point(38, 111);
+            this.labelNombreaplicacion.Location = new System.Drawing.Point(38, 142);
             this.labelNombreaplicacion.Name = "labelNombreaplicacion";
             this.labelNombreaplicacion.Size = new System.Drawing.Size(99, 13);
             this.labelNombreaplicacion.TabIndex = 17;
@@ -177,58 +176,97 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pkIdDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.estadoDataGridViewTextBoxColumn,
-            this.idReporteAsociadoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.aplicacionBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 294);
+            this.dataGridView1.Location = new System.Drawing.Point(88, 361);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(525, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(437, 156);
             this.dataGridView1.TabIndex = 27;
-            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick_1);
             // 
-            // pkIdDataGridViewTextBoxColumn
+            // textBox4
             // 
-            this.pkIdDataGridViewTextBoxColumn.DataPropertyName = "pkId";
-            this.pkIdDataGridViewTextBoxColumn.HeaderText = "pkId";
-            this.pkIdDataGridViewTextBoxColumn.Name = "pkIdDataGridViewTextBoxColumn";
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(150, 285);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(205, 20);
+            this.textBox4.TabIndex = 29;
             // 
-            // nombreDataGridViewTextBoxColumn
+            // button1
             // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.button1.Location = new System.Drawing.Point(41, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Examinar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // estadoDataGridViewTextBoxColumn
+            // textBox5
             // 
-            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
-            this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
-            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(150, 325);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(205, 20);
+            this.textBox5.TabIndex = 31;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // idReporteAsociadoDataGridViewTextBoxColumn
+            // button2
             // 
-            this.idReporteAsociadoDataGridViewTextBoxColumn.DataPropertyName = "idReporteAsociado";
-            this.idReporteAsociadoDataGridViewTextBoxColumn.HeaderText = "idReporteAsociado";
-            this.idReporteAsociadoDataGridViewTextBoxColumn.Name = "idReporteAsociadoDataGridViewTextBoxColumn";
+            this.button2.Location = new System.Drawing.Point(41, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Examinar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // aplicacionBindingSource1
+            // label1
             // 
-            this.aplicacionBindingSource1.DataMember = "aplicacion";
-            this.aplicacionBindingSource1.DataSource = this.dataSet1;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(361, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Ruta CHM";
             // 
-            // dataSet1
+            // label2
             // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(361, 325);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Referencia HTML";
             // 
-            // aplicacionTableAdapter1
+            // cbxModulo
             // 
-            this.aplicacionTableAdapter1.ClearBeforeFill = true;
+            this.cbxModulo.FormattingEnabled = true;
+            this.cbxModulo.Location = new System.Drawing.Point(143, 111);
+            this.cbxModulo.Name = "cbxModulo";
+            this.cbxModulo.Size = new System.Drawing.Size(162, 21);
+            this.cbxModulo.TabIndex = 34;
+            this.cbxModulo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(38, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Modulo:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(311, 111);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(27, 20);
+            this.textBox6.TabIndex = 36;
+            this.textBox6.Visible = false;
             // 
             // frmMantenimientoAplicacion
             // 
@@ -236,7 +274,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
-            this.ClientSize = new System.Drawing.Size(658, 491);
+            this.ClientSize = new System.Drawing.Size(658, 537);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbxModulo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEliminar);
@@ -253,12 +300,9 @@
             this.Name = "frmMantenimientoAplicacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMantenimientoAplicacion";
-            this.Load += new System.EventHandler(this.frmMantenimientoAplicacion_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aplicacionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,12 +323,14 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource aplicacionBindingSource1;
-        private DataSet1TableAdapters.aplicacionTableAdapter aplicacionTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pkIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idReporteAsociadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbxModulo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

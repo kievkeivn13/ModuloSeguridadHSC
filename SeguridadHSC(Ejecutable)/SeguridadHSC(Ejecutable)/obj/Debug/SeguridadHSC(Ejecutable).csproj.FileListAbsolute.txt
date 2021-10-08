@@ -243,9 +243,7 @@ C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
 C:\Users\kievk\OneDrive\Desktop\GitB\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
 C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.dll
-C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BitacoraRegistrarLogin.dll
 C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Dapper.dll
-C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
 C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
@@ -282,3 +280,5 @@ C:\Users\USUARIO 1\Desktop\Nueva carpeta\ModuloSeguridadHSC\SeguridadHSC(Ejecuta
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Bitacora.dll
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.pdb
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Bitacora.pdb
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Bitacora.dll
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe.config

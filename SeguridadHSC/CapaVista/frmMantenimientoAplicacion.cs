@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,9 @@ namespace CapaVista
         {
             InitializeComponent();
            CenterToScreen();
-            
+            actualizardatagriew();
+            llenarcbxAplicacion();
+
         }
 
         
@@ -47,51 +50,15 @@ namespace CapaVista
             textBox3.Text = "0";
         }
 
-        private void frmMantenimientoAplicacion_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'dataSet1.aplicacion' Puede moverla o quitarla según sea necesario.
-            //this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
-            // TODO: esta línea de código carga datos en la tabla 'componenteseguridadDataSet.aplicacion' Puede moverla o quitarla según sea necesario.
-            try
-            {
-                this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex);
-            }
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
        
-
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
         
         
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
 
-            if(textBox3.Text == "1")
-            {
-                btnHabilitado.Checked = true;
-            }
-            else if ( textBox3.Text == "0")
-            {
-                btnInhabilitado.Checked = true;
-            }
         }
-        
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -106,7 +73,7 @@ namespace CapaVista
             {
                 MessageBox.Show("Error: Debes llenar todos los campos");
             }
-            actualizarTabla();
+            actualizardatagriew();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -116,7 +83,7 @@ namespace CapaVista
                 conAplicacion.modificarAplicacion(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), " ");
                 MessageBox.Show("Modificacion realizada");
                 funLimpiar();
-                actualizarTabla();
+                actualizardatagriew();
             }
             catch (Exception ex)
             {
@@ -131,7 +98,7 @@ namespace CapaVista
                 conAplicacion.eliminarAplicacion(textBox1.Text);
                 MessageBox.Show("Eliminacion realizada");
                 funLimpiar();
-                actualizarTabla();
+                actualizardatagriew();
             }
             catch (Exception ex)
             {
@@ -144,36 +111,84 @@ namespace CapaVista
             funLimpiar();
         }
 
-
-        public void actualizarTabla()
+        public void llenarcbxAplicacion()
         {
             try
             {
-                this.aplicacionTableAdapter1.Fill(this.dataSet1.aplicacion);
-                //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
+                cbxModulo.Items.Clear();
+                OdbcDataReader datareader = conAplicacion.llenarcbxModulo();
+                cbxModulo.Items.Add("Selecione un Modulo");
+                while (datareader.Read())
+                {
+                    cbxModulo.Items.Add(datareader[0].ToString());
+                }
+                cbxModulo.SelectedIndex = 0;
+            }
+            catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+        }
+
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var fd = new FolderBrowserDialog())
+            {
+                if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
+                {
+                    textBox4.Text = fd.SelectedPath;
+                }
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (var fd = new FolderBrowserDialog())
+            {
+                if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
+                {
+                    textBox5.Text = fd.SelectedPath;
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbxModulo.SelectedValue.ToString() == null)
+                {
+                    textBox1.Text = "";
+                }
+                else
+                {
+                    textBox6.Text = cbxModulo.SelectedValue.ToString();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex);
-            }
 
+            }
         }
 
-        private void dataGridView1_RowHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        String tabla = "Aplicacion";
+
+        public void actualizardatagriew()
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            DataTable dt = conAplicacion.llenarTblAplicacion(tabla);
+            dataGridView1.DataSource = dt;
 
-            if (textBox3.Text == "1")
-            {
-                btnHabilitado.Checked = true;
-            }
-            else if (textBox3.Text == "0")
-            {
-                btnInhabilitado.Checked = true;
-            }
         }
+
+       
+
+        
     }
 
 

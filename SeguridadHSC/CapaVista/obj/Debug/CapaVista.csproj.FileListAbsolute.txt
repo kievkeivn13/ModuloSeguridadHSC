@@ -313,3 +313,12 @@ C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadH
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\Bitacora.pdb
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\bin\Debug\VistaBitacoraLogin.pdb
 C:\Users\CORE i7 6TA WIN10\Documents\ModuloSeguridadKevin\final\ModuloSeguridadHSC\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmBitacora.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmAplicacionAPerfiles.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmAplicaciones.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmBitacora.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmCambioContraseña.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmMantenimientoPerfil.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmPerfiles.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmPermisos.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmRecuperarContraseña.resources
+C:\Users\SEBAS\Desktop\ProyectoHCS\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmRegistrarUsuario.resources
