@@ -30,11 +30,9 @@ namespace CapaVista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnActualizarBitacora = new System.Windows.Forms.Button();
             this.dgvBitacora1 = new VistaBitacora.DGVBitacora();
             this.pkIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +43,8 @@ namespace CapaVista
             this.accionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conexionFechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conexionHoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnActualizarBitacora = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBitacora1)).BeginInit();
             this.SuspendLayout();
@@ -57,34 +57,8 @@ namespace CapaVista
             this.panel1.Controls.Add(this.dgvBitacora1);
             this.panel1.Location = new System.Drawing.Point(12, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 353);
+            this.panel1.Size = new System.Drawing.Size(821, 353);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bitácora";
-            // 
-            // btnActualizarBitacora
-            // 
-            this.btnActualizarBitacora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizarBitacora.BackColor = System.Drawing.Color.White;
-            this.btnActualizarBitacora.FlatAppearance.BorderSize = 0;
-            this.btnActualizarBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnActualizarBitacora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarBitacora.Location = new System.Drawing.Point(695, 13);
-            this.btnActualizarBitacora.Name = "btnActualizarBitacora";
-            this.btnActualizarBitacora.Size = new System.Drawing.Size(93, 36);
-            this.btnActualizarBitacora.TabIndex = 2;
-            this.btnActualizarBitacora.Text = "Actualizar";
-            this.btnActualizarBitacora.UseVisualStyleBackColor = false;
-            this.btnActualizarBitacora.Click += new System.EventHandler(this.btnActualizarBitacora_Click);
             // 
             // dgvBitacora1
             // 
@@ -94,10 +68,10 @@ namespace CapaVista
             this.dgvBitacora1.BackgroundColor = System.Drawing.Color.Wheat;
             this.dgvBitacora1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBitacora1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacora1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacora1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBitacora1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBitacora1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pkIdDataGridViewTextBoxColumn,
@@ -115,12 +89,12 @@ namespace CapaVista
             this.dgvBitacora1.MultiSelect = false;
             this.dgvBitacora1.Name = "dgvBitacora1";
             this.dgvBitacora1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBitacora1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBitacora1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBitacora1.RowHeadersVisible = false;
-            this.dgvBitacora1.Size = new System.Drawing.Size(776, 353);
+            this.dgvBitacora1.Size = new System.Drawing.Size(821, 353);
             this.dgvBitacora1.TabIndex = 0;
             // 
             // pkIdDataGridViewTextBoxColumn
@@ -186,16 +160,43 @@ namespace CapaVista
             this.conexionHoraDataGridViewTextBoxColumn.Name = "conexionHoraDataGridViewTextBoxColumn";
             this.conexionHoraDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(348, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bitácora";
+            // 
+            // btnActualizarBitacora
+            // 
+            this.btnActualizarBitacora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizarBitacora.BackColor = System.Drawing.Color.White;
+            this.btnActualizarBitacora.FlatAppearance.BorderSize = 0;
+            this.btnActualizarBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizarBitacora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarBitacora.Location = new System.Drawing.Point(740, 13);
+            this.btnActualizarBitacora.Name = "btnActualizarBitacora";
+            this.btnActualizarBitacora.Size = new System.Drawing.Size(93, 36);
+            this.btnActualizarBitacora.TabIndex = 2;
+            this.btnActualizarBitacora.Text = "Actualizar";
+            this.btnActualizarBitacora.UseVisualStyleBackColor = false;
+            this.btnActualizarBitacora.Click += new System.EventHandler(this.btnActualizarBitacora_Click);
+            // 
             // frmBitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
-            this.ClientSize = new System.Drawing.Size(800, 427);
+            this.ClientSize = new System.Drawing.Size(845, 427);
             this.Controls.Add(this.btnActualizarBitacora);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "frmBitacora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBitacora";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBitacora1)).EndInit();
