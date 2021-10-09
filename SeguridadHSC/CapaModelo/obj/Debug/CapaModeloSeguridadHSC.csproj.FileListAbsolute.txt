@@ -1,5 +1,0 @@
-C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
-C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
-C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
-C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
-C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
