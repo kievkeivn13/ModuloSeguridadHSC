@@ -65,7 +65,7 @@ namespace CapaVista
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
         {
-            frmAplicacionAPerfiles form3 = new frmAplicacionAPerfiles();
+            frmAplicacionesPerfiles form3 = new frmAplicacionesPerfiles();
             form3.MdiParent = this;
 
             form3.Show();

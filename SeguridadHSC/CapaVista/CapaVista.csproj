@@ -110,6 +110,12 @@
     <Compile Include="frmAplicaciones.designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAplicacionesPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacionesPerfiles.designer.cs">
+      <DependentUpon>frmAplicacionesPerfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacionesPerfiles.resx">
+      <DependentUpon>frmAplicacionesPerfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBitacora.resx">
       <DependentUpon>frmBitacora.cs</DependentUpon>

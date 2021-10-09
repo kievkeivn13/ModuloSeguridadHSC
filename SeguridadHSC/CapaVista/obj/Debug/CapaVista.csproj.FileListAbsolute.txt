@@ -354,3 +354,4 @@ C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVist
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVista.frmAplicacionesPerfiles.resources

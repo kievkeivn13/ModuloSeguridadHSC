@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace CapaModelo
 {
@@ -13,7 +14,7 @@ namespace CapaModelo
         private Conexion cn = new Conexion();
         private OdbcCommand Comm;
 
-        //frmLogin
+        //frmLogin Kevin Flores 
         public int funIniciarSesion(string Usuario, string Contraseña, int validar)
         {
             try
@@ -70,7 +71,7 @@ namespace CapaModelo
             }
         }
 
-        //frmMantenimientoAplicacion
+        //frmMantenimientoAplicacion Sebastián Moreira 
         public void funInsertar(string Id, string Nombre, int estado, string ruta)
         {
             string cadena = "INSERT INTO" +
@@ -116,7 +117,16 @@ namespace CapaModelo
             return (nombre, estado);
         }
 
-        //frmPerfiles
+        public OdbcDataAdapter llenarTblAplicacion(string tabla)// metodo  que obtinene el contenio de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT * FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+
+        //frmPerfiles Heydi Quemé
 
         public OdbcDataAdapter PerfilllenarTbl(string tabla2)// metodo  que obtinene el contenido de una tabla
         {
@@ -175,7 +185,7 @@ namespace CapaModelo
             consulta2.ExecuteNonQuery();
         }
 
-        //frmAplicaciones
+        //frmAplicaciones Danny Saldaña
         public OdbcDataAdapter aplicacionllenarTbl(string tabla2)// metodo  que obtinene el contenido de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
@@ -242,8 +252,27 @@ namespace CapaModelo
             OdbcCommand consulta2 = new OdbcCommand(sql2, cn.conexion());
             consulta2.ExecuteNonQuery();
         }
+        //frmAplicaciones Danny Saldaña
 
-        //frmRecuperarContraseña
+        public OdbcDataAdapter aplicacionllenarTblPersonal(string tabla2)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT aplicacion.pkid, aplicacion.nombre, perfil.pkid, perfil.nombre FROM aplicacionperfil  LEFT JOIN aplicacion ON aplicacion.pkid = aplicacionperfil.fkidAplicacion LEFT JOIN perfil ON aplicacionperfil.fkidPerfil = perfil.pkid ORDER BY aplicacion.pkid;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+
+        public void aplicacioneliminartodo(string tabla3)
+        {
+            string sql = "DELETE FROM aplicacionperfil;";
+            OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+
+
+        //frmRecuperarContraseña Heydi Quemé
         public OdbcDataReader funcModificarContraseña(string Consulta)
         {
             try
@@ -290,7 +319,7 @@ namespace CapaModelo
             }
         }
 
-        //mantenimiento Perfil
+        //mantenimiento Perfil Luis de la Cruz
 
         public void funInsertar(string Id, string Nombre, int estado)
         {
@@ -345,7 +374,7 @@ namespace CapaModelo
             return dataTable;
         }
 
-        //Aplicacion a perfiles
+        //Aplicacion a perfiles Roberto López
         public OdbcDataAdapter llenarTblappaperf(string tabla2)// metodo  que obtinene el contenido de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
@@ -402,7 +431,7 @@ namespace CapaModelo
             consulta2.ExecuteNonQuery();
         }
 
-        //Cambiar contraseña
+        //Cambiar contraseña Roberto López
 
         public OdbcDataReader funcModificar(string Consulta)
         {

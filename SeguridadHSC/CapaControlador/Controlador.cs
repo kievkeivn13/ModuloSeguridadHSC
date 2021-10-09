@@ -57,6 +57,21 @@ namespace CapaControlador
             sn.funEliminar(id);
         }
 
+        public DataTable llenarTblAplicacion(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTblAplicacion(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public OdbcDataReader llenarcbxModulo()
+        {
+            string sql = "SELECT nombre FROM componenteseguridad.modulo;";
+            return sn.llenarcbxUsuario(sql);
+        }
+
+
         //frmPerfiles
         public DataTable PerfilllenarTbl(string tabla2)
         {
@@ -103,6 +118,7 @@ namespace CapaControlador
         }
 
         //frmApliaciones
+        //frmApliaciones
         public DataTable aplicacionllenarTbl(string tabla2)
         {
             OdbcDataAdapter dt = sn.aplicacionllenarTbl(tabla2);
@@ -111,12 +127,42 @@ namespace CapaControlador
             return table;
         }
 
-        public DataTable aplicacionllenarTblPerfil(string tabla)
+        public DataTable aplicacionllenarTblPerfil(string tabla4)
         {
-            OdbcDataAdapter dt = sn.aplicacionllenarTbl(tabla);
+            OdbcDataAdapter dt = sn.aplicacionllenarTbl(tabla4);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
+        }
+
+        public DataTable aplicacionllenarTblPersonal(string tabla2)
+        {
+            OdbcDataAdapter dt = sn.aplicacionllenarTblPersonal(tabla2);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+
+        public void aplicacionagregar(string tabla3, string valor1, string valor2)
+        {
+            sn.aplicacionagregar(tabla3, valor1, valor2);
+        }
+
+        public void aplicacioneliminar(string tabla3, string valor1, string valor2)
+        {
+            sn.aplicacioneliminar(tabla3, valor1, valor2);
+        }
+
+        public void aplicacioneliminartodo(string tabla3)
+        {
+            sn.aplicacioneliminartodo(tabla3);
+        }
+
+        public void aplicacionagregartodo(string tabla3, string valor1, string valor2, string tabla2)
+        {
+            sn.aplicacionagregartodo(tabla3, valor1, valor2, tabla2);
         }
 
         public DataTable aplicacionllenarTblPersonal(string tabla3, string condicion)
@@ -135,24 +181,11 @@ namespace CapaControlador
             return table;
         }
 
-        public void aplicacionagregar(string tabla3, string valor1, string valor2)
-        {
-            sn.aplicacionagregar(tabla3, valor1, valor2);
-        }
-
-        public void aplicacioneliminar(string tabla3, string valor1, string valor2)
-        {
-            sn.aplicacioneliminar(tabla3, valor1, valor2);
-        }
+        
 
         public void aplicacioneliminartodo(string tabla3, string valor1)
         {
             sn.aplicacioneliminartodo(tabla3, valor1);
-        }
-
-        public void aplicacionagregartodo(string tabla3, string valor1, string valor2, string tabla2)
-        {
-            sn.aplicacionagregartodo(tabla3, valor1, valor2, tabla2);
         }
 
         //frmRecuperarContraseña
