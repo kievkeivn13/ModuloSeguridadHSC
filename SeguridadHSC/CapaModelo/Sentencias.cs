@@ -697,7 +697,7 @@ namespace CapaModeloSeguridadHSC
             return nombre;
         }
 
-        //funcion buscar aplicacion Ashly Barrios
+       
 
 
 

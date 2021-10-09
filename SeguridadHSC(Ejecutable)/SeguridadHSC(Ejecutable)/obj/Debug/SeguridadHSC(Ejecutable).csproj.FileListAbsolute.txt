@@ -314,3 +314,35 @@ C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC(Ejecutable)\SeguridadHSC(Eje
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVistaSeguridadHSC.dll.config
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControladorSeguridadHSC.pdb
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe.config
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVistaSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControladorSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\VistaBitacoraLogin.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Bitacora.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\MySql.Data.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Dapper.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Google.Protobuf.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Zstandard.Net.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Memory.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\System.Buffers.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVistaSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaVistaSeguridadHSC.dll.config
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaControladorSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC_Ejecutable_.Properties.Resources.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.GenerateResource.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CoreCompileInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).csproj.CopyComplete
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC(Ejecutable)\SeguridadHSC(Ejecutable)\obj\Debug\SeguridadHSC(Ejecutable).exe.config

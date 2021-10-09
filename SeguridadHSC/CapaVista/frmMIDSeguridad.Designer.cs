@@ -32,6 +32,7 @@ namespace CapaVistaSeguridadHSC
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMIDSeguridad));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCerrarSesion = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,7 @@ namespace CapaVistaSeguridadHSC
             this.btnBitacora = new System.Windows.Forms.ToolStripMenuItem();
             this.bitácoraDeLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,10 +78,17 @@ namespace CapaVistaSeguridadHSC
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.inicioToolStripMenuItem.Text = "Inicio";
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(180, 24);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(175, 24);
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
@@ -104,7 +112,7 @@ namespace CapaVistaSeguridadHSC
             this.btnUsuarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarUsuarioToolStripMenuItem});
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(167, 24);
+            this.btnUsuarios.Size = new System.Drawing.Size(276, 24);
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
@@ -118,15 +126,15 @@ namespace CapaVistaSeguridadHSC
             // btnAplicacion
             // 
             this.btnAplicacion.Name = "btnAplicacion";
-            this.btnAplicacion.Size = new System.Drawing.Size(167, 24);
-            this.btnAplicacion.Text = "Aplicaciones";
+            this.btnAplicacion.Size = new System.Drawing.Size(276, 24);
+            this.btnAplicacion.Text = "Mantenimiento Aplicaciones";
             this.btnAplicacion.Click += new System.EventHandler(this.btnAplicacion_Click);
             // 
             // btnPerfiles
             // 
             this.btnPerfiles.Name = "btnPerfiles";
-            this.btnPerfiles.Size = new System.Drawing.Size(167, 24);
-            this.btnPerfiles.Text = "Perfiles";
+            this.btnPerfiles.Size = new System.Drawing.Size(276, 24);
+            this.btnPerfiles.Text = "Mantenimiento Perfiles";
             this.btnPerfiles.Click += new System.EventHandler(this.btnPerfiles_Click);
             // 
             // asignacionesToolStripMenuItem1
@@ -195,16 +203,15 @@ namespace CapaVistaSeguridadHSC
             // 
             this.txtUsuario.Location = new System.Drawing.Point(688, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(48, 20);
             this.txtUsuario.TabIndex = 5;
-            this.txtUsuario.Visible = false;
             // 
-            // salirToolStripMenuItem
+            // txtIdUsuario
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.txtIdUsuario.Location = new System.Drawing.Point(742, 4);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(48, 20);
+            this.txtIdUsuario.TabIndex = 7;
             // 
             // frmMIDSeguridad
             // 
@@ -213,6 +220,7 @@ namespace CapaVistaSeguridadHSC
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -248,5 +256,6 @@ namespace CapaVistaSeguridadHSC
         private System.Windows.Forms.ToolStripMenuItem btnPermisos;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtIdUsuario;
     }
 }

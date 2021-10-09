@@ -36,3 +36,32 @@ C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVist
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.csproj.CopyComplete
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.dll
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmAplicacionAPerfiles.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmAplicaciones.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmAplicacionesPerfiles.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmBitacora.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmCambioContraseña.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmLoginHSC.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmMantenimientoAplicacion.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmMantenimientoPerfil.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmMIDSeguridad.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmPerfiles.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmPermisos.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmRecuperarContraseña.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.frmRegistrarUsuario.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.Properties.Resources.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.csproj.GenerateResource.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll.config
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaControladorSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\System.Memory.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\System.Buffers.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaControladorSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaVista\obj\Debug\CapaVistaSeguridadHSC.csproj.CopyComplete

@@ -10,7 +10,8 @@ namespace CapaVistaSeguridadHSC
     {
 
         private Controlador conAplicacion = new Controlador();
-
+        private ControladorPermisoAplicacion conPermisoAplicacion = new ControladorPermisoAplicacion();
+        public string obtenerIdUsuario;
 
         public frmLoginHSC()
         {
@@ -59,15 +60,18 @@ namespace CapaVistaSeguridadHSC
                     Bitacora loggear = new Bitacora();
                     IdUsuario = loggear.obtenerIdDeUsuario(Usuario);
                     loggear.guardarEnBitacora(IdUsuario, "1", "1", "Login");
+                    obtenerIdUsuario = IdUsuario;
                     DialogResult = DialogResult.OK;
                     // Fin bitácora
-
+                    
                     MessageBox.Show(" Bienvenido " + txtUsuario.Text);
-                  /*  funLimpiar();
-                    this.Hide();
-                    var form2 = new frmMIDSeguridad();
-                    form2.Closed += (s, args) => this.Close();
-                    form2.Show();*/
+                    /*  funLimpiar();
+                      this.Hide();
+                      var form2 = new frmMIDSeguridad();
+                      form2.Closed += (s, args) => this.Close();
+                      form2.Show();*/
+
+                    string cod = conPermisoAplicacion.funObtenerCod(txtUsuario.Text, password);
                 }
                 else
                 {

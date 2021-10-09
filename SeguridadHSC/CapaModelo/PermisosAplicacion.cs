@@ -1,53 +1,80 @@
 ﻿using System;
 using System.Data.Odbc;
+using System.Windows.Forms;
 
 namespace CapaModeloSeguridadHSC
 {
-    public class OtorgarPermisos
+    public class PermisosAplicacion
     {
         Conexion cn = new Conexion();
-        //Funcion para obtener el codigo del usuario
-        public string funcObtenerCodigoUsuario(string usuarioLogin)
+        private OdbcCommand Comm;
+        //funcion habilitar aplicacion  Ashly Barrios
+        public int funHabilitarAp(string idModulo, string idUsuario, string idApp, int validar)
         {
-            string strCodigo = "";
+
             try
             {
-                OdbcCommand command = new OdbcCommand("select LO.pkId from Usuario LO where LO.nombre ='" + usuarioLogin + "';", cn.conexion());
-                OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
-                strCodigo = reader.GetString(0);
-                reader.Close();
+                string query = "SELECT fkIdAplicacion " +
+                    "FROM aplicacion INNER JOIN usuarioaplicacion " +
+                    "ON usuarioaplicacion.fkIdAplicacion = aplicacion.pkId where aplicacion.fkIdModulo = " + idModulo +
+                    " and usuarioaplicacion.fkIdUsuario = " + idUsuario + ";";
+                string idAp = "";
+             
+              
+                Comm = new OdbcCommand(query, cn.conexion());
+                OdbcDataReader reader = Comm.ExecuteReader();
+
+                MessageBox.Show(query);
+             
+                if (reader.Read())
+                {
+                    idAp = reader["fkIdAplicacion"].ToString();
+                }
+                MessageBox.Show(idAp);
+                MessageBox.Show(idApp);
+                validar = idApp.CompareTo(idAp);
+                //validar = String.Compare(idAp, idApp, comparisonType: StringComparison.OrdinalIgnoreCase);
+
+
+                MessageBox.Show(validar.ToString());
+              
+               
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CapaModelo Error al consular obtenerCodigoUsuario:  " + ex);
+                Console.WriteLine("Error al consular usuario:  " + ex);
+                return 1;
             }
-            return strCodigo;
+            return validar;
         }
 
-        //funcion para obtener los permisos por aplicacion del usuario.
-        public string funcPermisosPorAplicacion(string strUsuario)
+        public string funObtenerCodigo(string Usuario, string Contrasena)
         {
-            string strCodigo = funcObtenerCodigoUsuario(strUsuario);
-            string strPermisosAplicacion = "";
             try
             {
-                OdbcCommand command = new OdbcCommand("SELECT permisoEscritura, permisoLectura,permisoModificar, permisoEliminar, permisoImprimir FROM UsuarioAplicacion WHERE fkIdUsuario = " + strCodigo, cn.conexion());
-                OdbcDataReader reader = command.ExecuteReader();
+
+                string id = "";
+                Comm = new OdbcCommand("SELECT * FROM componenteseguridad.usuario WHERE nombre ='" + Usuario + "' AND contraseña ='" + Contrasena + "' AND estado = 1 ;", cn.conexion());
+                OdbcDataReader reader = Comm.ExecuteReader();
                 reader.Read();
-                strPermisosAplicacion = reader.GetString(0) + "," + reader.GetString(1) + "," + reader.GetString(2) + "," + reader.GetString(3) + "," + reader.GetString(4);
-                reader.Close();
-                return strPermisosAplicacion;
+                if (reader.Read())
+                {
+
+                    id = reader["pkId"].ToString();
+
+                }
+
+
+                return id;
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CapaModelo Error al consular PermisosPorAplicacion:  " + ex);
+                Console.WriteLine("Error al consular codigo usuario:  " + ex);
                 return null;
-
             }
-
         }
-
 
     }
 }

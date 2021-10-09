@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador.cs" />
+    <Compile Include="ControladorPermisoAplicacion.cs" />
     <Compile Include="Encriptar.cs" />
     <Compile Include="ObtenerPermisos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

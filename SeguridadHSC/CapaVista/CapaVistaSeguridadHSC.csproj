@@ -188,6 +188,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="RecorrerAplicacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmAplicacionAPerfiles.resx">

@@ -300,6 +300,7 @@
             this.Name = "frmMantenimientoAplicacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMantenimientoAplicacion";
+            this.Load += new System.EventHandler(this.frmMantenimientoAplicacion_Load);
             this.gbxEstado.ResumeLayout(false);
             this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

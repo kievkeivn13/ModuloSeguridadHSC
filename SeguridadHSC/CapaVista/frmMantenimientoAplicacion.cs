@@ -180,9 +180,10 @@ namespace CapaVistaSeguridadHSC
 
         }
 
+        private void frmMantenimientoAplicacion_Load(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 
 

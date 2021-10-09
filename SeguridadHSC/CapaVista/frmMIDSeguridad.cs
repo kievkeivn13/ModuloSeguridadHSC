@@ -7,11 +7,16 @@ namespace CapaVistaSeguridadHSC
     public partial class frmMIDSeguridad : Form
     {
         ObtenerPermisos global = new ObtenerPermisos();
+        RecorrerAplicacion recorrer = new RecorrerAplicacion();
+        public string modulo = "1";
+        public string id;
+        public int valor;
         public frmMIDSeguridad()
         {
             InitializeComponent();
             CenterToScreen();
             this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -37,6 +42,18 @@ namespace CapaVistaSeguridadHSC
 
         private void btnAplicacion_Click(object sender, EventArgs e)
         {
+           id = "0003";
+            int validar = 0;
+            valor = recorrer.comprobar(modulo, txtIdUsuario.Text,id,validar);
+            if (valor != 0)
+            {
+                this.Enabled = false;
+            }
+            else
+            {
+                this.Enabled = true;
+            }
+            MessageBox.Show(valor.ToString());
             frmMantenimientoAplicacion form3 = new frmMantenimientoAplicacion();
             form3.MdiParent = this;
 
@@ -49,6 +66,18 @@ namespace CapaVistaSeguridadHSC
 
         private void btnPerfiles_Click(object sender, EventArgs e)
         {
+            id = "0002";
+            int validar = 0;
+            valor = recorrer.comprobar(modulo, txtIdUsuario.Text, id, validar);
+            if (valor != 0)
+            {
+                this.Enabled = false;
+            }
+            else
+            {
+                this.Enabled = true;
+            }
+            MessageBox.Show(valor.ToString());
             frmMantenimientoPerfil form3 = new frmMantenimientoPerfil();
             form3.MdiParent = this;
 
@@ -57,6 +86,18 @@ namespace CapaVistaSeguridadHSC
 
         private void btnAsignacionDeAplicacionAUsuarios_Click(object sender, EventArgs e)
         {
+            id = "0008";
+            int validar = 0;
+            valor = recorrer.comprobar(modulo, txtIdUsuario.Text, id, validar);
+            if (valor != 0)
+            {
+                this.Enabled = false;
+            }
+            else
+            {
+                this.Enabled = true;
+            }
+            MessageBox.Show(valor.ToString());
             frmAplicaciones form3 = new frmAplicaciones();
             form3.MdiParent = this;
 
@@ -73,6 +114,7 @@ namespace CapaVistaSeguridadHSC
 
         private void btnCambioContraseña_Click(object sender, EventArgs e)
         {
+            id = "0004";
             frmCambioContraseña form3 = new frmCambioContraseña();
             form3.MdiParent = this;
 
@@ -126,6 +168,7 @@ namespace CapaVistaSeguridadHSC
             {
                 txtUsuario.Text = form.usuario();
                 global.usuarioglobal = txtUsuario.Text;
+                txtIdUsuario.Text = form.obtenerIdUsuario;
             }
             else
             {

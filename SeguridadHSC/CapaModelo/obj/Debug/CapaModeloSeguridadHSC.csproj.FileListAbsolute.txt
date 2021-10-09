@@ -3,3 +3,9 @@ C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaMod
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
