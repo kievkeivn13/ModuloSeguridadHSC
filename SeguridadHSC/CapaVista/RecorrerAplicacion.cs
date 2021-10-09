@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using CapaControladorSeguridadHSC;
 namespace CapaVistaSeguridadHSC
 {
-   public class RecorrerAplicacion
+    //funcion habilitar aplicacion  Ashly Barrios
+    public class RecorrerAplicacion
     {
         private ControladorPermisoAplicacion permisoApp = new ControladorPermisoAplicacion();
         public int comprobar(string modulo, string usuario,string aplicacion,int validar)

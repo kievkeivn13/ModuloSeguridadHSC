@@ -106,6 +106,7 @@ namespace CapaVistaSeguridadHSC
 
         private void btnAsignacionDeAplicacionesAPerfiles_Click(object sender, EventArgs e)
         {
+            id = "0006";
             frmAplicacionesPerfiles form3 = new frmAplicacionesPerfiles();
             form3.MdiParent = this;
 
@@ -127,6 +128,7 @@ namespace CapaVistaSeguridadHSC
 
         private void btnAsiginaciónDePerfilesAUsuarios_Click(object sender, EventArgs e)
         {
+            id = "0007";
             frmPerfiles form3 = new frmPerfiles();
             form3.MdiParent = this;
 
@@ -135,6 +137,8 @@ namespace CapaVistaSeguridadHSC
 
         private void bitácoraDeLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            id = "0010";
+
             frmBitacora form3 = new frmBitacora();
             form3.MdiParent = this;
 
@@ -143,6 +147,7 @@ namespace CapaVistaSeguridadHSC
 
         private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            id = "0002";
             frmRegistrarUsuario form3 = new frmRegistrarUsuario();
             form3.MdiParent = this;
 
@@ -151,6 +156,7 @@ namespace CapaVistaSeguridadHSC
 
         private void btnPermisos_Click(object sender, EventArgs e)
         {
+            id = "000";
             frmPermisos form3 = new frmPermisos();
             form3.MdiParent = this;
 
