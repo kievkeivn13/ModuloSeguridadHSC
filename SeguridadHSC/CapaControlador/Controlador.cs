@@ -1,12 +1,36 @@
 ﻿using CapaModeloSeguridadHSC;
 using System.Data;
 using System.Data.Odbc;
+using System.Windows.Forms;
 
 namespace CapaControladorSeguridadHSC
 {
     public class Controlador
     {
         private Sentencias sn = new Sentencias();
+        private llamarPermisos ll = new llamarPermisos();
+        //Permisos de Botones
+
+
+
+
+        public string definirpermisosperfil(string id, string p, string permiso, string t2, string pk, string app)
+        {
+            ll.llenarpermisos(id, p, permiso, t2, pk, app);
+
+
+            MessageBox.Show(" 2da " + p);
+
+            return p;
+
+        }
+
+
+        public void obteneraplicacion(string nombreapp, string idapp)
+        {
+            ll.obteneraplicacion(nombreapp, idapp);
+        }
+
 
         //frmLogin
         public int InicarSesion(string Usuario, string Contraseña, int validar)
