@@ -43,7 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+<<<<<<< HEAD
     <Compile Include="PermisosAplicacion.cs" />
+=======
+    <Compile Include="llamarPermisos.cs" />
+    <Compile Include="OtorgarPermisos.cs" />
+>>>>>>> af90ea32b99a882e62c843bff8ffb3ee5928ef8e
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sentencias.cs" />
   </ItemGroup>

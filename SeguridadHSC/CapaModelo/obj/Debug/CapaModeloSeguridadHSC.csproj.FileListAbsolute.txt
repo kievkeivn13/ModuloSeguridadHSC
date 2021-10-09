@@ -3,9 +3,18 @@ C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaMod
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
 C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+<<<<<<< HEAD
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csprojAssemblyReference.cache
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto3\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+=======
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.AssemblyReference.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+>>>>>>> af90ea32b99a882e62c843bff8ffb3ee5928ef8e
