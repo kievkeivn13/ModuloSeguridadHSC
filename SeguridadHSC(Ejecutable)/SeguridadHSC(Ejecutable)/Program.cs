@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista;
+using CapaVistaSeguridadHSC;
 
 namespace SeguridadHSC_Ejecutable_
 {
@@ -17,7 +17,7 @@ namespace SeguridadHSC_Ejecutable_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMantenimientoAplicacion());
+            Application.Run(new frmMIDSeguridad());
         }
     }
 }

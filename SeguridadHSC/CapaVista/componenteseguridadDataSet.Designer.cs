@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace CapaVista {
+namespace CapaVistaSeguridadHSC {
     
     
     /// <summary>
@@ -703,7 +703,7 @@ namespace CapaVista {
         }
     }
 }
-namespace CapaVista.componenteseguridadDataSetTableAdapters {
+namespace CapaVistaSeguridadHSC.componenteseguridadDataSetTableAdapters {
     
     
     /// <summary>
@@ -1017,7 +1017,7 @@ namespace CapaVista.componenteseguridadDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::CapaVista.Properties.Settings.Default.componenteseguridadConnectionString;
+            this._connection.ConnectionString = global::CapaVistaSeguridadHSC.Properties.Settings.Default.componenteseguridadConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -1,5 +1,5 @@
 ﻿
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     partial class frmMIDSeguridad
     {
@@ -43,10 +43,12 @@ namespace CapaVista
             this.btnAsignacionDeAplicacionAUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAsignacionDeAplicacionesAPerfiles = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAsiginaciónDePerfilesAUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCambioContraseña = new System.Windows.Forms.ToolStripMenuItem();
             this.btnBitacora = new System.Windows.Forms.ToolStripMenuItem();
             this.bitácoraDeLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +71,7 @@ namespace CapaVista
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem,
             this.btnCerrarSesion});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
@@ -77,7 +80,7 @@ namespace CapaVista
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(175, 24);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(180, 24);
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
@@ -158,6 +161,13 @@ namespace CapaVista
             this.btnAsiginaciónDePerfilesAUsuarios.Text = "Asiginación de Perfiles a Usuarios";
             this.btnAsiginaciónDePerfilesAUsuarios.Click += new System.EventHandler(this.btnAsiginaciónDePerfilesAUsuarios_Click);
             // 
+            // btnPermisos
+            // 
+            this.btnPermisos.Name = "btnPermisos";
+            this.btnPermisos.Size = new System.Drawing.Size(340, 24);
+            this.btnPermisos.Text = "Permisos";
+            this.btnPermisos.Click += new System.EventHandler(this.btnPermisos_Click);
+            // 
             // btnCambioContraseña
             // 
             this.btnCambioContraseña.Name = "btnCambioContraseña";
@@ -181,12 +191,20 @@ namespace CapaVista
             this.bitácoraDeLoginToolStripMenuItem.Text = "Bitácora de Login";
             this.bitácoraDeLoginToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDeLoginToolStripMenuItem_Click);
             // 
-            // btnPermisos
+            // txtUsuario
             // 
-            this.btnPermisos.Name = "btnPermisos";
-            this.btnPermisos.Size = new System.Drawing.Size(340, 24);
-            this.btnPermisos.Text = "Permisos";
-            this.btnPermisos.Click += new System.EventHandler(this.btnPermisos_Click);
+            this.txtUsuario.Location = new System.Drawing.Point(688, 4);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.Visible = false;
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // frmMIDSeguridad
             // 
@@ -195,11 +213,13 @@ namespace CapaVista
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "frmMIDSeguridad";
             this.Text = "frmMIDSeguridad";
+            this.Load += new System.EventHandler(this.frmLoginHSC_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -226,5 +246,7 @@ namespace CapaVista
         private System.Windows.Forms.ToolStripMenuItem bitácoraDeLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnPermisos;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }

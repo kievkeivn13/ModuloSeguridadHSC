@@ -1,27 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using CapaControladorSeguridadHSC;
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using System;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
 
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     public partial class frmRecuperarContraseña : Form
     {
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         Controlador conAplicacion = new Controlador();
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         //string Usuario = "";
         public frmRecuperarContraseña()
         {
             InitializeComponent();
             llenarcbxUsuario();
             CenterToScreen();
-           
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,7 +33,7 @@ namespace CapaVista
                 var key = "b14ca5898a4e4133bbce2ea2315a1916";
                 Encriptar encriptar = new Encriptar();
                 Controlador controladorPerfil = new Controlador();
-                if (txtConfirmacion.Text != null && txtContraseña.Text != null && cbxUsuario.SelectedIndex!=-1 || cbxUsuario.SelectedIndex != 0)
+                if (txtConfirmacion.Text != null && txtContraseña.Text != null && cbxUsuario.SelectedIndex != -1 || cbxUsuario.SelectedIndex != 0)
                 {
 
                     if (txtContraseña.Text != txtConfirmacion.Text)
@@ -53,10 +50,11 @@ namespace CapaVista
                         MessageBox.Show("Modificación Realizada");
                         funLimpiar();
                     }
-                }  else
+                }
+                else
                 {
                     MessageBox.Show("Una o más casillas vacías.");
-                }         
+                }
 
             }
             catch (Exception ex)
@@ -86,7 +84,7 @@ namespace CapaVista
         {
             txtContraseña.Text = "";
             txtConfirmacion.Text = "";
-           
+
             cbxUsuario.SelectedIndex = 0;
 
         }
@@ -114,7 +112,7 @@ namespace CapaVista
             txtConfirmacion.UseSystemPasswordChar = false;
             btnConfirmacion.Visible = false;
             btnConfirmacionN.Visible = true;
-            
+
         }
         private void btnConfirmacionN_Click(object sender, EventArgs e)
         {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaVista.Properties {
+namespace CapaVistaSeguridadHSC.Properties {
     using System;
     using System.Drawing;
 

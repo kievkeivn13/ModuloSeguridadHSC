@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using CapaControladorSeguridadHSC;
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using System;
 using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
 
 
 
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     public partial class frmMantenimientoAplicacion : Form
     {
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         Controlador conAplicacion = new Controlador();
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         public frmMantenimientoAplicacion()
         {
             InitializeComponent();

@@ -1,5 +1,5 @@
 ﻿
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     partial class frmAplicaciones
     {
@@ -265,7 +265,7 @@ namespace CapaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
             this.ClientSize = new System.Drawing.Size(700, 492);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView2);

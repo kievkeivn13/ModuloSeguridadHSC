@@ -2,14 +2,11 @@
 //https://www.c-sharpcorner.com/article/encryption-and-decryption-using-a-symmetric-key-in-c-sharp/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography;
+using System.Text;
 
-namespace CapaControlador
+namespace CapaControladorSeguridadHSC
 {
     public class Encriptar
     {

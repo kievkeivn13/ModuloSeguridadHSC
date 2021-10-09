@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaModeloSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using CapaModeloSeguridadHSC;
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaModeloSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
 using System.Data;
 using System.Data.Odbc;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CapaModelo;
 
-namespace CapaControlador
+namespace CapaControladorSeguridadHSC
 {
     public class Controlador
     {
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Sentencias' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         private Sentencias sn = new Sentencias();
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Sentencias' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
 
         //frmLogin
         public int InicarSesion(string Usuario, string Contraseña, int validar)
@@ -21,7 +19,7 @@ namespace CapaControlador
 
             return validar;
         }
-        
+
         public int funIniciarSesion(string Usuario, string Contrasena)
         {
             int estado = sn.funInicio(Usuario, Contrasena);
@@ -181,7 +179,7 @@ namespace CapaControlador
             return table;
         }
 
-        
+
 
         public void aplicacioneliminartodo(string tabla3, string valor1)
         {

@@ -1,5 +1,5 @@
 ﻿
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     partial class frmLoginHSC
     {
@@ -78,7 +78,7 @@ namespace CapaVista
             // btnPasswordn
             // 
             this.btnPasswordn.BackColor = System.Drawing.Color.Transparent;
-            this.btnPasswordn.BackgroundImage = global::CapaVista.Properties.Resources.hide__1_;
+            this.btnPasswordn.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.hide__1_;
             this.btnPasswordn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPasswordn.FlatAppearance.BorderSize = 0;
             this.btnPasswordn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -93,7 +93,7 @@ namespace CapaVista
             // btnAyuda
             // 
             this.btnAyuda.BackColor = System.Drawing.Color.Transparent;
-            this.btnAyuda.BackgroundImage = global::CapaVista.Properties.Resources.ask_question_32px;
+            this.btnAyuda.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.ask_question_32px;
             this.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAyuda.FlatAppearance.BorderSize = 0;
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -107,7 +107,7 @@ namespace CapaVista
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.btnIniciarSesion.BackgroundImage = global::CapaVista.Properties.Resources.login_50px;
+            this.btnIniciarSesion.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.login_50px;
             this.btnIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -121,7 +121,7 @@ namespace CapaVista
             // btnPassword
             // 
             this.btnPassword.BackColor = System.Drawing.Color.Transparent;
-            this.btnPassword.BackgroundImage = global::CapaVista.Properties.Resources.see__1_;
+            this.btnPassword.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.see__1_;
             this.btnPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPassword.FlatAppearance.BorderSize = 0;
             this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,7 +161,7 @@ namespace CapaVista
             // adUser
             // 
             this.adUser.BackColor = System.Drawing.Color.Transparent;
-            this.adUser.BackgroundImage = global::CapaVista.Properties.Resources.error;
+            this.adUser.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.error;
             this.adUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.adUser.Location = new System.Drawing.Point(127, 366);
             this.adUser.Name = "adUser";
@@ -172,7 +172,7 @@ namespace CapaVista
             // adClave
             // 
             this.adClave.BackColor = System.Drawing.Color.Transparent;
-            this.adClave.BackgroundImage = global::CapaVista.Properties.Resources.error;
+            this.adClave.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.error;
             this.adClave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.adClave.Location = new System.Drawing.Point(127, 438);
             this.adClave.Name = "adClave";
@@ -197,7 +197,7 @@ namespace CapaVista
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::CapaVista.Properties.Resources.cuadro;
+            this.pictureBox2.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.cuadro;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(128, 149);
             this.pictureBox2.Name = "pictureBox2";
@@ -208,7 +208,7 @@ namespace CapaVista
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::CapaVista.Properties.Resources.Logopng;
+            this.pictureBox1.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.Logopng;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(129, 151);
             this.pictureBox1.Name = "pictureBox1";
@@ -220,7 +220,7 @@ namespace CapaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaVista.Properties.Resources.FondoN;
+            this.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.FondoN;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(471, 590);
             this.Controls.Add(this.lkbRecuperarContraseña);

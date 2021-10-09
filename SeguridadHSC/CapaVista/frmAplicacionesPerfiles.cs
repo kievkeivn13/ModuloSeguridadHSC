@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using CapaControladorSeguridadHSC;
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
 
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     public partial class frmAplicacionesPerfiles : Form
     {
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         Controlador cn = new Controlador();
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         public frmAplicacionesPerfiles()
         {
             InitializeComponent();
@@ -105,8 +103,8 @@ namespace CapaVista
             {
 
             }
-            
-            
+
+
 
         }
 
@@ -135,7 +133,7 @@ namespace CapaVista
 
             }
 
-            
+
 
 
 
@@ -163,7 +161,7 @@ namespace CapaVista
             {
 
             }
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -180,17 +178,17 @@ namespace CapaVista
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             //Llenar con Enter
-        
-                if (e.KeyCode == Keys.Enter)
-                {
+
+            if (e.KeyCode == Keys.Enter)
+            {
                 e.Handled = true;//elimina el sonido
                 actualizardatagriewpersonal();
                 actualizardatagriew();
                 aplicacionllenarTbl();
-            }            
+            }
         }
 
-        
+
         private void button6_Click(object sender, EventArgs e)
         {
 
@@ -237,7 +235,7 @@ namespace CapaVista
                 button5.Focus();//Mueve al siguiente boton
             }
         }
-        
+
         private void button5_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)
@@ -252,7 +250,7 @@ namespace CapaVista
             if (e.KeyCode == Keys.Down)
             {
                 e.Handled = true;//elimina el sonido
-             
+
             }
         }
 

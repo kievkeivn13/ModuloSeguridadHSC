@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace CapaVista {
+namespace CapaVistaSeguridadHSC {
     
     
     /// <summary>
@@ -678,7 +678,7 @@ namespace CapaVista {
         }
     }
 }
-namespace CapaVista.DataSet3TableAdapters {
+namespace CapaVistaSeguridadHSC.DataSet3TableAdapters {
     
     
     /// <summary>
@@ -843,7 +843,7 @@ namespace CapaVista.DataSet3TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.Odbc.OdbcConnection();
-            this._connection.ConnectionString = global::CapaVista.Properties.Settings.Default.ConnectionString;
+            this._connection.ConnectionString = global::CapaVistaSeguridadHSC.Properties.Settings.Default.ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

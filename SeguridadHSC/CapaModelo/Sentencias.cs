@@ -1,13 +1,8 @@
 using System;
-using System.Collections.Generic;
 using System.Data.Odbc;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 
-namespace CapaModelo
+namespace CapaModeloSeguridadHSC
 {
     public class Sentencias
     {
@@ -204,13 +199,13 @@ namespace CapaModelo
 
         public OdbcDataAdapter aplicacionllenarTblPersonal(string tabla3, string condicion)// metodo  que obtinene el contenido de una tabla
         {
-            
-                //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-                string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla3 + "  LEFT JOIN usuarioaplicacion ON aplicacion.pkid = usuarioaplicacion.fkidAplicacion LEFT JOIN usuario ON usuarioaplicacion.fkIdUsuario = usuario.pkid WHERE usuario.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
-                OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
-                return dataTable;
-          
-            
+
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT aplicacion.pkid, aplicacion.nombre FROM " + tabla3 + "  LEFT JOIN usuarioaplicacion ON aplicacion.pkid = usuarioaplicacion.fkidAplicacion LEFT JOIN usuario ON usuarioaplicacion.fkIdUsuario = usuario.pkid WHERE usuario.pkid = " + condicion + " ORDER BY aplicacion.pkid;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+
+
         }
 
         public OdbcDataAdapter aplicacionllenarNombre(string tabla, string condicion)// metodo  que obtinene el contenido
@@ -223,7 +218,7 @@ namespace CapaModelo
 
         public void aplicacionagregar(string tabla3, string valor1, string valor2)
         {
-            string sql = "INSERT INTO " + tabla3 + "  Values('" +valor1+ "','" + valor2 + "',null,null,null,null,null);";
+            string sql = "INSERT INTO " + tabla3 + "  Values('" + valor1 + "','" + valor2 + "',null,null,null,null,null);";
             OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
             consulta.ExecuteNonQuery();
         }
@@ -456,7 +451,9 @@ namespace CapaModelo
                 OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
                 consulta.ExecuteNonQuery();
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 Console.WriteLine("Ya existe un usuario con ese id de empleado");
             }

@@ -1,5 +1,5 @@
 ﻿
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     partial class frmRecuperarContraseña
     {
@@ -128,7 +128,7 @@ namespace CapaVista
             // btnPassword
             // 
             this.btnPassword.BackColor = System.Drawing.Color.Transparent;
-            this.btnPassword.BackgroundImage = global::CapaVista.Properties.Resources.see__1_;
+            this.btnPassword.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.see__1_;
             this.btnPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPassword.FlatAppearance.BorderSize = 0;
             this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -142,7 +142,7 @@ namespace CapaVista
             // btnPasswordn
             // 
             this.btnPasswordn.BackColor = System.Drawing.Color.Transparent;
-            this.btnPasswordn.BackgroundImage = global::CapaVista.Properties.Resources.hide__1_;
+            this.btnPasswordn.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.hide__1_;
             this.btnPasswordn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPasswordn.FlatAppearance.BorderSize = 0;
             this.btnPasswordn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -157,7 +157,7 @@ namespace CapaVista
             // btnConfirmacion
             // 
             this.btnConfirmacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfirmacion.BackgroundImage = global::CapaVista.Properties.Resources.see__1_;
+            this.btnConfirmacion.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.see__1_;
             this.btnConfirmacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnConfirmacion.FlatAppearance.BorderSize = 0;
             this.btnConfirmacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -171,7 +171,7 @@ namespace CapaVista
             // btnConfirmacionN
             // 
             this.btnConfirmacionN.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfirmacionN.BackgroundImage = global::CapaVista.Properties.Resources.hide__1_;
+            this.btnConfirmacionN.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources.hide__1_;
             this.btnConfirmacionN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnConfirmacionN.FlatAppearance.BorderSize = 0;
             this.btnConfirmacionN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -187,7 +187,7 @@ namespace CapaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 450);
             this.Controls.Add(this.btnConfirmacion);

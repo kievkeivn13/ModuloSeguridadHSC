@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista", "CapaVista\CapaVista.csproj", "{191AC92D-7794-4C0A-9BF3-649E0DBA9862}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVistaSeguridadHSC", "CapaVista\CapaVistaSeguridadHSC.csproj", "{191AC92D-7794-4C0A-9BF3-649E0DBA9862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo", "CapaModelo\CapaModelo.csproj", "{FDC86040-2F2F-41BF-BC88-5359962F84C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloSeguridadHSC", "CapaModelo\CapaModeloSeguridadHSC.csproj", "{FDC86040-2F2F-41BF-BC88-5359962F84C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador", "CapaControlador\CapaControlador.csproj", "{D6285F60-BB7A-43CE-89D9-86F769D8E572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControladorSeguridadHSC", "CapaControlador\CapaControladorSeguridadHSC.csproj", "{D6285F60-BB7A-43CE-89D9-86F769D8E572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

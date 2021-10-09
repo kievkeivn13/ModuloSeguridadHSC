@@ -1,4 +1,4 @@
-﻿namespace CapaVista
+﻿namespace CapaVistaSeguridadHSC
 {
     partial class frmCambioContraseña
     {
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaVista.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
+            this.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
             this.ClientSize = new System.Drawing.Size(379, 309);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);

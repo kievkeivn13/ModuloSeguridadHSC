@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using CapaControladorSeguridadHSC;
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
 
 
 
-namespace CapaVista
+namespace CapaVistaSeguridadHSC
 {
     public partial class frmMantenimientoPerfil : Form
     {
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         Controlador cn = new Controlador();
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         public frmMantenimientoPerfil()
         {
             InitializeComponent();
@@ -38,7 +36,7 @@ namespace CapaVista
             btnHabilitado.Checked = false;
             btnInhabilitado.Checked = false;
             textBox3.Text = "";
-            
+
         }
 
 
@@ -55,11 +53,11 @@ namespace CapaVista
 
         private void frmMantenimientoPerfil_Load(object sender, EventArgs e)
         {
-           
+
             try
             {
                 // TODO: esta línea de código carga datos en la tabla 'dataSet3.perfil' Puede moverla o quitarla según sea necesario.
-                
+
             }
             catch (Exception Error)
             {
@@ -96,7 +94,7 @@ namespace CapaVista
 
                 }
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
             }
@@ -121,7 +119,7 @@ namespace CapaVista
                 MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
 
             }
-            actualizardatagriew(); 
+            actualizardatagriew();
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -141,7 +139,7 @@ namespace CapaVista
         {
             try
             {
-                
+
                 //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
             }
             catch (Exception Error)

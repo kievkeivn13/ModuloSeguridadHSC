@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaVista.Properties {
+namespace CapaVistaSeguridadHSC.Properties {
     using System;
     
     
@@ -19,17 +19,27 @@ namespace CapaVista.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-  /*  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+#pragma warning disable CS0579 // Atributo 'global::System.CodeDom.Compiler.GeneratedCodeAttribute' duplicado
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+#pragma warning restore CS0579 // Atributo 'global::System.CodeDom.Compiler.GeneratedCodeAttribute' duplicado
+#pragma warning disable CS0579 // Atributo 'global::System.Diagnostics.DebuggerNonUserCodeAttribute' duplicado
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+#pragma warning restore CS0579 // Atributo 'global::System.Diagnostics.DebuggerNonUserCodeAttribute' duplicado
+#pragma warning disable CS0579 // Atributo 'global::System.Runtime.CompilerServices.CompilerGeneratedAttribute' duplicado
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+#pragma warning restore CS0579 // Atributo 'global::System.Runtime.CompilerServices.CompilerGeneratedAttribute' duplicado
+#pragma warning disable CS0101 // El espacio de nombres 'CapaVistaSeguridadHSC.Properties' ya contiene una definición para 'Resources'
     internal class Resources {
+#pragma warning restore CS0101 // El espacio de nombres 'CapaVistaSeguridadHSC.Properties' ya contiene una definición para 'Resources'
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+#pragma warning disable CS0111 // El tipo 'Resources' ya define un miembro denominado 'Resources' con los mismos tipos de parámetro
         internal Resources() {
+#pragma warning restore CS0111 // El tipo 'Resources' ya define un miembro denominado 'Resources' con los mismos tipos de parámetro
         }
         
         /// <summary>
@@ -39,7 +49,7 @@ namespace CapaVista.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CapaVista.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CapaVistaSeguridadHSC.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -189,5 +199,5 @@ namespace CapaVista.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-    }*/
+    }
 }
