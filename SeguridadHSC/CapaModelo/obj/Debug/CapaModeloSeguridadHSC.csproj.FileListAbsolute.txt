@@ -1,0 +1,23 @@
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\kievk\OneDrive\Desktop\Prueba\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.AssemblyReference.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\USUARIO 1\Desktop\Nueva carpeta (2)\ModuloSeguridadHSC\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.AssemblyReference.cache
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+C:\Users\kievk\OneDrive\Desktop\Luis\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.dll
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\bin\Debug\CapaModeloSeguridadHSC.pdb
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.AssemblyReference.cache
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.csproj.CoreCompileInputs.cache
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.dll
+G:\Git\ComponenteComunSeguridadHSC\1.Componentes\Seguridad\SeguridadHSC\CapaModelo\obj\Debug\CapaModeloSeguridadHSC.pdb
