@@ -4,7 +4,7 @@ namespace CapaControladorSeguridadHSC
 { 
     public class ObtenerPermisos
     { static string Usuario;
-        OtorgarPermisos permisos = new OtorgarPermisos();
+        PermisosAplicacion permisos = new PermisosAplicacion();
         public string funcPermisosPorAplicacion(string strUsuario)
         {
             return permisos.funcPermisosPorAplicacion(strUsuario);
