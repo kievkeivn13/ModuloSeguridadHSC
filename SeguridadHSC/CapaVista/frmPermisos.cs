@@ -1,6 +1,4 @@
-﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
-using CapaControladorSeguridadHSC;
-#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaControladorSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+﻿using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Data.Odbc;
@@ -10,9 +8,7 @@ namespace CapaVistaSeguridadHSC
 {
     public partial class frmPermisos : Form
     {
-#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         Controlador con = new Controlador();
-#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Controlador' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
 
         int escribir = 0;
         int leer = 0;

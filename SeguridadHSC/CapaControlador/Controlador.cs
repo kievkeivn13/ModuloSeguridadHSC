@@ -1,6 +1,4 @@
-﻿#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'CapaModeloSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
-using CapaModeloSeguridadHSC;
-#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'CapaModeloSeguridadHSC' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
+﻿using CapaModeloSeguridadHSC;
 using System.Data;
 using System.Data.Odbc;
 
@@ -8,9 +6,7 @@ namespace CapaControladorSeguridadHSC
 {
     public class Controlador
     {
-#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Sentencias' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         private Sentencias sn = new Sentencias();
-#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Sentencias' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
 
         //frmLogin
         public int InicarSesion(string Usuario, string Contraseña, int validar)
