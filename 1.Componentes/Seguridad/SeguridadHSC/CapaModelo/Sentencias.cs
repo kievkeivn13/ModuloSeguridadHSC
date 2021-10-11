@@ -69,8 +69,8 @@ namespace CapaModeloSeguridadHSC
         //frmMantenimientoAplicacion Sebastián Moreira 
         public void funInsertar(string Id, string Nombre, string Modulo, int estado, string rutaChm, string rutaHtml)
         {
-            string cadena = "INSERT INTO" +
-            " `componenteseguridad`.`Aplicacion` VALUES (" + "'" + Id + "', '" + Modulo + "' , '" + Nombre + "' , " + estado + ", '" + rutaChm + "', '" + rutaHtml + "');";
+            //INSERT INTO `componenteseguridad`.`aplicacion` (`pkId`, `fkIdModulo`, `nombre`, `estado`, `rutaChm`, `rutaHtml`) VALUES('1001', '2', 'Conta', '1', '0', '0');
+            string cadena = "INSERT INTO aplicacion VALUES ('" + Id + "', '" + Modulo + "' , '" + Nombre + "' , '" + estado + "', '" + rutaChm + "', '" + rutaHtml + "');";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -78,7 +78,7 @@ namespace CapaModeloSeguridadHSC
 
         public void funModificar(string Id, string Modulo, string Nombre, int estado, string rutaChm, string rutaHtml)
         {
-            string cadena = "UPDATE componenteseguridad.aplicacion set pkId ='" + Id + "', fkIdModulo= '" + Modulo 
+            string cadena = "UPDATE componenteseguridad.aplicacion set pkId ='" + Id + "', fkIdModulo= '" + Modulo
               + "',nombre ='" + Nombre + "',estado = " + estado + ", rutaChm = '" + rutaChm + "', rutaHtml = '" + rutaHtml + "'  where pkId= '" + Id + "';";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -142,6 +142,7 @@ namespace CapaModeloSeguridadHSC
 
             return id;
         }
+
 
         //frmPerfiles Heydi Quemé
 
@@ -341,7 +342,7 @@ namespace CapaModeloSeguridadHSC
         public void funInsertar(string Id, string Nombre, int estado)
         {
             string cadena = "INSERT INTO" +
-            " `componenteseguridad`.`Perfil` VALUES (" + "'" + Id + "', '" + Nombre + "' , " + estado + ");";
+            " `componenteseguridad`.`Perfil` VALUES ('" + Id + "', '" + Nombre + "' , '" + estado + "');";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -473,9 +474,9 @@ namespace CapaModeloSeguridadHSC
                 OdbcCommand consulta = new OdbcCommand(sql, cn.conexion());
                 consulta.ExecuteNonQuery();
             }
-#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
+
             catch (Exception e)
-#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
+
             {
                 Console.WriteLine("Ya existe un usuario con ese id de empleado");
             }
@@ -717,6 +718,63 @@ namespace CapaModeloSeguridadHSC
 
 
             return nombre;
+        }
+        //mantenimiento Módulo Kevin Flores
+
+        public void metodoInsertar(string Id, string Nombre, string Descripcion,int estado)
+        {
+            //INSERT INTO `componenteseguridad`.`modulo` (`pkId`, `nombre`, `descripcion`, `estado`) VALUES('3', 'Reportes', '0', '1');
+
+            string cadena = "INSERT INTO" +
+            " modulo VALUES ('" + Id + "', '" + Nombre + "' , '" + Descripcion + "' , '" + estado + "');";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+        public void metodoModificar(string Id, string Nombre, string Descripcion, int estado)
+        {
+            string cadena = "UPDATE componenteseguridad.modulo set pkId ='" + Id
+              + "',nombre ='" + Nombre + "',descripcion ='" + Descripcion + "',estado = " + estado + "  where pkId= '" + Id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+        public void metodoEliminar(string Id)
+        {
+            string cadena = "delete from componenteseguridad.modulo where pkId ='" + Id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+        }
+
+        public (string, string, int) metodoBuscar(string id, string nombre, string descripcion, int estado)
+        {
+            string Query = "select * from `componenteseguridad`.`Modulo` where pkId='" + id + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+                nombre = busqueda["nombre"].ToString();
+                descripcion = busqueda["descripcion"].ToString();
+                estado = int.Parse(busqueda["estado"].ToString());
+            }
+
+            return (nombre, descripcion, estado);
+        }
+
+        public OdbcDataAdapter metodollenarTbl(string tabla)// metodo  que obtinene el contenido de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT pkid, nombre, descripcion, estado FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
         }
     }
 }

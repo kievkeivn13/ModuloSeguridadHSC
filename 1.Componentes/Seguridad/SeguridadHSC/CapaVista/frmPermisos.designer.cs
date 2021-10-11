@@ -377,7 +377,7 @@ namespace CapaVistaSeguridadHSC
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPermisos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "0008 Permisos";
+            this.Text = "0008 Asiganción de Permisos";
             ((System.ComponentModel.ISupportInitialize)(this.dtgPermisosUA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPermisosPA)).EndInit();
             this.ResumeLayout(false);

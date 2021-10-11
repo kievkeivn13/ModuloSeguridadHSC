@@ -2,13 +2,15 @@
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using BitacoraUsuario;
 using CapaControladorSeguridadHSC;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmAplicacionAPerfiles : Form
     {
-        Controlador cn = new Controlador();
+        private Controlador cn = new Controlador();
 
         public frmAplicacionAPerfiles()
         {
@@ -17,9 +19,11 @@ namespace CapaVistaSeguridadHSC
         }
 
         //Mostrar los datos CAPA VISTA
-        string tabla = "perfil";
-        string tabla2 = "aplicacion";
-        string tabla3 = "aplicacionperfil";
+        private string tabla = "perfil";
+
+        private string tabla2 = "aplicacion";
+        private string tabla3 = "aplicacionperfil";
+
         public void actualizardatagriew()
         {
             DataTable dt = cn.llenarTblappaperf(tabla2);
@@ -41,14 +45,14 @@ namespace CapaVistaSeguridadHSC
             textBox2.Text = dta;
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0005", "Consulta");
             string condicion = textBox1.Text;
             actualizardatagriew();
             llenarnombre();
             actualizardatagriewpersonal();
-
         }
 
         private void dtgConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -56,34 +60,33 @@ namespace CapaVistaSeguridadHSC
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
         }
 
-
-
-
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void fmConsulta_Load(object sender, EventArgs e)
         {
-
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
-
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
-
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0005", "Asignar");
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
             cn.agregarappaperf(tabla3, valor1, valor2);
             actualizardatagriewpersonal();
         }
+
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0005", "Quitar");
             textBox3.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
@@ -98,11 +101,12 @@ namespace CapaVistaSeguridadHSC
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0005", "Quitar todo");
             string valor1 = textBox1.Text;
             cn.perfileliminartodoappaperf(tabla3, valor1);
             actualizardatagriewpersonal();
@@ -115,8 +119,6 @@ namespace CapaVistaSeguridadHSC
             string condicion = textBox1.Text;
             cn.perfileliminartodoappaperf(tabla3, valor1);
             cn.perfilagregartodoappaperf(tabla3, valor1, valor2, tabla2);
-
-
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -133,16 +135,16 @@ namespace CapaVistaSeguridadHSC
             }
         }
 
-
         private void button6_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0005", "Limpiar");
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
             dtgConsulta.DataSource = null;
             dataGridView1.DataSource = null;
         }
-
 
         //Utilizar flechas para moverse entre botones
 
@@ -172,6 +174,7 @@ namespace CapaVistaSeguridadHSC
                 button2.Focus();//Mueve al siguiente boton
             }
         }
+
         private void button2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)

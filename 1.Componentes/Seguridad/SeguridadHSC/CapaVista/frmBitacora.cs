@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BitacoraUsuario;
+using System;
 using System.Windows.Forms;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
@@ -12,7 +14,9 @@ namespace CapaVistaSeguridadHSC
 
         private void btnActualizarBitacora_Click(object sender, EventArgs e)
         {
-            dgvBitacora1.actualizarBitacora();
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0011", "Actualizar Bitácora");
+            verBitacora.actualizarBitacora();
         }
     }
 }

@@ -70,6 +70,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(212, 20);
             this.textBox2.TabIndex = 1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // gbxEstado
             // 
@@ -178,9 +179,9 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(88, 361);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 361);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(437, 156);
+            this.dataGridView1.Size = new System.Drawing.Size(534, 156);
             this.dataGridView1.TabIndex = 27;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick_1);
             // 
@@ -267,6 +268,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(44, 20);
             this.textBox6.TabIndex = 36;
+            this.textBox6.Visible = false;
             // 
             // frmMantenimientoAplicacion
             // 
@@ -274,7 +276,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVistaSeguridadHSC.Properties.Resources._90_Simple_Backgrounds_Edit_and_Download_Visual_Learning_Center;
-            this.ClientSize = new System.Drawing.Size(658, 537);
+            this.ClientSize = new System.Drawing.Size(618, 537);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbxModulo);

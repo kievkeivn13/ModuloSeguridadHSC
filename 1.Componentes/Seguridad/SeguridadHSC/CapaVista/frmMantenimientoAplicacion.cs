@@ -1,9 +1,10 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Data.Odbc;
 using System.Windows.Forms;
-
+using static datosUsuario;
 
 
 namespace CapaVistaSeguridadHSC
@@ -11,6 +12,7 @@ namespace CapaVistaSeguridadHSC
     public partial class frmMantenimientoAplicacion : Form
     {
         Controlador conAplicacion = new Controlador();
+        Bitacora loggear = new Bitacora();
         public frmMantenimientoAplicacion()
         {
             InitializeComponent();
@@ -61,7 +63,7 @@ namespace CapaVistaSeguridadHSC
         {
             try
             {
-
+                loggear.guardarEnBitacora(IdUsuario, "1", "0003", "Inserción realizada");
                 conAplicacion.insertarAplicacion(textBox1.Text, textBox6.Text, textBox2.Text, int.Parse(textBox3.Text), textBox4.Text, textBox5.Text);
                 MessageBox.Show("Insercion realizada");
                 funLimpiar();
@@ -69,7 +71,8 @@ namespace CapaVistaSeguridadHSC
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: Debes llenar todos los campos");
+                loggear.guardarEnBitacora(IdUsuario, "1", "0003", "Error al realizar Inserción");
+                MessageBox.Show("Error: Debes llenar todos los campos"+ex);
             }
             actualizardatagriew();
         }
@@ -78,6 +81,7 @@ namespace CapaVistaSeguridadHSC
         {
             try
             {
+                loggear.guardarEnBitacora(IdUsuario, "1", "0003", "Modificación Exitosa");
                 conAplicacion.modificarAplicacion(textBox1.Text, textBox6.Text, textBox2.Text, int.Parse(textBox3.Text), textBox4.Text, textBox5.Text);
                 MessageBox.Show("Modificacion realizada");
                 funLimpiar();
@@ -85,6 +89,7 @@ namespace CapaVistaSeguridadHSC
             }
             catch (Exception ex)
             {
+                loggear.guardarEnBitacora(IdUsuario, "1", "0003", "Error al modificar");
                 MessageBox.Show("Error: " + ex);
             }
         }
@@ -93,6 +98,7 @@ namespace CapaVistaSeguridadHSC
         {
             try
             {
+                loggear.guardarEnBitacora(IdUsuario, "1", "0003", "Eliminar");
                 conAplicacion.eliminarAplicacion(textBox1.Text);
                 MessageBox.Show("Eliminacion realizada");
                 funLimpiar();
@@ -205,6 +211,11 @@ namespace CapaVistaSeguridadHSC
             {
                 btnInhabilitado.Checked = true;
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

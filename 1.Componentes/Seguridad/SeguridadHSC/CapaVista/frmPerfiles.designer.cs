@@ -263,7 +263,7 @@ namespace CapaVistaSeguridadHSC
             this.MaximizeBox = false;
             this.Name = "frmPerfiles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "007 Asignación de Perfiles a Usuarios";
+            this.Text = "0007 Asignación de Perfiles a Usuarios";
             this.Load += new System.EventHandler(this.fmConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

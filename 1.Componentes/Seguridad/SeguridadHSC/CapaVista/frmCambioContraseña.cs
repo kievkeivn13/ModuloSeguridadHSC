@@ -36,7 +36,7 @@ namespace CapaVistaSeguridadHSC
                     txtConfirmarContraseña.Text = "";
                     // Prueba bitácora
                     Bitacora loggear = new Bitacora();
-                    loggear.guardarEnBitacora(IdUsuario, "2", "1", "Cambio de Contraseña");
+                    loggear.guardarEnBitacora(IdUsuario, "1", "0010", "Confirmar cambio");
                     // Fin bitácora
 
                     this.Hide();

@@ -1,14 +1,17 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmPerfiles : Form
     {
-        Controlador cn = new Controlador();
+        private Controlador cn = new Controlador();
+
         public frmPerfiles()
         {
             InitializeComponent();
@@ -16,9 +19,11 @@ namespace CapaVistaSeguridadHSC
         }
 
         //Mostrar los datos CAPA VISTA
-        string tabla = "usuario";
-        string tabla2 = "perfil";
-        string tabla3 = "usuarioperfil";
+        private string tabla = "usuario";
+
+        private string tabla2 = "perfil";
+        private string tabla3 = "usuarioperfil";
+
         public void actualizardatagriew()
         {
             DataTable dt = cn.PerfilllenarTbl(tabla2);
@@ -40,14 +45,15 @@ namespace CapaVistaSeguridadHSC
             textBox2.Text = dta;
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0007", "Consultar");
+
             string condicion = textBox1.Text;
             actualizardatagriew();
             PerfilllenarNombre();
             actualizardatagriewpersonal();
-
         }
 
         private void dtgConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -55,40 +61,26 @@ namespace CapaVistaSeguridadHSC
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
         }
 
-
-
-
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void fmConsulta_Load(object sender, EventArgs e)
         {
-
         }
-
-
-
-
-
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
 
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
             cn.Perfilagregar(tabla3, valor1, valor2);
             actualizardatagriewpersonal();
-
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -98,9 +90,6 @@ namespace CapaVistaSeguridadHSC
             string valor2 = textBox3.Text;
             cn.Perfileliminar(tabla3, valor1, valor2);
             actualizardatagriewpersonal();
-
-
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -110,7 +99,6 @@ namespace CapaVistaSeguridadHSC
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -127,8 +115,6 @@ namespace CapaVistaSeguridadHSC
             string condicion = textBox1.Text;
             cn.perfilPerfileliminartodo(tabla3, valor1);
             cn.perfilPerfilagregartodo(tabla3, valor1, valor2, tabla2);
-
-
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -145,7 +131,6 @@ namespace CapaVistaSeguridadHSC
             }
         }
 
-
         private void button6_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
@@ -154,7 +139,6 @@ namespace CapaVistaSeguridadHSC
             dtgConsulta.DataSource = null;
             dataGridView1.DataSource = null;
         }
-
 
         //Utilizar flechas para moverse entre botones
 
@@ -184,6 +168,7 @@ namespace CapaVistaSeguridadHSC
                 button2.Focus();//Mueve al siguiente boton
             }
         }
+
         private void button2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)

@@ -1,44 +1,45 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Windows.Forms;
-
-
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmMantenimientoPerfil : Form
     {
-        bloqueos b = new bloqueos();
-        string idaplicacion = "204";
-        string pe = "permisoEscritura";
-        string pel = "permisoEliminar";
-        string pm = "permisoModificar";
-        string pl = "permisoLectura";
-        string pi = "permisoImprimir";
-        string t1 = "usuarioaplicacion";
-        string t2 = "aplicacionperfil";
-        string pk2 = "fkidperfil";
-        string pk1 = "fkidusuario";
-        string p1 = "";
-        string p2 = "";
-        string p3 = "";
-        string p4 = "";
-        string p5 = "";
+        private bloqueos b = new bloqueos();
+        private string idaplicacion = "204";
+        private string pe = "permisoEscritura";
+        private string pel = "permisoEliminar";
+        private string pm = "permisoModificar";
+        private string pl = "permisoLectura";
+        private string pi = "permisoImprimir";
+        private string t1 = "usuarioaplicacion";
+        private string t2 = "aplicacionperfil";
+        private string pk2 = "fkidperfil";
+        private string pk1 = "fkidusuario";
+        private string p1 = "";
+        private string p2 = "";
+        private string p3 = "";
+        private string p4 = "";
+        private string p5 = "";
 
-        Controlador cn = new Controlador();
+        private Controlador cn = new Controlador();
+
         public frmMantenimientoPerfil()
         {
             InitializeComponent();
             CenterToScreen();
             actualizardatagriew();
-            obtenerpermisos("2", p1, pe, t2, pk2, idaplicacion);
-            obtenerpermisos("2", p3, pm, t2, pk2, idaplicacion);
-            obtenerpermisos("2", p4, pel, t2, pk2, idaplicacion);
-            obtenerpermisos("2", p5, pi, t2, pk2, idaplicacion);
+           //obtenerpermisos("2", p1, pe, t2, pk2, idaplicacion);
+           // obtenerpermisos("2", p3, pm, t2, pk2, idaplicacion);
+           // obtenerpermisos("2", p4, pel, t2, pk2, idaplicacion);
+           // obtenerpermisos("2", p5, pi, t2, pk2, idaplicacion);
         }
 
-        string tabla = "perfil";
+        private string tabla = "perfil";
 
         public void actualizardatagriew()
         {
@@ -53,10 +54,7 @@ namespace CapaVistaSeguridadHSC
             btnHabilitado.Checked = false;
             btnInhabilitado.Checked = false;
             textBox3.Text = "";
-
         }
-
-
 
         private void btnHabilitado_CheckedChanged(object sender, EventArgs e)
         {
@@ -70,45 +68,42 @@ namespace CapaVistaSeguridadHSC
 
         private void frmMantenimientoPerfil_Load(object sender, EventArgs e)
         {
-
             try
             {
                 // TODO: esta línea de código carga datos en la tabla 'dataSet3.perfil' Puede moverla o quitarla según sea necesario.
-
             }
             catch (Exception Error)
             {
                 Console.WriteLine("404", Error);
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void perfilTabla_RowHeaderMouseClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
             {
+                Bitacora loggear = new Bitacora();
+                loggear.guardarEnBitacora(IdUsuario, "1", "0012", "Insertar");
+
                 if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
                 {
-
+                    loggear.guardarEnBitacora(IdUsuario, "1", "0004", "Inserción realizada");
                     cn.insertarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
                     MessageBox.Show("Insercion realizada");
                     funLimpiar();
                 }
                 else
                 {
-
+                    loggear.guardarEnBitacora(IdUsuario, "1", "0004", "Error al realizar Inserción");
                     MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
-
                 }
             }
             catch
@@ -118,28 +113,29 @@ namespace CapaVistaSeguridadHSC
             actualizardatagriew();
         }
 
-
-
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "")
             {
-
+                Bitacora loggear = new Bitacora();
+                loggear.guardarEnBitacora(IdUsuario, "1", "0004", "Modificación Exitosa");
                 cn.modificarPerfil(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text));
                 MessageBox.Show("Insercion realizada");
                 funLimpiar();
             }
             else
             {
-
+                Bitacora loggear = new Bitacora();
+                loggear.guardarEnBitacora(IdUsuario, "1", "0004", "Error al modificar");
                 MessageBox.Show("Error debe de ingresar todos los valores solicitados ");
-
             }
             actualizardatagriew();
         }
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0004", "Eliminar");
             cn.eliminarPerfil(textBox1.Text);
             MessageBox.Show("Eliminacion realizada");
             funLimpiar();
@@ -151,19 +147,16 @@ namespace CapaVistaSeguridadHSC
             funLimpiar();
         }
 
-
         public void actualizarTablaDeporte()
         {
             try
             {
-
                 //CapaVista.deporteTableAdapter.Fill(vista.vwDeportes.deporte);
             }
             catch (Exception Error)
             {
                 Console.WriteLine("404 ", Error);
             }
-
         }
 
         private void perfilTabla_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -185,7 +178,6 @@ namespace CapaVistaSeguridadHSC
             }
             catch
             {
-
             }
         }
 
@@ -200,14 +192,11 @@ namespace CapaVistaSeguridadHSC
 
             if (permiso == pe)
             {
-
                 if (p1 == "0")
                 {
-
                     btnInsertar.Enabled = false;
                     //label1.Text = p1;
                 }
-
                 else
                 {
                     if (p1 == "1")
@@ -221,7 +210,6 @@ namespace CapaVistaSeguridadHSC
             {
                 if (permiso == pm)
                 {
-
                     if (p3 == "0")
                     {
                         btnModificar.Enabled = false;
@@ -273,25 +261,11 @@ namespace CapaVistaSeguridadHSC
                      }*/
                 }
             }
-
-
-
-
-
         }
-
 
         /*   public void obteneraplicacion(string nombreapp,string idapp)
            {
                b.obteneraplicacion(nombreapp,idapp);
            }*/
-    
-
-
     }
-
-
-
-
-
 }

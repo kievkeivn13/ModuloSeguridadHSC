@@ -1,23 +1,26 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Data.Odbc;
 using System.Windows.Forms;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmPermisos : Form
     {
-        Controlador con = new Controlador();
+        private Controlador con = new Controlador();
 
-        int escribir = 0;
-        int leer = 0;
-        int modificar = 0;
-        int eliminar = 0;
-        int imprimir = 0;
+        private int escribir = 0;
+        private int leer = 0;
+        private int modificar = 0;
+        private int eliminar = 0;
+        private int imprimir = 0;
 
-        int Perfil = 0;
-        int Usuario = 0;
+        private int Perfil = 0;
+        private int Usuario = 0;
+
         public frmPermisos()
         {
             InitializeComponent();
@@ -31,6 +34,9 @@ namespace CapaVistaSeguridadHSC
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0008", "Guardar");
+
             if (labelidentidad.Text == "")
             {
                 MessageBox.Show("Debe seleccionar una entidad");
@@ -67,7 +73,6 @@ namespace CapaVistaSeguridadHSC
             }
             actualizarpermisosUA();
             actualizarpermisosPA();
-
         }
 
         public void llenarcbxAplicacion()
@@ -182,7 +187,6 @@ namespace CapaVistaSeguridadHSC
             if (Escritura.Checked == true)
             {
                 escribir = 1;
-
             }
             else
             {
@@ -238,8 +242,8 @@ namespace CapaVistaSeguridadHSC
             }
         }
 
-        string tabla1 = "vwpermisosusuario";
-        string tabla2 = "vwpermisosperfil";
+        private string tabla1 = "vwpermisosusuario";
+        private string tabla2 = "vwpermisosperfil";
 
         public void actualizarpermisosUA()
         {
@@ -349,10 +353,7 @@ namespace CapaVistaSeguridadHSC
             }
             catch
             {
-
             }
-
-
         }
 
         private void dtgPermisosPA_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -430,13 +431,11 @@ namespace CapaVistaSeguridadHSC
             }
             catch
             {
-
             }
         }
 
         private void labelidaplicacion_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

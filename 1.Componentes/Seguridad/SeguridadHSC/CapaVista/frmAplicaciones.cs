@@ -1,14 +1,17 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmAplicaciones : Form
     {
-        Controlador cn = new Controlador();
+        private Controlador cn = new Controlador();
+
         public frmAplicaciones()
         {
             InitializeComponent();
@@ -16,10 +19,12 @@ namespace CapaVistaSeguridadHSC
         }
 
         //Mostrar los datos CAPA VISTA
-        string tabla = "usuario";
-        string tabla2 = "aplicacion"; //aplicacion
-        string tabla3 = "UsuarioAplicacion"; //Usuario
-        string tabla4 = "perfil";
+        private string tabla = "usuario";
+
+        private string tabla2 = "aplicacion"; //aplicacion
+        private string tabla3 = "UsuarioAplicacion"; //Usuario
+        private string tabla4 = "perfil";
+
         public void actualizardatagriew()
         {
             DataTable dt = cn.aplicacionllenarTbl(tabla2);
@@ -54,15 +59,15 @@ namespace CapaVistaSeguridadHSC
             textBox2.Text = dta;
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0006", "Consulta");
             string condicion = textBox1.Text;
             aplicacionllenarTbl();
             actualizardatagriew();
             aplicacionllenarNombre();
             actualizardatagriewpersonal();
-
         }
 
         private void dtgConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -70,52 +75,38 @@ namespace CapaVistaSeguridadHSC
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
         }
 
-
-
-
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void fmConsulta_Load(object sender, EventArgs e)
         {
-
         }
-
-
-
-
-
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             textBox3.Text = dtgConsulta.CurrentRow.Cells[0].Value.ToString();
-
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0006", "Asignar");
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
             cn.aplicacionagregar(tabla3, valor1, valor2);
             actualizardatagriewpersonal();
-
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0006", "Quitar");
             textBox3.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
             cn.aplicacioneliminar(tabla3, valor1, valor2);
             actualizardatagriewpersonal();
-
-
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -125,11 +116,12 @@ namespace CapaVistaSeguridadHSC
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0006", "Quitar todo");
             string valor1 = textBox1.Text;
             cn.aplicacioneliminartodo(tabla3, valor1);
             actualizardatagriewpersonal();
@@ -137,13 +129,13 @@ namespace CapaVistaSeguridadHSC
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0006", "Asignar todo");
             string valor1 = textBox1.Text;
             string valor2 = textBox3.Text;
             string condicion = textBox1.Text;
             cn.aplicacioneliminartodo(tabla3, valor1);
             cn.aplicacionagregartodo(tabla3, valor1, valor2, tabla2);
-
-
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -161,7 +153,6 @@ namespace CapaVistaSeguridadHSC
             }
         }
 
-
         private void button6_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
@@ -171,7 +162,6 @@ namespace CapaVistaSeguridadHSC
             dataGridView1.DataSource = null;
             dataGridView2.DataSource = null;
         }
-
 
         //Utilizar flechas para moverse entre botones
 
@@ -201,6 +191,7 @@ namespace CapaVistaSeguridadHSC
                 button2.Focus();//Mueve al siguiente boton
             }
         }
+
         private void button2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)
@@ -239,7 +230,6 @@ namespace CapaVistaSeguridadHSC
 
         private void label6_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

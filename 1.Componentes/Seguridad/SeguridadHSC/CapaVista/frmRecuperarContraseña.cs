@@ -1,25 +1,26 @@
-﻿using CapaControladorSeguridadHSC;
+﻿using BitacoraUsuario;
+using CapaControladorSeguridadHSC;
 using System;
 using System.Data.Odbc;
 using System.Windows.Forms;
+using static datosUsuario;
 
 namespace CapaVistaSeguridadHSC
 {
     public partial class frmRecuperarContraseña : Form
     {
-       Controlador conAplicacion = new Controlador();
+        private Controlador conAplicacion = new Controlador();
+
         //string Usuario = "";
         public frmRecuperarContraseña()
         {
             InitializeComponent();
             llenarcbxUsuario();
             CenterToScreen();
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -31,10 +32,12 @@ namespace CapaVistaSeguridadHSC
                 Controlador controladorPerfil = new Controlador();
                 if (txtConfirmacion.Text != null && txtContraseña.Text != null && cbxUsuario.SelectedIndex != -1 || cbxUsuario.SelectedIndex != 0)
                 {
-
                     if (txtContraseña.Text != txtConfirmacion.Text)
                     {
                         MessageBox.Show("La contraseña no es igual.");
+                        Bitacora loggear = new Bitacora();
+                        loggear.guardarEnBitacora(IdUsuario, "1", "0009", "Fallo al Recuperar Contraseña");
+
                         funLimpiar();
                     }
                     else
@@ -44,6 +47,8 @@ namespace CapaVistaSeguridadHSC
                         conAplicacion.recuperarContraseña(cbxUsuario.SelectedIndex.ToString(), password);
 
                         MessageBox.Show("Modificación Realizada");
+                        Bitacora loggear = new Bitacora();
+                        loggear.guardarEnBitacora(IdUsuario, "1", "0009", "Recuperar contraseña");
                         funLimpiar();
                     }
                 }
@@ -51,14 +56,13 @@ namespace CapaVistaSeguridadHSC
                 {
                     MessageBox.Show("Una o más casillas vacías.");
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex);
             }
-
         }
+
         public void llenarcbxUsuario()
         {
             try
@@ -75,18 +79,18 @@ namespace CapaVistaSeguridadHSC
             catch (Exception ex) { MessageBox.Show("Error: " + ex); }
         }
 
-
         public void funLimpiar()
         {
             txtContraseña.Text = "";
             txtConfirmacion.Text = "";
 
             cbxUsuario.SelectedIndex = 0;
-
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            Bitacora loggear = new Bitacora();
+            loggear.guardarEnBitacora(IdUsuario, "1", "0009", "Limpiar");
             funLimpiar();
         }
 
@@ -96,6 +100,7 @@ namespace CapaVistaSeguridadHSC
             btnPassword.Visible = false;
             btnPasswordn.Visible = true;
         }
+
         private void btnPasswordN_Click(object sender, EventArgs e)
         {
             txtContraseña.UseSystemPasswordChar = true;
@@ -108,8 +113,8 @@ namespace CapaVistaSeguridadHSC
             txtConfirmacion.UseSystemPasswordChar = false;
             btnConfirmacion.Visible = false;
             btnConfirmacionN.Visible = true;
-
         }
+
         private void btnConfirmacionN_Click(object sender, EventArgs e)
         {
             txtConfirmacion.UseSystemPasswordChar = true;

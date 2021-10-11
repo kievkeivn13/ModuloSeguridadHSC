@@ -54,9 +54,9 @@ namespace CapaControladorSeguridadHSC
 
 
         //frmMantenimientoAplicacion
-        public void insertarAplicacion(string Id, string modulo, string nombre , int Estado, string RutaChm, string rutahtml)
+        public void insertarAplicacion(string Id, string modulo, string nombre, int Estado, string RutaChm, string rutahtml)
         {
-            sn.funInsertar(Id, modulo, nombre,  Estado, RutaChm, rutahtml);
+            sn.funInsertar(Id, modulo, nombre, Estado, RutaChm, rutahtml);
         }
 
         public void modificarAplicacion(string Id, string modulo, string nombre, int Estado, string RutaChm, string rutahtml)
@@ -94,6 +94,8 @@ namespace CapaControladorSeguridadHSC
             string id = sn.consultaModulo(nombre);
             return id;
         }
+
+
         //frmPerfiles
         public DataTable PerfilllenarTbl(string tabla2)
         {
@@ -398,5 +400,35 @@ namespace CapaControladorSeguridadHSC
             return nombre;
         }
 
+        //Mantenimiento Perfil
+
+        public void metodoInsertar(string Id, string Nombre, string Descripcion, int Estado)
+        {
+            sn.metodoInsertar(Id, Nombre, Descripcion, Estado);
+        }
+
+        public void modificarModificar(string Id, string Nombre, string Descripcion, int Estado)
+        {
+            sn.metodoModificar(Id, Nombre, Descripcion, Estado);
+        }
+
+        public (string, string, int) metodoBuscar(string id, string nombre, string descripcion, int estado, string ruta)
+        {
+            sn.metodoBuscar(id, nombre, descripcion, estado);
+            return (nombre, descripcion, estado);
+        }
+
+        public void metodoEliminar(string id)
+        {
+            sn.metodoEliminar(id);
+        }
+
+        public DataTable metodollenarTbl(string tabla)
+        {
+            OdbcDataAdapter dt = sn.metodollenarTbl(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
     }
 }
