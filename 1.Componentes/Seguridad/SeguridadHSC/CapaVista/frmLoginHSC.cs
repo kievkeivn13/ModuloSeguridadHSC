@@ -58,7 +58,7 @@ namespace CapaVistaSeguridadHSC
                     // Bitácora
                     Bitacora loggear = new Bitacora();
                     IdUsuario = loggear.obtenerIdDeUsuario(Usuario);
-                    loggear.guardarEnBitacora(IdUsuario, "1", "1", "Login");
+                    //loggear.guardarEnBitacora(IdUsuario, "1", "1", "Login");
                     DialogResult = DialogResult.OK;
                     // Fin bitácora
 

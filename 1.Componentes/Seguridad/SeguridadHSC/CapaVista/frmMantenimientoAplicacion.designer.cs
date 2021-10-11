@@ -182,6 +182,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(437, 156);
             this.dataGridView1.TabIndex = 27;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick_1);
             // 
             // textBox4
             // 
@@ -247,7 +248,7 @@
             this.cbxModulo.Name = "cbxModulo";
             this.cbxModulo.Size = new System.Drawing.Size(162, 21);
             this.cbxModulo.TabIndex = 34;
-            this.cbxModulo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbxModulo.SelectedIndexChanged += new System.EventHandler(this.cbxModulo_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -264,9 +265,8 @@
             this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(311, 111);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(27, 20);
+            this.textBox6.Size = new System.Drawing.Size(44, 20);
             this.textBox6.TabIndex = 36;
-            this.textBox6.Visible = false;
             // 
             // frmMantenimientoAplicacion
             // 

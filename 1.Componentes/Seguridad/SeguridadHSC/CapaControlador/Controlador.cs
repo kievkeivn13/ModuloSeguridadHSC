@@ -54,14 +54,14 @@ namespace CapaControladorSeguridadHSC
 
 
         //frmMantenimientoAplicacion
-        public void insertarAplicacion(string Id, string Nombre, int Estado, string Ruta)
+        public void insertarAplicacion(string Id, string modulo, string nombre , int Estado, string RutaChm, string rutahtml)
         {
-            sn.funInsertar(Id, Nombre, Estado, Ruta);
+            sn.funInsertar(Id, modulo, nombre,  Estado, RutaChm, rutahtml);
         }
 
-        public void modificarAplicacion(string Id, string Nombre, int Estado, string Ruta)
+        public void modificarAplicacion(string Id, string modulo, string nombre, int Estado, string RutaChm, string rutahtml)
         {
-            sn.funModificar(Id, Nombre, Estado, Ruta);
+            sn.funModificar(Id, modulo, nombre, Estado, RutaChm, rutahtml);
         }
 
         public (string, int, string) buscarAplicacion(string id, string nombre, int estado, string ruta)
@@ -89,7 +89,11 @@ namespace CapaControladorSeguridadHSC
             return sn.llenarcbxUsuario(sql);
         }
 
-
+        public string consultaModulo(string nombre)
+        {
+            string id = sn.consultaModulo(nombre);
+            return id;
+        }
         //frmPerfiles
         public DataTable PerfilllenarTbl(string tabla2)
         {

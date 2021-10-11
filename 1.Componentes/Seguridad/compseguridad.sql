@@ -31,14 +31,6 @@ nombre VARCHAR(30) NOT NULL,
 descripcion VARCHAR(200) NOT NULL,
 estado VARCHAR(1) NOT NULL
 )ENGINE = InnoDB;
-insert into modulo values ("1", "Seguridad", "Modulo de seguridad", 1);
-insert into modulo values ("1001", "Hoteleria", "Modulo de hoteleria", 1);
-insert into modulo values ("2001", "Compras", "Modulo de Compras", 1);
-insert into modulo values ("3001", "Ventas", "Modulo de Ventas", 1);
-insert into modulo values ("40001", "Inventarios", "Modulo de Inventarios", 1);
-insert into modulo values ("50001", "RRHH", "Modulo de RRHH", 1);
-insert into modulo values ("60001", "Bancos", "Modulo de Bancos", 1);
-insert into modulo values ("70001", "Contabilidad", "Modulo de Contabilidad", 1);
 
 CREATE TABLE Aplicacion(
 pkId VARCHAR(15) PRIMARY KEY,
@@ -50,13 +42,6 @@ rutaHtml varchar(80) not null,
 FOREIGN KEY (fkIdModulo) REFERENCES Modulo(pkId)
 )ENGINE = InnoDB;
 
-INSERT INTO aplicacion VALUES ("1","1","Mantenimiento Aplicacion", "1", "1", "");
-#INSERT INTO aplicacion VALUES ("2","1","Prueba2", "1", "1", "0");
-/*
-INSERT INTO aplicacion VALUES ("2","Registro de Usuario",1,"");
-INSERT INTO aplicacion VALUES ("3","Asignación de Perfiles a Usuario",1,"");
-INSERT INTO aplicacion VALUES ("4","Permisos Usuario Aplicación",1,"");
-*/
 /*create table reporte (
 	idReporte int NOT NULL primary key,
 	nombre varchar(20) NOT NULL,
@@ -69,15 +54,17 @@ INSERT INTO aplicacion VALUES ("4","Permisos Usuario Aplicación",1,"");
 
 CREATE TABLE BitacoraUsuario(
 pkId INT AUTO_INCREMENT PRIMARY KEY,
+fkIdUsuario VARCHAR(15) NOT NULL,
  `host` VARCHAR(45) NULL DEFAULT NULL,
 ip VARCHAR(20) NULL,
-conexionFecha DATE NULL,
-conexionHora TIME NULL,
-fkIdUsuario VARCHAR(15) NOT NULL,
+fkIdModulo VARCHAR(15) NOT NULL,
 fkIdAplicacion VARCHAR(15) NOT NULL,
 accion VARCHAR(200) NOT NULL,
-
+conexionFecha DATE NULL,
+conexionHora TIME NULL,
+  
 FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId),
+FOREIGN KEY (fkIdModulo) REFERENCES Modulo (pkId),
 FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion(pkID)
 )ENGINE = InnoDB;
 
@@ -86,9 +73,6 @@ pkId VARCHAR(15) PRIMARY KEY,
 nombre VARCHAR(45) NULL,
 estado VARCHAR(45) NULL
 )ENGINE = InnoDB;
-
-insert into perfil values("1","Administrador","1");
-insert into perfil values("2","Vendedor","1");
 
 CREATE TABLE UsuarioPerfil(
 fkIdUsuario VARCHAR(15) NOT NULL,
@@ -110,8 +94,7 @@ permisoImprimir int,
 FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
 FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
 )ENGINE = InnoDB;
-
-#insert into usuarioaplicacion VALUES (1,1,null,null,null,null,null);      
+   
 
 CREATE TABLE IF NOT EXISTS AplicacionPerfil (
 fkIdPerfil VARCHAR(15) NOT NULL,
@@ -126,9 +109,6 @@ FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
 FOREIGN KEY (fkIdPerfil) REFERENCES Perfil (pkId)
 )ENGINE = InnoDB;
 
-/*insert into aplicacionperfil VALUES (1,1,null,null,null,null,null);
-insert into aplicacionperfil VALUES (2,1,1,1,1,1,1);
-insert into aplicacionperfil VALUES (1,2,1,1,1,1,1);*/
 
 CREATE 
     ALGORITHM = UNDEFINED 
@@ -183,4 +163,22 @@ fkIdAplicacion VARCHAR(15) NOT NULL,
 FOREIGN KEY (fkIdAplicacion) REFERENCES Aplicacion (pkId),
 FOREIGN KEY (fkIdUsuario) REFERENCES Usuario (pkId)
 )ENGINE = InnoDB;
+
+insert into perfil values("1","Administrador","1");
+insert into perfil values("2","Vendedor","1");
+
+INSERT INTO modulo VALUES ('1','Seguridad','Módulo de Seguridad',1);
+
+INSERT INTO aplicacion VALUES ("0001","1","Login Seguridad HSC",1,0001,0);
+INSERT INTO aplicacion VALUES ("0002","1","Registrar Usuario",1,0002,0);
+INSERT INTO aplicacion VALUES ("0003","1","Mantenimiento Aplicación",1,0003,0);
+INSERT INTO aplicacion VALUES ("0004","1","Mantenimiento Perfil",1,0004,0);
+INSERT INTO aplicacion VALUES ("0005","1","Asignación de Aplicación a Perfiles",1,0005,0);
+INSERT INTO aplicacion VALUES ("0006","1","Asignación de Aplicación a Usuarios",1,0006,0);
+INSERT INTO aplicacion VALUES ("0007","1","Asignación de Perfiles a Usuarios",1,0007,0);
+INSERT INTO aplicacion VALUES ("0008","1","Asignación Permisos",1,0008,0);
+INSERT INTO aplicacion VALUES ("0009","1","Recuperar Contraseña",1,0009,0);
+INSERT INTO aplicacion VALUES ("0010","1","Cambiar Contraseña",1,0010,0);
+INSERT INTO aplicacion VALUES ("0011","1","Consulta Bitácora",1,0011,0);
+
 

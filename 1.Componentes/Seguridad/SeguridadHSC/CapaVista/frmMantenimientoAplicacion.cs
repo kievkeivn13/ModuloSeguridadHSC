@@ -29,7 +29,11 @@ namespace CapaVistaSeguridadHSC
             btnHabilitado.Checked = false;
             btnInhabilitado.Checked = false;
             textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
 
+            cbxModulo.SelectedIndex = 0;
         }
 
 
@@ -58,7 +62,7 @@ namespace CapaVistaSeguridadHSC
             try
             {
 
-                conAplicacion.insertarAplicacion(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), " ");
+                conAplicacion.insertarAplicacion(textBox1.Text, textBox6.Text, textBox2.Text, int.Parse(textBox3.Text), textBox4.Text, textBox5.Text);
                 MessageBox.Show("Insercion realizada");
                 funLimpiar();
 
@@ -74,14 +78,14 @@ namespace CapaVistaSeguridadHSC
         {
             try
             {
-                conAplicacion.modificarAplicacion(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), " ");
+                conAplicacion.modificarAplicacion(textBox1.Text, textBox6.Text, textBox2.Text, int.Parse(textBox3.Text), textBox4.Text, textBox5.Text);
                 MessageBox.Show("Modificacion realizada");
                 funLimpiar();
                 actualizardatagriew();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: Debes llenar todos los campos");
+                MessageBox.Show("Error: " + ex);
             }
         }
 
@@ -152,22 +156,19 @@ namespace CapaVistaSeguridadHSC
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbxModulo_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
-                if (cbxModulo.SelectedValue.ToString() == null)
-                {
-                    textBox1.Text = "";
-                }
-                else
-                {
-                    textBox6.Text = cbxModulo.SelectedValue.ToString();
-                }
+                
+                    textBox6.Text = consultaModulo(cbxModulo.Text.ToString());
+                   
+                
+                
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex + "");
             }
         }
 
@@ -180,9 +181,31 @@ namespace CapaVistaSeguridadHSC
 
         }
 
+        public string consultaModulo(string nombre)
+        {
+            string id_modulo = conAplicacion.consultaModulo(nombre);
 
+            return id_modulo;
+        }
 
+        private void dataGridView1_RowHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBox6.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            textBox5.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
 
+            if (textBox3.Text == "1")
+            {
+                btnHabilitado.Checked = true;
+            }
+            else if (textBox3.Text == "0")
+            {
+                btnInhabilitado.Checked = true;
+            }
+        }
     }
 
 

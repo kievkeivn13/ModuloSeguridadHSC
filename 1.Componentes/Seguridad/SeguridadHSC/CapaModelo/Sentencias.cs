@@ -67,19 +67,19 @@ namespace CapaModeloSeguridadHSC
         }
 
         //frmMantenimientoAplicacion Sebastián Moreira 
-        public void funInsertar(string Id, string Nombre, int estado, string ruta)
+        public void funInsertar(string Id, string Nombre, string Modulo, int estado, string rutaChm, string rutaHtml)
         {
             string cadena = "INSERT INTO" +
-            " `componenteseguridad`.`Aplicacion` VALUES (" + "'" + Id + "', '" + Nombre + "' , " + estado + ", '" + ruta + "');";
+            " `componenteseguridad`.`Aplicacion` VALUES (" + "'" + Id + "', '" + Modulo + "' , '" + Nombre + "' , " + estado + ", '" + rutaChm + "', '" + rutaHtml + "');";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
         }
 
-        public void funModificar(string Id, string Nombre, int estado, string ruta)
+        public void funModificar(string Id, string Modulo, string Nombre, int estado, string rutaChm, string rutaHtml)
         {
-            string cadena = "UPDATE componenteseguridad.aplicacion set pkId ='" + Id
-              + "',nombre ='" + Nombre + "',estado = " + estado + ", idReporteAsociado = '" + ruta + "'  where pkId= '" + Id + "';";
+            string cadena = "UPDATE componenteseguridad.aplicacion set pkId ='" + Id + "', fkIdModulo= '" + Modulo 
+              + "',nombre ='" + Nombre + "',estado = " + estado + ", rutaChm = '" + rutaChm + "', rutaHtml = '" + rutaHtml + "'  where pkId= '" + Id + "';";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -120,6 +120,28 @@ namespace CapaModeloSeguridadHSC
             return dataTable;
         }
 
+        public string consultaModulo(string nombre)
+        {
+
+            string id = "";
+            string Query = "select * from `componenteseguridad`.`Modulo` where nombre='" + nombre + "';";
+
+            OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            if (busqueda.Read())
+            {
+
+                id = busqueda["pkid"].ToString();
+
+            }
+
+
+            return id;
+        }
 
         //frmPerfiles Heydi Quemé
 
